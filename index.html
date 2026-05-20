@@ -1014,12 +1014,163 @@ function generateExampleSentence(word, meaning, cat) {
   const tpl = templates[Math.floor(Math.random() * templates.length)];
   try {
     let sentence = tpl(word);
-    // Capitalize first letter
     sentence = sentence.charAt(0).toUpperCase() + sentence.slice(1);
     return sentence;
   } catch(e) {
-    return `${word.charAt(0).toUpperCase() + word.slice(1)} plays a crucial role in modern society.`;
+    return word.charAt(0).toUpperCase() + word.slice(1) + ' plays a crucial role in modern society.';
   }
+}
+
+// ===== DEFINITION GENERATOR =====
+// Generates TOEFL-level English definitions for vocabulary
+function generateDefinition(word, meaning, cat) {
+  const defs = getWordDefinitions(word, meaning, cat);
+  if (!defs || !defs.defEN) {
+    return { defEN: word + ': ' + (meaning || '(term)'), defCN: meaning || '' };
+  }
+  return defs;
+}
+
+// Known academic word definitions (1-2 concise EN definitions)
+const WORD_DEFS = {
+  'stratigraphy': { defEN: 'The study of rock layers and how they were formed', defCN: '地层学' },
+  'drainage channel': { defEN: 'A passage that carries away excess water', defCN: '排水渠道' },
+  'radiocarbon dating': { defEN: 'A method to determine the age of ancient objects by measuring carbon', defCN: '放射性碳测定年代' },
+  'porcelain': { defEN: 'A hard white ceramic material; fine china', defCN: '瓷器' },
+  'microfossil': { defEN: 'A very small fossil that can only be seen with a microscope', defCN: '微化石' },
+  'domestication': { defEN: 'The process of taming wild animals for human use', defCN: '驯养；圈养' },
+  'pit': { defEN: 'A large hole in the ground; a mine or excavation', defCN: '坑；地坑' },
+  'oral tradition': { defEN: 'Stories and history passed down by speaking, not writing', defCN: '口述传统' },
+  'ditch': { defEN: 'A long narrow channel dug in the ground for water flow', defCN: '沟渠' },
+  'corral': { defEN: 'A fenced area for keeping animals; an enclosure', defCN: '围栏；畜栏' },
+  'starch grain': { defEN: 'A tiny particle of starch found in plant cells', defCN: '淀粉颗粒' },
+  'perennial village': { defEN: 'A settlement that is occupied all year round', defCN: '长期定居村落' },
+  'ceramic': { defEN: 'Made of clay and hardened by heat; pottery', defCN: '陶器；陶制的' },
+  'sediment layer': { defEN: 'A sheet of material that settles at the bottom of a liquid', defCN: '沉积土层' },
+  'relic': { defEN: 'An object from the past that has historical value', defCN: '古迹；遗址；遗物' },
+  'inscription': { defEN: 'Words carved into a hard surface like stone or metal', defCN: '铭文；刻字' },
+  'terrain': { defEN: 'The physical features of an area of land', defCN: '地形；地貌' },
+  'floodplain': { defEN: 'Flat land beside a river that floods regularly', defCN: '泛滥平原' },
+  'topography': { defEN: 'The study of the shape and features of land surfaces', defCN: '地形学' },
+  'delta': { defEN: 'An area of land where a river spreads into smaller rivers', defCN: '三角洲' },
+  'latitude': { defEN: 'The distance north or south of the equator, measured in degrees', defCN: '纬度' },
+  'tundra': { defEN: 'A cold treeless region found in the far north', defCN: '冻土；苔原' },
+  'longitude': { defEN: 'The distance east or west of a meridian, measured in degrees', defCN: '经度' },
+  'temperate': { defEN: 'Having a mild climate without extremes of hot or cold', defCN: '温带的；温和的' },
+  'hemisphere': { defEN: 'Half of the Earth, divided by the equator or a meridian', defCN: '半球' },
+  'alpine': { defEN: 'Relating to high mountains; growing in mountain areas', defCN: '高山的' },
+  'peninsular': { defEN: 'Relating to a piece of land almost surrounded by water', defCN: '半岛的' },
+  'landlocked': { defEN: 'Completely surrounded by land, with no coast', defCN: '内陆的；被陆地包围的' },
+  'estuary': { defEN: 'The wide part of a river where it meets the sea', defCN: '河口' },
+  'plateau': { defEN: 'A large flat area of land that is higher than the land around it', defCN: '高原' },
+  'watershed': { defEN: 'A line of high land where rivers flow in different directions', defCN: '分水岭' },
+  'ridge': { defEN: 'The long narrow top of a mountain or hill', defCN: '山脊' },
+  'tributary': { defEN: 'A river or stream that flows into a larger river', defCN: '支流' },
+  'canyon': { defEN: 'A deep narrow valley with steep sides', defCN: '峡谷' },
+  'cape': { defEN: 'A piece of land that sticks out into the sea', defCN: '海角；岬' },
+  'aerial view': { defEN: 'A view of something from above, as if from an airplane', defCN: '俯视图；鸟瞰' },
+  'coastline': { defEN: 'The line where the land meets the sea', defCN: '海岸线' },
+  'permafrost': { defEN: 'A layer of soil that is permanently frozen', defCN: '永久冻土' },
+  'continental drift': { defEN: 'The slow movement of continents across the Earth', defCN: '大陆漂移' },
+  'plate tectonics': { defEN: 'The theory that Earth\'s surface is made of moving plates', defCN: '板块构造学说' },
+  'thaw lake': { defEN: 'A lake formed when frozen ground melts', defCN: '融冻湖' },
+  'deposition': { defEN: 'The process of sediment being left in a new place', defCN: '沉积；堆积' },
+  'cementation': { defEN: 'The process of particles being glued together in rock formation', defCN: '胶结作用' },
+  'compaction': { defEN: 'The process of sediment being pressed together', defCN: '压实作用' },
+  'eject': { defEN: 'To force something out; to throw out with force', defCN: '喷出；喷发；驱逐' },
+  'igneous rock': { defEN: 'Rock formed when magma or lava cools and hardens', defCN: '岩浆岩' },
+  'subsidence': { defEN: 'The gradual sinking of land to a lower level', defCN: '地面下沉' },
+  'metamorphic': { defEN: 'Relating to rock changed by heat and pressure', defCN: '变质的' },
+  'glacial moraine': { defEN: 'Rock debris carried and deposited by a glacier', defCN: '冰川搬运堆积的岩石碎屑' },
+  'strata': { defEN: 'Layers of rock in the ground', defCN: '地层' },
+  'marine': { defEN: 'Relating to the sea or ocean', defCN: '海洋的' },
+  'fault': { defEN: 'A crack in the Earth\'s crust where movement occurs', defCN: '断层' },
+  'aquifer': { defEN: 'An underground layer of rock that holds water', defCN: '蓄水层' },
+  'bedrock': { defEN: 'The solid rock beneath the soil and loose sediment', defCN: '基岩' },
+  'alluvial plain': { defEN: 'Flat land formed by river sediment deposits', defCN: '冲积平原' },
+  'limestone': { defEN: 'A type of rock made from the remains of sea creatures', defCN: '石灰岩' },
+  'seismic': { defEN: 'Relating to earthquakes or other ground vibrations', defCN: '地震的' },
+  'granite': { defEN: 'A hard type of rock used in building', defCN: '花岗岩' },
+  'fissure': { defEN: 'A long narrow crack in rock or the ground', defCN: '裂缝' },
+  'active layer': { defEN: 'The top layer of soil that thaws in summer in cold regions', defCN: '活动层' },
+  'shale': { defEN: 'A type of soft rock that splits into thin layers', defCN: '页岩' },
+  'geothermal': { defEN: 'Relating to heat from inside the Earth', defCN: '地热的' },
+  'ice wedge': { defEN: 'A wedge-shaped piece of ice in frozen ground', defCN: '冰楔' },
+  'leach': { defEN: 'To remove substances from soil by water passing through', defCN: '淋滤；溶出' },
+  'harmonic analysis': { defEN: 'The study of representing functions as sums of basic waves', defCN: '调和分析' },
+  'quantum mechanics': { defEN: 'The study of matter and energy at the smallest scale', defCN: '量子力学' },
+  'data compression': { defEN: 'Reducing the size of digital files to save space', defCN: '数据压缩' },
+  'localization': { defEN: 'The process of limiting something to a specific area', defCN: '局部化；定位' },
+  'frequency domain': { defEN: 'A way of analyzing signals based on their frequency content', defCN: '频率域' },
+  'mantra': { defEN: 'A word or phrase repeated as a statement of belief', defCN: '口头禅；座右铭' },
+  'inertia': { defEN: 'The tendency to stay in the same state; lack of movement', defCN: '惯性；惰性；停滞' },
+  'palatable': { defEN: 'Acceptable or agreeable; pleasant to taste', defCN: '美味的；可接受的' },
+  'insightful': { defEN: 'Having a deep understanding of a situation', defCN: '有启发性的' },
+  'protocol': { defEN: 'A set of rules or procedures for a situation', defCN: '规程；协议；礼仪' },
+  'anomaly': { defEN: 'Something unusual that is different from what is expected', defCN: '异常；反常' },
+  'inconsistency': { defEN: 'The state of not matching or being the same each time', defCN: '不一致；矛盾' },
+  'constituent': { defEN: 'A part of a whole; an element that makes up something', defCN: '组成的；构成的；成分' },
+  'decomposition': { defEN: 'The process of breaking down into simpler parts', defCN: '分解；腐烂' },
+  'resilient': { defEN: 'Able to recover quickly from difficulties', defCN: '坚韧的；有弹性的' },
+  'neuroscience': { defEN: 'The scientific study of the brain and nervous system', defCN: '神经科学' },
+  'transcendence': { defEN: 'The state of going beyond normal limits', defCN: '超越；超然' },
+  'intrinsically': { defEN: 'In a way that is natural and basic to something', defCN: '本质上；内在地' },
+  'flounder': { defEN: 'To struggle or have difficulty; to be confused', defCN: '挣扎；茫然无措' },
+  'disengagement': { defEN: 'The act of becoming less involved or connected', defCN: '脱离；缺乏投入' },
+  'devalue': { defEN: 'To reduce the worth or importance of something', defCN: '轻视；贬低' },
+  'morphology': { defEN: 'The study of the form and structure of things', defCN: '形态学' },
+  'archaeology': { defEN: 'The study of ancient people through their remains', defCN: '考古学' },
+  'pioneer': { defEN: 'A person who is the first to do something new', defCN: '先驱；开创者；率先推行' },
+  'complex': { defEN: 'Made of many parts; difficult to understand', defCN: '复杂的；综合体' },
+  'span': { defEN: 'The full length or range of something', defCN: '跨越；持续时间' },
+  'overlay': { defEN: 'To cover a surface with a layer', defCN: '覆盖；叠加' },
+  'shift': { defEN: 'To change position or direction', defCN: '转变；移动；轮班' },
+  'adaptability': { defEN: 'The ability to adjust to new conditions', defCN: '适应性' },
+  'subsistence': { defEN: 'The minimum amount needed to stay alive', defCN: '生存；生计' },
+  'megacity': { defEN: 'A very large city, usually with over 10 million people', defCN: '特大城市' },
+  'urban sprawl': { defEN: 'The uncontrolled spread of a city into surrounding areas', defCN: '城市扩张' },
+  'infrastructure': { defEN: 'The basic systems needed for a society to function', defCN: '基础设施' },
+  'sustainable': { defEN: 'Able to continue for a long time without harming the environment', defCN: '可持续的' },
+  'spring from': { defEN: 'To originate or come from a source', defCN: '源自；起源于' },
+  'draw back': { defEN: 'To move away from a situation; to hesitate', defCN: '退缩' },
+  'pertain to': { defEN: 'To relate to or be connected with something', defCN: '与…相关' },
+  'comply with': { defEN: 'To follow a rule or request', defCN: '遵守' },
+  'abide by': { defEN: 'To accept and follow a rule or decision', defCN: '遵守；信守' },
+  'dispense with': { defEN: 'To get rid of; to stop using something', defCN: '摒弃；省去' },
+  'reign in': { defEN: 'To control or limit something', defCN: '控制；收敛' },
+  'get off track': { defEN: 'To move away from the main subject or goal', defCN: '偏离正轨' },
+  'swing by': { defEN: 'To visit someone or a place briefly', defCN: '顺便拜访' },
+  'gnaw away at': { defEN: 'To gradually damage or worry someone', defCN: '侵蚀；折磨' },
+  'weave a story': { defEN: 'To create a story or explanation', defCN: '编织故事' },
+  'carve out': { defEN: 'To create something through effort', defCN: '开创；雕刻出' },
+  'reach a 30-year high': { defEN: 'To achieve the highest level in 30 years', defCN: '创30年新高' },
+  'by every conceivable standard': { defEN: 'By all possible measures or ways of judging', defCN: '从所有可衡量的标准来看' },
+  'feel needed': { defEN: 'To have the sense that others require your presence', defCN: '感受到被需要' },
+  'in all fairness': { defEN: 'Speaking honestly and giving due consideration', defCN: '公平地说' },
+};
+
+function getWordDefinitions(word, meaning, cat) {
+  const key = word.toLowerCase().trim();
+  if (WORD_DEFS[key]) return WORD_DEFS[key];
+  // Try matching by word only (for phrases like 'comply with')
+  const matchKey = Object.keys(WORD_DEFS).find(k => k.toLowerCase() === key);
+  if (matchKey) return WORD_DEFS[matchKey];
+  return null;
+}
+
+function addDefinitionsToWord(w) {
+  if (!w.defEN && !w.defCN) {
+    const defs = getWordDefinitions(w.word, w.meaning, w.cat);
+    if (defs) {
+      w.defEN = defs.defEN;
+      w.defCN = defs.defCN || w.meaning;
+    } else {
+      // Fallback template
+      w.defEN = w.word + ': ' + (w.meaning || '');
+      w.defCN = w.meaning || '';
+    }
+  }
+  return w;
 }
 
 function addExampleToWord(w) {
@@ -1239,7 +1390,10 @@ function renderWords() {
         '</div>' +
         '<button class="btn btn-danger btn-sm" onclick="deleteWord(' + realIdx + ')">删除</button>' +
         '</div>' +
-        '<div style="margin-top:6px;padding:8px 12px;background:#f8f9ff;border-radius:6px;border-left:3px solid var(--primary);font-size:13px;color:#555;line-height:1.5;">' +
+        addDefinitionsToWord(w);
+        const defEN = (w.defEN && w.defEN !== w.word + ': ' + (w.meaning||'')) ? w.defEN : '';
+        html += '<div style="margin-top:6px;padding:8px 12px;background:#f8f9ff;border-radius:6px;border-left:3px solid var(--primary);font-size:13px;color:#555;line-height:1.5;">' +
+        (defEN ? '<div style="margin-bottom:4px;font-size:12px;color:#444;"><span style="color:var(--primary);font-weight:600;">EN:</span> ' + escapeHtml(defEN) + '</div>' : '') +
         '💬 ' + escapeHtml(w.example || '') +
         ' <button class="btn btn-outline btn-sm" onclick="regenExample(' + realIdx + ')" style="font-size:11px;padding:1px 8px;margin-left:6px;">🔄 换一句</button>' +
         '</div>' +
