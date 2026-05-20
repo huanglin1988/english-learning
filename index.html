@@ -1163,7 +1163,8 @@ function addDefinitionsToWord(w) {
 }
 
 function addExampleToWord(w) {
-  if (!w.example) {
+  // Generate new examples for old short templates (<80 chars = old version)
+  if (!w.example || w.example.length < 80 || !w.example.includes('TOEFL') && !w.example.includes('IELTS') && !w.example.includes('lecture')) {
     w.example = generateExampleSentence(w.word, w.meaning, w.cat || '通用');
   }
   return w;
