@@ -1,1 +1,700 @@
-{}
+{
+  "ew_words": [
+    {
+      "word": "right",
+      "meaning": "对的啊",
+      "cat": "通用",
+      "time": "2026/5/20 22:27:33"
+    },
+    {
+      "word": "wrong",
+      "meaning": "dui",
+      "cat": "通用",
+      "time": "2026/5/20 17:31:51"
+    },
+    {
+      "word": "stratigraphy",
+      "meaning": "地层学",
+      "cat": "考古",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "drainage channel",
+      "meaning": "排水渠道",
+      "cat": "考古",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "radiocarbon dating",
+      "meaning": "放射性碳测定年代",
+      "cat": "考古",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "porcelain",
+      "meaning": "瓷器",
+      "cat": "考古",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "microfossil",
+      "meaning": "微化石",
+      "cat": "考古",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "domestication",
+      "meaning": "驯养；圈养",
+      "cat": "考古",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "pit",
+      "meaning": "坑；地坑",
+      "cat": "考古",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "oral tradition",
+      "meaning": "口述传统",
+      "cat": "考古",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "ditch",
+      "meaning": "沟渠",
+      "cat": "考古",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "corral",
+      "meaning": "围栏；畜栏",
+      "cat": "考古",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "starch grain",
+      "meaning": "淀粉颗粒",
+      "cat": "考古",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "perennial village",
+      "meaning": "长期定居村落",
+      "cat": "考古",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "ceramic",
+      "meaning": "陶器；陶制的",
+      "cat": "考古",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "sediment layer",
+      "meaning": "沉积土层",
+      "cat": "考古",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "relic",
+      "meaning": "古迹；遗址；遗物",
+      "cat": "考古",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "inscription",
+      "meaning": "铭文；刻字",
+      "cat": "考古",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "terrain",
+      "meaning": "地形；地貌",
+      "cat": "地理",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "floodplain",
+      "meaning": "泛滥平原",
+      "cat": "地理",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "topography",
+      "meaning": "地形学",
+      "cat": "地理",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "delta",
+      "meaning": "三角洲",
+      "cat": "地理",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "latitude",
+      "meaning": "纬度",
+      "cat": "地理",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "tundra",
+      "meaning": "冻土；苔原",
+      "cat": "地理",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "longitude",
+      "meaning": "经度",
+      "cat": "地理",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "temperate",
+      "meaning": "温带的；温和的",
+      "cat": "地理",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "hemisphere",
+      "meaning": "半球",
+      "cat": "地理",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "alpine",
+      "meaning": "高山的",
+      "cat": "地理",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "peninsular",
+      "meaning": "半岛的",
+      "cat": "地理",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "landlocked",
+      "meaning": "内陆的；被陆地包围的",
+      "cat": "地理",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "estuary",
+      "meaning": "河口",
+      "cat": "地理",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "plateau",
+      "meaning": "高原",
+      "cat": "地理",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "watershed",
+      "meaning": "分水岭",
+      "cat": "地理",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "ridge",
+      "meaning": "山脊",
+      "cat": "地理",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "tributary",
+      "meaning": "支流",
+      "cat": "地理",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "canyon",
+      "meaning": "峡谷",
+      "cat": "地理",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "cape",
+      "meaning": "海角；岬",
+      "cat": "地理",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "aerial view",
+      "meaning": "俯视图；鸟瞰",
+      "cat": "地理",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "coastline",
+      "meaning": "海岸线",
+      "cat": "地理",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "permafrost",
+      "meaning": "永久冻土",
+      "cat": "地质",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "continental drift",
+      "meaning": "大陆漂移",
+      "cat": "地质",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "plate tectonics",
+      "meaning": "板块构造学说",
+      "cat": "地质",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "thaw lake",
+      "meaning": "融冻湖",
+      "cat": "地质",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "deposition",
+      "meaning": "沉积；堆积",
+      "cat": "地质",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "cementation",
+      "meaning": "胶结作用",
+      "cat": "地质",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "compaction",
+      "meaning": "压实作用",
+      "cat": "地质",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "eject",
+      "meaning": "喷出；喷发；驱逐",
+      "cat": "地质",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "igneous rock",
+      "meaning": "岩浆岩",
+      "cat": "地质",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "subsidence",
+      "meaning": "地面下沉",
+      "cat": "地质",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "metamorphic",
+      "meaning": "变质的",
+      "cat": "地质",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "glacial moraine",
+      "meaning": "冰川搬运堆积的岩石碎屑",
+      "cat": "地质",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "strata",
+      "meaning": "地层",
+      "cat": "地质",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "marine",
+      "meaning": "海洋的",
+      "cat": "地质",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "fault",
+      "meaning": "断层",
+      "cat": "地质",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "aquifer",
+      "meaning": "蓄水层",
+      "cat": "地质",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "bedrock",
+      "meaning": "基岩",
+      "cat": "地质",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "alluvial plain",
+      "meaning": "冲积平原",
+      "cat": "地质",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "limestone",
+      "meaning": "石灰岩",
+      "cat": "地质",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "seismic",
+      "meaning": "地震的",
+      "cat": "地质",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "granite",
+      "meaning": "花岗岩",
+      "cat": "地质",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "fissure",
+      "meaning": "裂缝",
+      "cat": "地质",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "active layer",
+      "meaning": "活动层",
+      "cat": "地质",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "shale",
+      "meaning": "页岩",
+      "cat": "地质",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "geothermal",
+      "meaning": "地热的",
+      "cat": "地质",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "ice wedge",
+      "meaning": "冰楔",
+      "cat": "地质",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "leach",
+      "meaning": "淋滤；溶出",
+      "cat": "地质",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "harmonic analysis",
+      "meaning": "调和分析",
+      "cat": "数学",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "quantum mechanics",
+      "meaning": "量子力学",
+      "cat": "科学",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "data compression",
+      "meaning": "数据压缩",
+      "cat": "科学",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "localization",
+      "meaning": "局部化；定位",
+      "cat": "科学",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "frequency domain",
+      "meaning": "频率域",
+      "cat": "科学",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "mantra",
+      "meaning": "口头禅；座右铭",
+      "cat": "学术",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "inertia",
+      "meaning": "惯性；惰性；停滞",
+      "cat": "学术",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "palatable",
+      "meaning": "美味的；可接受的",
+      "cat": "学术",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "insightful",
+      "meaning": "有启发性的",
+      "cat": "学术",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "protocol",
+      "meaning": "规程；协议；礼仪",
+      "cat": "学术",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "anomaly",
+      "meaning": "异常；反常",
+      "cat": "学术",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "inconsistency",
+      "meaning": "不一致；矛盾",
+      "cat": "学术",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "constituent",
+      "meaning": "组成的；构成的；成分",
+      "cat": "学术",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "decomposition",
+      "meaning": "分解；腐烂",
+      "cat": "学术",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "resilient",
+      "meaning": "坚韧的；有弹性的",
+      "cat": "学术",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "neuroscience",
+      "meaning": "神经科学",
+      "cat": "学术",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "transcendence",
+      "meaning": "超越；超然",
+      "cat": "学术",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "intrinsically",
+      "meaning": "本质上；内在地",
+      "cat": "学术",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "flounder",
+      "meaning": "挣扎；茫然无措",
+      "cat": "学术",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "disengagement",
+      "meaning": "脱离；缺乏投入",
+      "cat": "学术",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "devalue",
+      "meaning": "轻视；贬低",
+      "cat": "学术",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "morphology",
+      "meaning": "形态学",
+      "cat": "学术",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "archaeology",
+      "meaning": "考古学",
+      "cat": "学术",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "pioneer",
+      "meaning": "先驱；开创者；率先推行",
+      "cat": "学术",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "complex",
+      "meaning": "复杂的；综合体",
+      "cat": "TOEFL",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "span",
+      "meaning": "跨越；持续时间",
+      "cat": "TOEFL",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "overlay",
+      "meaning": "覆盖；叠加",
+      "cat": "TOEFL",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "shift",
+      "meaning": "转变；移动；轮班",
+      "cat": "TOEFL",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "adaptability",
+      "meaning": "适应性",
+      "cat": "TOEFL",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "subsistence",
+      "meaning": "生存；生计",
+      "cat": "TOEFL",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "megacity",
+      "meaning": "特大城市",
+      "cat": "TOEFL",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "urban sprawl",
+      "meaning": "城市扩张",
+      "cat": "TOEFL",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "infrastructure",
+      "meaning": "基础设施",
+      "cat": "TOEFL",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "sustainable",
+      "meaning": "可持续的",
+      "cat": "TOEFL",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "spring from",
+      "meaning": "源自；起源于",
+      "cat": "短语",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "draw back",
+      "meaning": "退缩",
+      "cat": "短语",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "pertain to",
+      "meaning": "与…相关",
+      "cat": "短语",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "comply with",
+      "meaning": "遵守",
+      "cat": "短语",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "abide by",
+      "meaning": "遵守；信守",
+      "cat": "短语",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "dispense with",
+      "meaning": "摒弃；省去",
+      "cat": "短语",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "reign in",
+      "meaning": "控制；收敛",
+      "cat": "短语",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "get off track",
+      "meaning": "偏离正轨",
+      "cat": "短语",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "swing by",
+      "meaning": "顺便拜访",
+      "cat": "短语",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "gnaw away at",
+      "meaning": "侵蚀；折磨",
+      "cat": "短语",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "weave a story",
+      "meaning": "编织故事",
+      "cat": "短语",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "carve out",
+      "meaning": "开创；雕刻出",
+      "cat": "短语",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "reach a 30-year high",
+      "meaning": "创30年新高",
+      "cat": "短语",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "by every conceivable standard",
+      "meaning": "从所有可衡量的标准来看",
+      "cat": "短语",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "feel needed",
+      "meaning": "感受到被需要",
+      "cat": "短语",
+      "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "in all fairness",
+      "meaning": "公平地说",
+      "cat": "短语",
+      "time": "2026/5/20 17:23:46"
+    }
+  ]
+}
