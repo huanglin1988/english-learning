@@ -770,179 +770,61 @@ const STORAGE = {
   grades: { get(){return STORAGE.get('ew_grades')}, set(v){STORAGE.set('ew_grades',v)} },
 };
 
-// ===== GITHUB DATA SYNC =====
-// All data is stored in the GitHub repo via API, shared across all devices
-const GITHUB_TOKEN = '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';
-const GITHUB_REPO = 'huanglin1988/english-learning';
-const DATA_FILE = 'data.json';
+// ===== DATA SYNC =====
+// When on local server, sync between devices via server API
+// When on GitHub Pages, use localStorage only (per-device)
+const IS_SERVER = window.location.port === '3000';
 
-let _dataSHA = null;
-let _lastLoadKey = null;
-
-// Fallback: use localStorage only
-function syncSaveLocalOnly(k, v) {
-  localStorage.setItem(k, JSON.stringify(v));
-}
-
-async function githubGetContent() {
+async function syncLoadAll() {
+  if (!IS_SERVER) return false;
   try {
-    const res = await fetch('https://api.github.com/repos/' + GITHUB_REPO + '/contents/' + DATA_FILE, {
-      headers: { 'Authorization': 'token ' + GITHUB_TOKEN, 'Accept': 'application/vnd.github.v3+json' }
-    });
+    const res = await fetch('/api/data');
     const json = await res.json();
-    if (json.content) {
-      _dataSHA = json.sha;
-      const decoded = atob(json.content.replace(/\n/g, ''));
-      return JSON.parse(decoded);
+    if (json.success && json.data && Object.keys(json.data).length > 0) {
+      Object.keys(json.data).forEach(key => {
+        try { localStorage.setItem(key, JSON.stringify(json.data[key])); } catch(e) {}
+      });
+      return true;
     }
   } catch(e) {}
-  return null;
-}
-
-async function githubSaveContent(data) {
-  try {
-    const content = btoa(unescape(encodeURIComponent(JSON.stringify(data, null, 2))));
-    const body = {
-      message: '🔄 同步数据 ' + new Date().toLocaleString('zh-CN'),
-      content: content,
-      sha: _dataSHA
-    };
-    const res = await fetch('https://api.github.com/repos/' + GITHUB_REPO + '/contents/' + DATA_FILE, {
-      method: 'PUT',
-      headers: { 'Authorization': 'token ' + GITHUB_TOKEN, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
-      body: JSON.stringify(body)
-    });
-    const json = await res.json();
-    if (json.content) _dataSHA = json.content.sha;
-    return true;
-  } catch(e) {
-    return false;
-  }
-}
-
-// Get all keys from localStorage
-function getAllLocalData() {
-  const data = {};
-  const prefixes = ['ew_words', 'ew_sentences', 'ew_essays', 'ew_grades', 'ew_collection', 'ew_custom_qs', 'ew_mm_edit_'];
-  prefixes.forEach(p => {
-    const keys = Object.keys(localStorage).filter(k => k.startsWith(p));
-    keys.forEach(k => {
-      try { data[k] = JSON.parse(localStorage.getItem(k)); } catch(e) {}
-    });
-  });
-  return data;
-}
-
-// Load data from GitHub into localStorage
-async function syncLoadFromGitHub() {
-  const data = await githubGetContent();
-  if (data && Object.keys(data).length > 0) {
-    Object.keys(data).forEach(key => {
-      try { localStorage.setItem(key, JSON.stringify(data[key])); } catch(e) {}
-    });
-    // Trigger re-render
-    if (typeof renderWords === 'function') renderWords();
-    if (typeof renderSentences === 'function') renderSentences();
-    if (typeof renderCollection === 'function') renderCollection();
-    return true;
-  }
   return false;
 }
 
-// Save all local data to GitHub
-async function syncSaveToGitHub() {
-  const data = getAllLocalData();
-  return await githubSaveContent(data);
+async function syncSaveAll() {
+  if (!IS_SERVER) return;
+  try {
+    const prefixes = ['ew_words', 'ew_sentences', 'ew_essays', 'ew_grades', 'ew_collection', 'ew_custom_qs', 'ew_mm_edit_'];
+    const entries = {};
+    prefixes.forEach(p => {
+      Object.keys(localStorage).filter(k => k.startsWith(p)).forEach(k => {
+        try { entries[k] = JSON.parse(localStorage.getItem(k)); } catch(e) {}
+      });
+    });
+    await fetch('/api/data/batch', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ entries })
+    });
+  } catch(e) {}
 }
 
-// Merge local data with GitHub data
-async function syncFull() {
-  const localData = getAllLocalData();
-  const githubData = await githubGetContent();
-  
-  if (!githubData || Object.keys(githubData).length === 0) {
-    // First time - upload local data
-    return await githubSaveContent(localData);
-  }
-  
-  // Merge: local wins for keys that exist locally, otherwise keep github
-  const merged = { ...githubData };
-  let changed = false;
-  Object.keys(localData).forEach(key => {
-    merged[key] = localData[key];
-    changed = true;
-  });
-  
-  if (changed) {
-    return await githubSaveContent(merged);
-  }
-  return true;
-}
-
-// Init sync on page load
-(async function initGitHubSync() {
-  // Always try to load from GitHub first
-  const loaded = await syncLoadFromGitHub();
-  
-  if (loaded) {
-    // Data loaded from GitHub - refresh all views
-    if (typeof renderWords === 'function') renderWords();
-    if (typeof renderSentences === 'function') renderSentences();
-    if (typeof renderCollection === 'function') renderCollection();
-    if (typeof selectedTopic !== 'undefined' && selectedTopic && typeof selectTopic === 'function') {
-      selectTopic(selectedTopic);
+// Init sync
+if (IS_SERVER) {
+  syncLoadAll().then(loaded => {
+    if (loaded) {
+      if (typeof renderWords === 'function') renderWords();
+      if (typeof renderSentences === 'function') renderSentences();
     }
-  }
-  
-  // Then upload any local-only data
-  await syncFull();
-})();
-
-// Auto-sync every 60 seconds
-setInterval(syncFull, 60000);
-
-// Override save functions to trigger sync
-const _origSaveWord = STORAGE.words.set;
-STORAGE.words.set = function(v) {
-  _origSaveWord(v);
-  syncFull();
-};
-
-const _origSaveSentence = STORAGE.sentences.set;
-STORAGE.sentences.set = function(v) {
-  _origSaveSentence(v);
-  syncFull();
-};
-
-const _origSaveEssay = STORAGE.essays.set;
-STORAGE.essays.set = function(v) {
-  _origSaveEssay(v);
-  syncFull();
-};
-
-// Also trigger sync when collection/custom data changes
-const _origSaveCollection = saveCollectionData;
-saveCollectionData = function() {
-  _origSaveCollection();
-  syncFull();
-};
-
-const _origSaveCustom = saveCustomQuestions;
-saveCustomQuestions = function() {
-  _origSaveCustom();
-  syncFull();
-};
-
-// Also sync on model essay save
-const _origSaveModel = typeof saveModelEssayEdit !== 'undefined' ? saveModelEssayEdit : null;
-if (saveModelEssayEdit && !saveModelEssayEdit.__patched) {
-  const origModelSave = saveModelEssayEdit;
-  window.saveModelEssayEdit = function() {
-    origModelSave();
-    syncFull();
-  };
-  window.saveModelEssayEdit.__patched = true;
+  });
+  setInterval(syncSaveAll, 30000);
 }
+
+const _origW = STORAGE.words.set;
+STORAGE.words.set = function(v) { _origW(v); if(IS_SERVER) syncSaveAll(); };
+const _origS = STORAGE.sentences.set;
+STORAGE.sentences.set = function(v) { _origS(v); if(IS_SERVER) syncSaveAll(); };
+const _origE = STORAGE.essays.set;
+STORAGE.essays.set = function(v) { _origE(v); if(IS_SERVER) syncSaveAll(); };
 
 // ===== NAVIGATION =====
 document.querySelectorAll('#nav a').forEach(a => {
