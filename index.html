@@ -951,6 +951,93 @@ document.querySelectorAll('#nav a').forEach(a => {
   });
 });
 
+// ===== EXAMPLE SENTENCE GENERATOR =====
+// Generates IELTS/TOEFL-style example sentences for vocabulary
+const SENTENCE_TEMPLATES = {
+  '通用': [
+    (w) => `The concept of "${w}" plays an important role in our daily lives.`,
+    (w) => `Many researchers have focused on understanding how ${w} affects human behavior.`,
+    (w) => `It is widely believed that ${w} is essential for personal development.`,
+    (w) => `${w.charAt(0).toUpperCase() + w.slice(1)} is a topic that has been discussed by experts for many years.`,
+  ],
+  '考古': [
+    (w) => `Archaeologists use ${w} to better understand ancient civilizations and their development.`,
+    (w) => `The discovery of ${w} at the excavation site provided valuable insights into early human life.`,
+    (w) => `Through the study of ${w}, researchers can reconstruct the daily activities of prehistoric societies.`,
+    (w) => `Recent findings in ${w} have challenged our previous understanding of ancient trade routes.`,
+  ],
+  '地理': [
+    (w) => `The ${w} of a region significantly influences its climate and agricultural potential.`,
+    (w) => `Geographers studying ${w} have found a strong correlation with population distribution patterns.`,
+    (w) => `Understanding ${w} is crucial for predicting future environmental changes.`,
+    (w) => `The unique ${w} of this area makes it particularly suitable for biodiversity conservation.`,
+  ],
+  '地质': [
+    (w) => `Geologists have been studying ${w} to better predict natural disasters and protect human settlements.`,
+    (w) => `The process of ${w} occurs over millions of years and shapes the Earth's surface.`,
+    (w) => `Evidence of ${w} can be found in rock formations around the world.`,
+    (w) => `Understanding ${w} is essential for locating valuable mineral resources beneath the ground.`,
+  ],
+  '科学': [
+    (w) => `Recent advances in ${w} have opened up new possibilities for scientific discovery.`,
+    (w) => `The principles of ${w} are fundamental to understanding how the universe works.`,
+    (w) => `Scientists in the field of ${w} continue to push the boundaries of human knowledge.`,
+    (w) => `A thorough understanding of ${w} is required for students pursuing careers in scientific research.`,
+  ],
+  '学术': [
+    (w) => `The concept of ${w} is frequently discussed in academic journals and research papers.`,
+    (w) => `Scholars have long debated the role of ${w} in shaping modern society.`,
+    (w) => `Developing a deep understanding of ${w} is crucial for academic success at the university level.`,
+    (w) => `Students who master the concept of ${w} tend to perform better in their examinations.`,
+  ],
+  'TOEFL': [
+    (w) => `The TOEFL reading passage discussed how ${w} affects modern urban development.`,
+    (w) => `In the lecture, the professor emphasized the importance of ${w} in today's global economy.`,
+    (w) => `According to recent studies, ${w} has a significant impact on people's quality of life.`,
+    (w) => `The relationship between ${w} and economic growth has been a topic of considerable debate.`,
+  ],
+  '数学': [
+    (w) => `Understanding ${w} is essential for solving complex problems in advanced mathematics.`,
+    (w) => `The application of ${w} has revolutionized the way scientists analyze data.`,
+    (w) => `Students studying ${w} develop strong logical thinking and problem-solving abilities.`,
+  ],
+  '短语': [
+    (w) => `In academic writing, it is important to ${w} the main argument with sufficient evidence.`,
+    (w) => `Students should learn to ${w} when presenting their ideas in TOEFL essays.`,
+    (w) => `The ability to ${w} is considered an essential skill for effective communication.`,
+    (w) => `Many successful people have learned to ${w} in order to achieve their goals.`,
+  ],
+};
+
+function generateExampleSentence(word, meaning, cat) {
+  const templates = SENTENCE_TEMPLATES[cat] || SENTENCE_TEMPLATES['通用'];
+  const tpl = templates[Math.floor(Math.random() * templates.length)];
+  try {
+    let sentence = tpl(word);
+    // Capitalize first letter
+    sentence = sentence.charAt(0).toUpperCase() + sentence.slice(1);
+    return sentence;
+  } catch(e) {
+    return `${word.charAt(0).toUpperCase() + word.slice(1)} plays a crucial role in modern society.`;
+  }
+}
+
+function addExampleToWord(w) {
+  if (!w.example) {
+    w.example = generateExampleSentence(w.word, w.meaning, w.cat || '通用');
+  }
+  return w;
+}
+
+function regenExample(index) {
+  const words = STORAGE.words.get();
+  if (words[index]) {
+    words[index].example = generateExampleSentence(words[index].word, words[index].meaning, words[index].cat || '通用');
+    STORAGE.words.set(words);
+    renderWords();
+  }
+}
+
 // ===== DEFAULT VOCABULARY =====
 const DEFAULT_WORDS = [
   { word:'stratigraphy', meaning:'地层学', cat:'考古' },
@@ -1072,9 +1159,11 @@ let wordCategoryFilter = 'all';
 function initDefaultWords() {
   const words = STORAGE.words.get();
   if (words.length === 0) {
-    STORAGE.words.set(DEFAULT_WORDS.map(w => ({
-      word: w.word, meaning: w.meaning, cat: w.cat || '通用', time: new Date().toLocaleString()
-    })));
+    STORAGE.words.set(DEFAULT_WORDS.map(w => {
+      const nw = { word: w.word, meaning: w.meaning, cat: w.cat || '通用', time: new Date().toLocaleString() };
+      nw.example = generateExampleSentence(w.word, w.meaning, w.cat || '通用');
+      return nw;
+    }));
   }
   updateCategoryFilters();
 }
@@ -1100,7 +1189,9 @@ function addWord() {
   const cat = document.getElementById('wordCategory') ? document.getElementById('wordCategory').value : '通用';
   if (!word) return alert('请输入单词');
   const words = STORAGE.words.get();
-  words.unshift({ word, meaning: meaning || '(待查)', cat, time: new Date().toLocaleString() });
+  const newWord = { word, meaning: meaning || '(待查)', cat, time: new Date().toLocaleString() };
+  newWord.example = generateExampleSentence(word, meaning, cat);
+  words.unshift(newWord);
   STORAGE.words.set(words);
   document.getElementById('wordInput').value = '';
   document.getElementById('wordMeaning').value = '';
@@ -1138,13 +1229,20 @@ function renderWords() {
     html += '<div style="margin:12px 0 4px;font-size:13px;font-weight:600;color:var(--text-light);">' + (labels[cat] || '📂 '+cat) + ' · ' + grouped[cat].length + ' 词</div>';
     grouped[cat].forEach(w => {
       const realIdx = words.indexOf(w);
-      html += '<div class="list-item">' +
-        '<div class="content">' +
+      addExampleToWord(w);
+      html += '<div class="list-item" style="flex-direction:column;">' +
+        '<div style="display:flex;width:100%;gap:10px;align-items:flex-start;">' +
+        '<div class="content" style="flex:1;">' +
         '<div class="word">' + w.word + '</div>' +
         '<div class="translation">' + (w.meaning||'') + '</div>' +
         '<div class="meta">' + (w.time||'') + '</div>' +
         '</div>' +
         '<button class="btn btn-danger btn-sm" onclick="deleteWord(' + realIdx + ')">删除</button>' +
+        '</div>' +
+        '<div style="margin-top:6px;padding:8px 12px;background:#f8f9ff;border-radius:6px;border-left:3px solid var(--primary);font-size:13px;color:#555;line-height:1.5;">' +
+        '💬 ' + escapeHtml(w.example || '') +
+        ' <button class="btn btn-outline btn-sm" onclick="regenExample(' + realIdx + ')" style="font-size:11px;padding:1px 8px;margin-left:6px;">🔄 换一句</button>' +
+        '</div>' +
         '</div>';
     });
   });
