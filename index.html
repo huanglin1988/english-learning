@@ -550,11 +550,12 @@ nav a.active {
 
 <nav id="nav">
   <a href="#" data-page="words">📖 单词库</a>
+  <a href="#" data-page="review">🔄 单词复习</a>
   <a href="#" data-page="sentences">📝 句子库</a>
   <a href="#" data-page="train" class="active">🧠 话题训练</a>
   <a href="#" data-page="collection">📚 作文集合</a>
   <a href="#" data-page="essay">✍️ 托福作文</a>
-  <a href="#" data-page="review">📊 批改评分</a>
+  <a href="#" data-page="grading">📊 批改评分</a>
 </nav>
 
 <div class="container">
@@ -723,8 +724,41 @@ nav a.active {
   </div>
 </div>
 
-<!-- ===== 批改评分 ===== -->
+<!-- ===== 单词复习 ===== -->
 <div class="page" id="page-review">
+  <div class="card">
+    <div class="card-title">🔄 单词复习 · 艾宾浩斯记忆曲线</div>
+    <p style="font-size:13px;color:var(--text-light);margin-bottom:12px;">根据遗忘曲线安排复习，认识就过，不认识就标记，系统自动安排下次复习时间。</p>
+    <div id="reviewStats" style="display:flex;gap:12px;margin-bottom:14px;flex-wrap:wrap;"></div>
+    <div id="reviewToday" style="font-size:14px;margin-bottom:12px;"></div>
+    <div id="reviewCard" style="display:none;">
+      <div style="background:var(--card);border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.1);padding:30px 24px;text-align:center;">
+        <div id="reviewCatBadge" style="font-size:12px;color:var(--text-light);margin-bottom:8px;"></div>
+        <div id="reviewWord" style="font-size:32px;font-weight:700;color:var(--text);margin-bottom:20px;"></div>
+        <div id="reviewMeaning" style="font-size:16px;color:#555;margin-bottom:24px;display:none;"></div>
+        <div id="reviewProgress" style="font-size:12px;color:var(--text-light);margin-bottom:16px;"></div>
+        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+          <button class="btn btn-danger" onclick="reviewWord(false)" style="padding:12px 28px;font-size:16px;">❌ 不认识</button>
+          <button class="btn btn-outline btn-sm" onclick="toggleReviewMeaning()" style="padding:8px 16px;">👁️ 看释义</button>
+          <button class="btn btn-success" onclick="reviewWord(true)" style="padding:12px 28px;font-size:16px;">✅ 认识</button>
+        </div>
+      </div>
+    </div>
+    <div id="reviewComplete" style="display:none;text-align:center;padding:40px 20px;">
+      <div style="font-size:48px;margin-bottom:12px;">🎉</div>
+      <div style="font-size:18px;font-weight:600;margin-bottom:6px;">今日复习完成！</div>
+      <div style="font-size:14px;color:var(--text-light);margin-bottom:16px;">明天再来复习吧</div>
+      <button class="btn btn-outline" onclick="renderReview()">刷新</button>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title">📊 复习统计</div>
+    <div id="reviewStatsDetail"></div>
+  </div>
+</div>
+
+<!-- ===== 批改评分 ===== -->
+<div class="page" id="page-grading">
   <div class="card">
     <div class="card-title">📊 文章批改与评分</div>
     <div class="tab-bar" id="reviewTabs">
@@ -909,7 +943,8 @@ document.querySelectorAll('#nav a').forEach(a => {
     a.classList.add('active');
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
     document.getElementById('page-' + a.dataset.page).classList.add('active');
-    if (a.dataset.page === 'review') loadReviewPage();
+    if (a.dataset.page === 'grading') loadReviewPage();
+    if (a.dataset.page === 'review') renderReview();
     if (a.dataset.page === 'essay') updateWordCount();
     if (a.dataset.page === 'train') initTraining();
     if (a.dataset.page === 'collection') renderCollection();
@@ -1115,6 +1150,187 @@ function renderWords() {
   });
   el.innerHTML = html;
 }
+
+// ===== WORD REVIEW (Ebbinghaus) =====
+const REVIEW_INTERVALS = [1, 2, 4, 7, 15, 30]; // days
+
+function getReviewData() {
+  try { return JSON.parse(localStorage.getItem('ew_review')) || {}; } catch(e) { return {}; }
+}
+
+function saveReviewData(d) {
+  localStorage.setItem('ew_review', JSON.stringify(d));
+}
+
+function initWordReview() {
+  const words = STORAGE.words.get();
+  const review = getReviewData();
+  
+  // Initialize review data for words that don't have it
+  words.forEach((w, i) => {
+    const key = w.word + '|' + (w.meaning || '');
+    if (!review[key]) {
+      review[key] = {
+        word: w.word,
+        meaning: w.meaning || '',
+        cat: w.cat || '通用',
+        level: 0,       // 0 = new, 1-6 = review level
+        nextReview: Date.now(),  // due now
+        reviewed: 0,
+        forgotten: 0,
+        lastReview: null
+      };
+    }
+  });
+  saveReviewData(review);
+}
+
+function getWordsDueForReview() {
+  const review = getReviewData();
+  const now = Date.now();
+  const due = [];
+  Object.keys(review).forEach(key => {
+    if (review[key].nextReview <= now) {
+      due.push({ key, ...review[key] });
+    }
+  });
+  // Sort: most overdue first
+  due.sort((a, b) => a.nextReview - b.nextReview);
+  return due;
+}
+
+let _currentReviewQueue = [];
+let _currentReviewIndex = 0;
+
+function renderReview() {
+  initWordReview();
+  const due = getWordsDueForReview();
+  const review = getReviewData();
+  const allKeys = Object.keys(review);
+  
+  // Stats
+  const total = allKeys.length;
+  const learned = allKeys.filter(k => review[k].level >= 3).length;
+  const todayDone = allKeys.filter(k => {
+    const d = review[k];
+    if (!d.lastReview) return false;
+    const today = new Date();
+    const last = new Date(d.lastReview);
+    return last.toDateString() === today.toDateString();
+  }).length;
+  
+  document.getElementById('reviewStats').innerHTML = `
+    <span style="background:var(--bg);padding:6px 14px;border-radius:8px;font-size:13px;">📚 总词 ${total}</span>
+    <span style="background:#d4edda;padding:6px 14px;border-radius:8px;font-size:13px;">✅ 已掌握 ${learned}</span>
+    <span style="background:#cce5ff;padding:6px 14px;border-radius:8px;font-size:13px;">📅 今日需复习 ${due.length}</span>
+    <span style="background:#fff3cd;padding:6px 14px;border-radius:8px;font-size:13px;">✅ 今日已复习 ${todayDone}</span>
+  `;
+  
+  // Detail stats
+  const levels = {0:'新词',1:'第1轮',2:'第2轮',3:'第3轮',4:'第4轮',5:'第5轮',6:'已掌握'};
+  const lc = {};
+  allKeys.forEach(k => {
+    const l = review[k].level;
+    lc[l] = (lc[l] || 0) + 1;
+  });
+  document.getElementById('reviewStatsDetail').innerHTML = 
+    '<div style="font-size:13px;line-height:2;">' +
+    Object.keys(levels).map(l => {
+      const cnt = lc[l] || 0;
+      const pct = total > 0 ? Math.round(cnt/total*100) : 0;
+      const barW = Math.max(4, pct * 3);
+      return `<div style="display:flex;align-items:center;gap:8px;">
+        <span style="width:60px;font-size:12px;text-align:right;">${levels[l]}</span>
+        <div style="flex:1;height:16px;background:var(--bg);border-radius:8px;overflow:hidden;">
+          <div style="height:100%;width:${barW}px;background:${l >= 6 ? '#2ecc71' : l >= 3 ? '#3498db' : l >= 1 ? '#f39c12' : '#95a5a6'};border-radius:8px;"></div>
+        </div>
+        <span style="width:40px;font-size:12px;color:var(--text-light);">${cnt}</span>
+      </div>`;
+    }).join('') + '</div>';
+  
+  // Start review if words due
+  if (due.length > 0) {
+    _currentReviewQueue = due;
+    _currentReviewIndex = 0;
+    showReviewCard();
+  } else {
+    document.getElementById('reviewCard').style.display = 'none';
+    document.getElementById('reviewComplete').style.display = 'block';
+    if (total === 0) {
+      document.getElementById('reviewComplete').innerHTML = '<div style="font-size:48px;margin-bottom:12px;">📚</div><div style="font-size:18px;font-weight:600;margin-bottom:6px;">还没有单词</div><div style="font-size:14px;color:var(--text-light);margin-bottom:16px;">先去单词库添加单词吧！</div>';
+    }
+  }
+}
+
+function showReviewCard() {
+  const q = _currentReviewQueue;
+  if (!q || _currentReviewIndex >= q.length) {
+    document.getElementById('reviewCard').style.display = 'none';
+    document.getElementById('reviewComplete').style.display = 'block';
+    return;
+  }
+  
+  const item = q[_currentReviewIndex];
+  document.getElementById('reviewComplete').style.display = 'none';
+  document.getElementById('reviewCard').style.display = 'block';
+  document.getElementById('reviewWord').textContent = item.word;
+  document.getElementById('reviewMeaning').textContent = item.meaning;
+  document.getElementById('reviewMeaning').style.display = 'none';
+  document.getElementById('reviewCatBadge').textContent = (item.cat || '通用') + ' · 复习第' + (item.level + 1) + '轮';
+  
+  const total = q.length;
+  const done = _currentReviewIndex;
+  document.getElementById('reviewProgress').textContent = `📌 ${done + 1}/${total} · 遗忘 ${item.forgotten} 次`;
+}
+
+function toggleReviewMeaning() {
+  const el = document.getElementById('reviewMeaning');
+  el.style.display = el.style.display === 'none' ? 'block' : 'none';
+}
+
+function reviewWord(know) {
+  const item = _currentReviewQueue[_currentReviewIndex];
+  const review = getReviewData();
+  const key = item.word + '|' + (item.meaning || '');
+  
+  if (!review[key]) {
+    _currentReviewIndex++;
+    showReviewCard();
+    return;
+  }
+  
+  const now = Date.now();
+  review[key].lastReview = now;
+  review[key].reviewed++;
+  
+  if (know) {
+    // Know: advance to next level
+    review[key].level = Math.min(review[key].level + 1, REVIEW_INTERVALS.length);
+  } else {
+    // Don't know: reset to level 0
+    review[key].level = 0;
+    review[key].forgotten++;
+  }
+  
+  // Calculate next review date
+  const intervalIdx = Math.min(review[key].level, REVIEW_INTERVALS.length - 1);
+  const days = REVIEW_INTERVALS[intervalIdx];
+  review[key].nextReview = now + days * 86400000;
+  
+  saveReviewData(review);
+  
+  _currentReviewIndex++;
+  if (_currentReviewIndex >= _currentReviewQueue.length) {
+    // Refresh queue
+    renderReview();
+  } else {
+    showReviewCard();
+  }
+}
+
+// Navigation handler
+const _origNav2 = document.querySelectorAll;
+// Add to nav handler
 
 // ===== SENTENCES =====
 function addSentence() {
@@ -1431,9 +1647,9 @@ function submitForGrading() {
   if (!content) return alert('请先写文章内容');
   saveEssay();
   document.querySelectorAll('#nav a').forEach(x => x.classList.remove('active'));
-  document.querySelector('[data-page="review"]').classList.add('active');
+  document.querySelector('[data-page="grading"]').classList.add('active');
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.getElementById('page-review').classList.add('active');
+  document.getElementById('page-grading').classList.add('active');
   loadReviewPage();
   setTimeout(autoGrade, 300);
 }
