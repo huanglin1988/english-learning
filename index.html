@@ -770,61 +770,136 @@ const STORAGE = {
   grades: { get(){return STORAGE.get('ew_grades')}, set(v){STORAGE.set('ew_grades',v)} },
 };
 
-// ===== DATA SYNC =====
-// When on local server, sync between devices via server API
-// When on GitHub Pages, use localStorage only (per-device)
-const IS_SERVER = window.location.port === '3000';
+// ===== GITHUB CLOUD SYNC =====
+// Read/write data.json in your GitHub repo via API
+// Token is stored in your browser, not in the code (safe)
+const GITHUB_REPO = 'huanglin1988/english-learning';
+const DATA_FILE = 'data.json';
+let _dataSHA = null;
 
-async function syncLoadAll() {
-  if (!IS_SERVER) return false;
+function getGitToken() {
+  let t = localStorage.getItem('ew_github_token');
+  return t || null;
+}
+
+function showTokenPrompt() {
+  const t = getGitToken();
+  if (!t) {
+    const div = document.createElement('div');
+    div.id = 'tokenBanner';
+    div.innerHTML = `<div style="background:#fff3cd;border:1px solid #ffc107;padding:14px 18px;border-radius:10px;margin-bottom:14px;font-size:14px;">
+      <strong>🔑 需要 GitHub Token 才能云端同步数据</strong>
+      <p style="margin:6px 0;font-size:13px;color:#555;">在浏览器打开 → <a href="https://github.com/settings/tokens/new" target="_blank" style="color:var(--primary);">https://github.com/settings/tokens/new</a></p>
+      <p style="font-size:12px;color:#666;margin-bottom:8px;">Note: english-learning · Expiration: No expiration · 勾选 repo 权限 · 生成后粘贴到下面</p>
+      <div style="display:flex;gap:8px;">
+        <input id="tokenInput" type="password" placeholder="粘贴 ghp_..." style="flex:1;padding:8px 12px;border:1.5px solid #ffc107;border-radius:6px;font-size:13px;outline:none;">
+        <button class="btn btn-primary btn-sm" onclick="saveToken()">💾 保存</button>
+        <button class="btn btn-outline btn-sm" onclick="document.getElementById(\'tokenBanner\').style.display=\'none\'">暂不使用</button>
+      </div>
+    </div>`;
+    const container = document.querySelector('.container');
+    if (container) container.insertBefore(div, container.firstChild);
+  }
+}
+
+function saveToken() {
+  const input = document.getElementById('tokenInput');
+  if (!input) return;
+  const token = input.value.trim();
+  if (!token) return alert('请输入 Token');
+  localStorage.setItem('ew_github_token', token);
+  document.getElementById('tokenBanner').style.display = 'none';
+  alert('✅ Token 已保存！开始同步数据…');
+  syncAll();
+}
+
+async function githubGet() {
+  const token = getGitToken();
+  if (!token) return null;
   try {
-    const res = await fetch('/api/data');
+    const res = await fetch('https://api.github.com/repos/' + GITHUB_REPO + '/contents/' + DATA_FILE, {
+      headers: { 'Authorization': 'Bearer ' + token, 'Accept': 'application/vnd.github.v3+json' }
+    });
     const json = await res.json();
-    if (json.success && json.data && Object.keys(json.data).length > 0) {
-      Object.keys(json.data).forEach(key => {
-        try { localStorage.setItem(key, JSON.stringify(json.data[key])); } catch(e) {}
-      });
-      return true;
+    if (json.content) {
+      _dataSHA = json.sha;
+      return JSON.parse(decodeURIComponent(escape(atob(json.content.replace(/\n/g, '')))));
     }
+  } catch(e) {}
+  return null;
+}
+
+async function githubPut(data) {
+  const token = getGitToken();
+  if (!token) return false;
+  try {
+    const jsonStr = JSON.stringify(data, null, 2);
+    const content = btoa(unescape(encodeURIComponent(jsonStr)));
+    const body = { message: '🔄 同步 ' + new Date().toLocaleString('zh-CN'), content, sha: _dataSHA };
+    const res = await fetch('https://api.github.com/repos/' + GITHUB_REPO + '/contents/' + DATA_FILE, {
+      method: 'PUT',
+      headers: { 'Authorization': 'Bearer ' + token, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
+      body: JSON.stringify(body)
+    });
+    const r = await res.json();
+    if (r.content) _dataSHA = r.content.sha;
+    return true;
   } catch(e) {}
   return false;
 }
 
-async function syncSaveAll() {
-  if (!IS_SERVER) return;
-  try {
-    const prefixes = ['ew_words', 'ew_sentences', 'ew_essays', 'ew_grades', 'ew_collection', 'ew_custom_qs', 'ew_mm_edit_'];
-    const entries = {};
-    prefixes.forEach(p => {
-      Object.keys(localStorage).filter(k => k.startsWith(p)).forEach(k => {
-        try { entries[k] = JSON.parse(localStorage.getItem(k)); } catch(e) {}
-      });
-    });
-    await fetch('/api/data/batch', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ entries })
-    });
-  } catch(e) {}
+function getAllLocal() {
+  const d = {};
+  ['ew_words', 'ew_sentences', 'ew_essays', 'ew_grades', 'ew_collection', 'ew_custom_qs']
+    .forEach(p => Object.keys(localStorage).filter(k => k.startsWith(p)).forEach(k => {
+      try { d[k] = JSON.parse(localStorage.getItem(k)); } catch(e) {}
+    }));
+  return d;
 }
 
-// Init sync
-if (IS_SERVER) {
-  syncLoadAll().then(loaded => {
-    if (loaded) {
-      if (typeof renderWords === 'function') renderWords();
-      if (typeof renderSentences === 'function') renderSentences();
-    }
-  });
-  setInterval(syncSaveAll, 30000);
+async function syncLoad() {
+  const cloud = await githubGet();
+  if (cloud && Object.keys(cloud).length > 0) {
+    Object.keys(cloud).forEach(k => {
+      try { localStorage.setItem(k, JSON.stringify(cloud[k])); } catch(e) {}
+    });
+    return true;
+  }
+  return false;
 }
 
-const _origW = STORAGE.words.set;
-STORAGE.words.set = function(v) { _origW(v); if(IS_SERVER) syncSaveAll(); };
-const _origS = STORAGE.sentences.set;
-STORAGE.sentences.set = function(v) { _origS(v); if(IS_SERVER) syncSaveAll(); };
-const _origE = STORAGE.essays.set;
-STORAGE.essays.set = function(v) { _origE(v); if(IS_SERVER) syncSaveAll(); };
+async function syncSave() {
+  const local = getAllLocal();
+  if (Object.keys(local).length > 0) return await githubPut(local);
+  return false;
+}
+
+async function syncAll() {
+  const loaded = await syncLoad();
+  if (loaded) {
+    if (typeof renderWords === 'function') renderWords();
+    if (typeof renderSentences === 'function') renderSentences();
+    if (typeof renderCollection === 'function') renderCollection();
+  }
+  await syncSave();
+}
+
+// Init
+if (getGitToken()) {
+  syncAll();
+  setInterval(syncAll, 60000);
+}
+
+// Override
+const _g = function(fn) {
+  return function(v) { fn(v); if (getGitToken()) setTimeout(syncSave, 100); };
+};
+STORAGE.words.set = _g(STORAGE.words.set);
+STORAGE.sentences.set = _g(STORAGE.sentences.set);
+STORAGE.essays.set = _g(STORAGE.essays.set);
+
+// Show token prompt after page loads
+setTimeout(showTokenPrompt, 500);
 
 // ===== NAVIGATION =====
 document.querySelectorAll('#nav a').forEach(a => {
