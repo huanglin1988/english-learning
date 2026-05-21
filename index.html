@@ -947,6 +947,7 @@ document.querySelectorAll('#nav a').forEach(a => {
     if (a.dataset.page === 'review') renderReview();
     if (a.dataset.page === 'essay') updateWordCount();
     if (a.dataset.page === 'train') initTraining();
+    if (a.dataset.page === 'words') { updateCategoryFilters(); renderWords(); }
     if (a.dataset.page === 'collection') renderCollection();
   });
 });
