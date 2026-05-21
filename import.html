@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>词汇数据导入</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; }
+.btn { display:inline-block; padding:12px 24px; background:#4f6ef7; color:#fff; border:none; border-radius:8px; font-size:16px; cursor:pointer; }
+.btn:hover { background:#3b56d9; }
+.status { margin-top:20px; padding:14px; border-radius:8px; }
+.success { background:#d4edda; color:#155724; }
+.error { background:#f8d7da; color:#721c24; }
+.info { background:#d1ecf1; color:#0c5460; }
+</style>
+</head>
+<body>
+<h1>🦐 导入词汇数据到浏览器</h1>
+<p>点击下方按钮，将 data.json 中的词汇导入到浏览器的本地存储中。</p>
+<button class="btn" onclick="importData()">📥 导入词汇数据</button>
+<div id="status" class="status info">等待导入...</div>
+
+<script>
+async function importData() {
+  const status = document.getElementById('status');
+  try {
+    status.className = 'status info';
+    status.textContent = '正在加载数据...';
+    
+    const res = await fetch('/data.json');
+    const data = await res.json();
+    
+    if (!data.ew_words || !Array.isArray(data.ew_words)) {
+      throw new Error('data.json 格式不正确');
+    }
+    
+    const oldCount = (JSON.parse(localStorage.getItem('ew_words') || '[]')).length;
+    localStorage.setItem('ew_words', JSON.stringify(data.ew_words));
+    const newCount = data.ew_words.length;
+    
+    const added = newCount - oldCount;
+    status.className = 'status success';
+    status.innerHTML = '✅ 导入成功！<br>' +
+      '原有词汇: ' + oldCount + ' 个<br>' +
+      '导入后词汇: ' + newCount + ' 个<br>' +
+      (added > 0 ? '新增: ' + added + ' 个 ✨' : '');
+    
+    // Trigger a page refresh recommendation
+    status.innerHTML += '<br><br>🔄 请点击导航栏的「📖 单词库」查看！';
+  } catch(e) {
+    status.className = 'status error';
+    status.textContent = '❌ 导入失败: ' + e.message;
+  }
+}
+</script>
+</body>
+</html>

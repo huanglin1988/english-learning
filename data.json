@@ -717,6 +717,4437 @@
       "meaning": "公平地说",
       "cat": "短语",
       "time": "2026/5/20 17:23:46"
+    },
+    {
+      "word": "Organism",
+      "meaning": "有机体； 生物； 生命体",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Each organism has to adapt to the environment to survive in the wild."
+    },
+    {
+      "word": "Cell",
+      "meaning": "细胞； 小房间",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "The basic structure of all living things is a single cell or a group of cells."
+    },
+    {
+      "word": "Evolution",
+      "meaning": "进化； 演变； 发展",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "The evolution of species is a slow process that takes millions of years."
+    },
+    {
+      "word": "Adaptation",
+      "meaning": "适应； 适应性变化； 改编",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "The adaptation of birds to cold climates includes thick feathers and fat storage."
+    },
+    {
+      "word": "Habitat",
+      "meaning": "栖息地； 生存环境",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Human activities have destroyed the natural habitat of many wild animals."
+    },
+    {
+      "word": "Biodiversity",
+      "meaning": "生物多样性",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Protecting biodiversity is essential to maintain the balance of the ecosystem."
+    },
+    {
+      "word": "Extinction",
+      "meaning": "灭绝； 消亡； 熄灭",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Many animals are facing extinction due to the loss of their natural habitats."
+    },
+    {
+      "word": "Photosynthesis",
+      "meaning": "光合作用",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Plants use photosynthesis to convert sunlight into energy for growth."
+    },
+    {
+      "word": "Predator",
+      "meaning": "捕食者；食肉动物；掠夺者",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "The lion is a top predator in the African grassland ecosystem."
+    },
+    {
+      "word": "Prey",
+      "meaning": "n.猎物；被捕食者 v.捕食；猎食",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Rabbits are the main prey of foxes and wolves in the forest."
+    },
+    {
+      "word": "Gene",
+      "meaning": "基因；遗传因子",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "A person's height is partly determined by their genes and partly by environment."
+    },
+    {
+      "word": "Mutation",
+      "meaning": "突变；变异；基因突变",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Genetic mutation is one of the main reasons for the evolution of species."
+    },
+    {
+      "word": "Ecosystem",
+      "meaning": "生态系统",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Any damage to one part of the ecosystem will affect all other living things."
+    },
+    {
+      "word": "Endangered",
+      "meaning": "濒危的；濒临灭绝的",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "The panda is an endangered species that is protected by international laws."
+    },
+    {
+      "word": "Mammal",
+      "meaning": "哺乳动物",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Whales are large mammals that live in the ocean instead of fish."
+    },
+    {
+      "word": "Amphibian",
+      "meaning": "n.两栖动物 adj.两栖的",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Frogs and toads are common amphibians that live both on land and in water."
+    },
+    {
+      "word": "Reptile",
+      "meaning": "爬行动物；爬虫",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Snakes, lizards and crocodiles all belong to the category of reptiles."
+    },
+    {
+      "word": "Reproduction",
+      "meaning": "繁殖；生殖；复制",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Asexual reproduction is common in many simple organisms such as bacteria."
+    },
+    {
+      "word": "Metabolism",
+      "meaning": "新陈代谢",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "The metabolism rate of animals increases when they are active during the day."
+    },
+    {
+      "word": "Organ",
+      "meaning": "器官；机构；风琴",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "The heart is a vital organ that pumps blood to all parts of the body."
+    },
+    {
+      "word": "Symbiosis",
+      "meaning": "共生；共生关系",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "The symbiosis between bees and flowers benefits both species in the ecosystem."
+    },
+    {
+      "word": "Respiration",
+      "meaning": "呼吸；呼吸作用",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Plants carry out respiration both during the day and at night, unlike photosynthesis."
+    },
+    {
+      "word": "Producer",
+      "meaning": "生产者；制造者（生态：生产者生物）",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Green plants are producers that form the base of the food chain in nature."
+    },
+    {
+      "word": "Consumer",
+      "meaning": "消费者；用户（生态：消费者生物）",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Herbivores and carnivores are all consumers in the natural food chain."
+    },
+    {
+      "word": "Decomposer",
+      "meaning": "分解者；分解物",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Bacteria and fungi are important decomposers that break down dead organic matter."
+    },
+    {
+      "word": "Genetics",
+      "meaning": "遗传学；遗传特征",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Modern genetics has explained many mysteries about human inheritance traits."
+    },
+    {
+      "word": "DNA",
+      "meaning": "脱氧核糖核酸；基因密码；（二）化学（25词）",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "DNA contains the genetic information that determines all the traits of an organism."
+    },
+    {
+      "word": "Element",
+      "meaning": "元素；要素；成分",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Oxygen and hydrogen are two essential elements that form water molecules."
+    },
+    {
+      "word": "Atom",
+      "meaning": "原子；微粒；微量",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "An atom is the smallest unit of an element that retains its chemical properties."
+    },
+    {
+      "word": "Molecule",
+      "meaning": "分子；微小颗粒",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "The molecules of a gas move freely and quickly in all directions."
+    },
+    {
+      "word": "Acid",
+      "meaning": "n.酸；酸性物质 adj.酸性的；尖酸的",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Vinegar contains acetic acid, which gives it a sour taste and acidic properties."
+    },
+    {
+      "word": "Base",
+      "meaning": "n.碱；基础；底部 adj.碱性的 v.以...为基础",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Bases react with acids to form salts and water in a chemical reaction."
+    },
+    {
+      "word": "Chemical Reaction",
+      "meaning": "化学反应",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "A chemical reaction occurs when iron is exposed to air and water, forming rust."
+    },
+    {
+      "word": "Bond",
+      "meaning": "n.化学键；结合；纽带 v.结合；粘合",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Atoms are connected by chemical bonds to form stable molecules and compounds."
+    },
+    {
+      "word": "Oxidation",
+      "meaning": "氧化；氧化作用",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Oxidation is the main cause of metal corrosion and food spoilage."
+    },
+    {
+      "word": "Reduction",
+      "meaning": "还原；减少；降低",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Reduction and oxidation always occur together in chemical reactions."
+    },
+    {
+      "word": "Catalyst",
+      "meaning": "催化剂；促成因素",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "A catalyst can speed up a chemical reaction without being consumed itself."
+    },
+    {
+      "word": "Mixture",
+      "meaning": "混合物；混合体",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Air is a mixture of nitrogen, oxygen and other gases in different proportions."
+    },
+    {
+      "word": "Density",
+      "meaning": "密度；浓度；稠密",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "The density of a substance determines whether it floats or sinks in water."
+    },
+    {
+      "word": "Volume",
+      "meaning": "体积；容量；音量；卷",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "The volume of a solid object can be calculated by measuring its length and width."
+    },
+    {
+      "word": "Mass",
+      "meaning": "n.质量；大量；群众 adj.大量的 v.聚集",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "The mass of an object remains constant regardless of its location in the universe."
+    },
+    {
+      "word": "Combustion",
+      "meaning": "燃烧；烧毁",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Combustion of fossil fuels releases a large amount of carbon dioxide into the air."
+    },
+    {
+      "word": "Evaporation",
+      "meaning": "蒸发；汽化；挥发",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Evaporation of water from the ocean surface is the main source of atmospheric water vapor."
+    },
+    {
+      "word": "Condensation",
+      "meaning": "凝结；冷凝；缩合",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Condensation forms water droplets on the surface of a cold glass in summer."
+    },
+    {
+      "word": "Sublimation",
+      "meaning": "升华；升华作用",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Dry ice turns into carbon dioxide gas through sublimation without melting into liquid."
+    },
+    {
+      "word": "Ion",
+      "meaning": "离子",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "When salt dissolves in water, it breaks down into positive and negative ions."
+    },
+    {
+      "word": "Salt",
+      "meaning": "n.盐；食盐 v.加盐；腌制",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Sodium chloride, common table salt, is formed by the reaction of acid and base."
+    },
+    {
+      "word": "Pure Substance",
+      "meaning": "纯净物；pH Value 英 /'piː eɪtʃ 'væljuː/ 美 /'piː eɪtʃ 'væljuː/ n.；酸碱度； pH值",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "The pH value of pure water is 7, which is neutral between acid and base."
+    },
+    {
+      "word": "Polymer",
+      "meaning": "聚合物；高分子化合物；（三）物理学（25词）",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Plastics are synthetic polymers that are widely used in modern industry."
+    },
+    {
+      "word": "Force",
+      "meaning": "n.力；力量；武力 v.强迫；迫使",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Gravity is a force that pulls all objects toward the center of the Earth."
+    },
+    {
+      "word": "Motion",
+      "meaning": "n.运动；移动；动作 v.示意；打手势",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Newton's first law describes the relationship between force and motion of an object."
+    },
+    {
+      "word": "Energy",
+      "meaning": "能量；精力；活力",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Energy can be converted from one form to another, but it cannot be created or destroyed."
+    },
+    {
+      "word": "Gravity",
+      "meaning": "重力；地心引力；严重性",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "The gravity of the sun keeps all the planets in their orbits around it."
+    },
+    {
+      "word": "Friction",
+      "meaning": "摩擦力；摩擦；矛盾",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Friction between the tires and the road surface allows cars to stop and start safely."
+    },
+    {
+      "word": "Speed",
+      "meaning": "n.速度；速率 v.加速；超速",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "The speed of light in a vacuum is about 300,000 kilometers per second."
+    },
+    {
+      "word": "Velocity",
+      "meaning": "速度；速率（矢量，含方向）",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Velocity is different from speed because it includes the direction of motion."
+    },
+    {
+      "word": "Acceleration",
+      "meaning": "加速度；加速；促进",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Acceleration is the rate of change of an object's velocity over time."
+    },
+    {
+      "word": "Electricity",
+      "meaning": "电；电学；电流",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Electricity is generated by converting other forms of energy such as heat and wind."
+    },
+    {
+      "word": "Magnetism",
+      "meaning": "磁性；磁力；吸引力",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Magnetism is a natural force that attracts certain metals such as iron and nickel."
+    },
+    {
+      "word": "Light",
+      "meaning": "n.光；光线 adj.轻的 v.点亮；照亮",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Light travels in straight lines and can be reflected or refracted by different materials."
+    },
+    {
+      "word": "Sound",
+      "meaning": "n.声音；声波 v.听起来 adj.健康的",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Sound cannot travel in a vacuum because it needs a medium such as air or water."
+    },
+    {
+      "word": "Heat",
+      "meaning": "n.热；热量；热度 v.加热；升温",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Heat always flows from a warmer object to a cooler one until they reach the same temperature."
+    },
+    {
+      "word": "Wave",
+      "meaning": "n.波；波浪；声波 v.挥手；波动",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Light and sound both travel in the form of waves with different frequencies and wavelengths."
+    },
+    {
+      "word": "Particle",
+      "meaning": "粒子；微粒；颗粒",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Scientists believe that light has both wave and particle properties at the same time."
+    },
+    {
+      "word": "Radiation",
+      "meaning": "辐射；放射；放射线",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "The sun's radiation provides the Earth with heat and light necessary for life."
+    },
+    {
+      "word": "Frequency",
+      "meaning": "频率；频繁；次数",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "The frequency of a wave determines its color (for light) or pitch (for sound)."
+    },
+    {
+      "word": "Wavelength",
+      "meaning": "波长",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Longer wavelength light appears red, while shorter wavelength light appears blue or violet."
+    },
+    {
+      "word": "Pressure",
+      "meaning": "n.压力；压强；压迫 v.施压",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Air pressure decreases as the altitude increases, which is why breathing is hard on high mountains."
+    },
+    {
+      "word": "Temperature",
+      "meaning": "温度；体温；气温",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "The temperature of a substance is a measure of the average kinetic energy of its molecules."
+    },
+    {
+      "word": "Power",
+      "meaning": "n.功率；力量；电力 v.驱动；供电",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "The power of a machine is the amount of work it can do in a given time."
+    },
+    {
+      "word": "Work",
+      "meaning": "n.功；工作；作品 v.工作；做功",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Work is done when a force moves an object a certain distance in the direction of the force."
+    },
+    {
+      "word": "Conduction",
+      "meaning": "传导；导热；导电",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Heat conduction is the main way heat travels through solid materials like metal."
+    },
+    {
+      "word": "Convection",
+      "meaning": "对流；对流换热",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Convection currents in the atmosphere cause wind and changes in weather."
+    },
+    {
+      "word": "Nuclear",
+      "meaning": "核的；原子核的；核能的",
+      "cat": "填空题-自然科学",
+      "time": "2026/05/21 13:39:51",
+      "example": "Nuclear energy is produced by splitting or combining atomic nuclei in a reactor."
+    },
+    {
+      "word": "Civilization",
+      "meaning": "文明；文明社会；文化",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Ancient Egyptian civilization is famous for its pyramids and hieroglyphic writing system."
+    },
+    {
+      "word": "Dynasty",
+      "meaning": "王朝；朝代；世袭统治",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The Tang Dynasty is considered one of the most prosperous dynasties in Chinese history."
+    },
+    {
+      "word": "Empire",
+      "meaning": "帝国；大企业；霸权",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The Roman Empire once controlled a large part of Europe, Africa and the Middle East."
+    },
+    {
+      "word": "Kingdom",
+      "meaning": "王国；领域；界（生物）",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The United Kingdom was formed by the unification of several small kingdoms in ancient times."
+    },
+    {
+      "word": "Tribe",
+      "meaning": "部落；宗族；族群",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Ancient tribes lived by hunting and gathering before the development of agriculture."
+    },
+    {
+      "word": "Ancient",
+      "meaning": "adj.古代的；古老的 n.古人；古代文明",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Ancient civilizations such as Mesopotamia and India made great contributions to human culture."
+    },
+    {
+      "word": "Medieval",
+      "meaning": "中世纪的；中古的；守旧的",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Medieval Europe was a period of feudalism and the dominant influence of the Christian Church."
+    },
+    {
+      "word": "Feudalism",
+      "meaning": "封建主义；封建制度",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Feudalism was the main social and political system in Europe and China for hundreds of years."
+    },
+    {
+      "word": "Colony",
+      "meaning": "殖民地；聚居地；群体",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "European countries established many colonies in North America and Africa during the 17th century."
+    },
+    {
+      "word": "Colonization",
+      "meaning": "殖民化；殖民统治；定居",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The colonization of Australia by British settlers began in the late 18th century."
+    },
+    {
+      "word": "Revolution",
+      "meaning": "革命；变革；旋转",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The Industrial Revolution transformed the economic and social structure of Western countries in the 19th century."
+    },
+    {
+      "word": "Industrial",
+      "meaning": "工业的；产业的；工业化的",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Industrial development led to the growth of cities and the decline of rural populations."
+    },
+    {
+      "word": "Agricultural",
+      "meaning": "农业的；农艺的；农学的",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Agricultural innovations such as crop rotation greatly increased food production in ancient civilizations."
+    },
+    {
+      "word": "Artifact",
+      "meaning": "人工制品；文物；史前古器物",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Stone tools and pottery are common artifacts found at archaeological sites around the world."
+    },
+    {
+      "word": "Monarchy",
+      "meaning": "君主制；君主国；君主政体",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Many European countries abandoned monarchy and adopted republican systems in the 19th century."
+    },
+    {
+      "word": "Republic",
+      "meaning": "共和国；共和政体；共和制国家",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The United States is a federal republic composed of 50 states with a democratic system."
+    },
+    {
+      "word": "Conquest",
+      "meaning": "征服；攻占；征服地",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The conquest of Gaul by Julius Caesar expanded the territory of the Roman Republic significantly."
+    },
+    {
+      "word": "Migration",
+      "meaning": "迁移；迁徙；移居",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The migration of humans from Africa to other continents began tens of thousands of years ago."
+    },
+    {
+      "word": "Settlement",
+      "meaning": "定居点；殖民地；解决；协议",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Early human settlements were usually built near rivers for water and transportation."
+    },
+    {
+      "word": "Hieroglyph",
+      "meaning": "象形文字；象形符号",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Egyptian hieroglyphs were used for religious texts and official records on temple walls."
+    },
+    {
+      "word": "Manuscript",
+      "meaning": "手稿；原稿；手写本",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Medieval manuscripts preserved ancient knowledge that would have otherwise been lost."
+    },
+    {
+      "word": "Renaissance",
+      "meaning": "n.文艺复兴；复兴 adj.文艺复兴时期的",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The Renaissance was a period of cultural and artistic rebirth in Europe from the 14th to 17th centuries."
+    },
+    {
+      "word": "Enlightenment",
+      "meaning": "启蒙运动；启迪；启发",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The Enlightenment emphasized reason, science and individual freedom in the 18th century."
+    },
+    {
+      "word": "Crusade",
+      "meaning": "n.十字军东征；改革运动 v.发起运动",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The Crusades were a series of religious wars between European Christians and Middle Eastern Muslims."
+    },
+    {
+      "word": "Treaty",
+      "meaning": "条约；协议；协定",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The Treaty of Versailles officially ended World War I in 1919."
+    },
+    {
+      "word": "Alliance",
+      "meaning": "联盟；同盟；联合",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The Allied Powers were an alliance of countries that fought against the Axis Powers in World War II."
+    },
+    {
+      "word": "Hegemony",
+      "meaning": "霸权；霸权地位；支配权",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Britain's naval hegemony in the 19th century ensured its control over global trade routes."
+    },
+    {
+      "word": "Annexation",
+      "meaning": "兼并；吞并；附加物",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The annexation of Texas by the United States in 1845 led to the Mexican-American War."
+    },
+    {
+      "word": "Decay",
+      "meaning": "n.衰败；腐朽；衰落 v.腐烂；衰退",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The decay of the Roman Empire was caused by a combination of political, economic and military problems."
+    },
+    {
+      "word": "Prosperity",
+      "meaning": "繁荣；兴旺；昌盛",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The discovery of new trade routes brought unprecedented prosperity to European cities in the 16th century."
+    },
+    {
+      "word": "Sociology",
+      "meaning": "社会学；社会关系学",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Sociology examines how individuals interact with each other and form social groups."
+    },
+    {
+      "word": "Society",
+      "meaning": "社会；社团；社交界",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Modern society is characterized by rapid technological change and diverse cultural values."
+    },
+    {
+      "word": "Community",
+      "meaning": "社区；群体；共同体",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "A strong sense of community helps residents support each other during difficult times."
+    },
+    {
+      "word": "Culture",
+      "meaning": "n.文化；文明；教养 v.培养；栽培",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Culture shapes people's beliefs, behaviors and perceptions of the world around them."
+    },
+    {
+      "word": "Tradition",
+      "meaning": "传统；惯例；传说",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Many cultural traditions are passed down from generation to generation through stories and rituals."
+    },
+    {
+      "word": "Custom",
+      "meaning": "n.习俗；风俗；习惯 adj.定制的",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Wedding customs vary greatly between different cultures and regions of the world."
+    },
+    {
+      "word": "Norm",
+      "meaning": "规范；标准；准则；常态",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Social norms are unwritten rules that guide people's behavior in a community."
+    },
+    {
+      "word": "Value",
+      "meaning": "n.价值观；价值；价格 v.重视；珍视",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Family values play an important role in shaping the social behavior of individuals in many cultures."
+    },
+    {
+      "word": "Hierarchy",
+      "meaning": "等级制度；层级；等级体系",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Most traditional societies have a clear social hierarchy based on wealth, power or birth."
+    },
+    {
+      "word": "Stratification",
+      "meaning": "社会分层；分层结构；成层现象",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Social stratification refers to the division of society into different classes with unequal resources."
+    },
+    {
+      "word": "Class",
+      "meaning": "n.社会阶层；阶级；班级 v.分类 adj.优秀的",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The middle class has grown significantly in many developing countries over the past few decades."
+    },
+    {
+      "word": "Status",
+      "meaning": "社会地位；身份；状态",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "In some cultures, a person's social status is determined by their occupation or family background."
+    },
+    {
+      "word": "Identity",
+      "meaning": "身份；认同；同一性",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Cultural identity is the sense of belonging to a particular group with shared traditions and values."
+    },
+    {
+      "word": "Deviance",
+      "meaning": "越轨行为；异常；偏离",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Sociologists study deviance to understand why some people violate social norms and how society responds."
+    },
+    {
+      "word": "Institution",
+      "meaning": "社会机构；制度；习俗",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Family, education and religion are important social institutions that shape individual behavior."
+    },
+    {
+      "word": "Organization",
+      "meaning": "组织；机构；团体",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Non-governmental organizations play an important role in promoting social welfare and environmental protection."
+    },
+    {
+      "word": "Interaction",
+      "meaning": "互动；相互作用；交流",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Positive social interaction between different cultural groups helps reduce prejudice and discrimination."
+    },
+    {
+      "word": "Cooperation",
+      "meaning": "合作；协作；配合",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "International cooperation is essential to address global issues such as climate change and poverty."
+    },
+    {
+      "word": "Conflict",
+      "meaning": "n.冲突；矛盾；争执 v.冲突；抵触",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Social conflict can arise from differences in values, interests or resources between groups."
+    },
+    {
+      "word": "Prejudice",
+      "meaning": "n.偏见；成见；损害 v.使抱有偏见",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Prejudice against minority groups can lead to discrimination and social inequality."
+    },
+    {
+      "word": "Discrimination",
+      "meaning": "歧视；区别；辨别力",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Laws have been passed in many countries to prohibit discrimination based on race, gender or religion."
+    },
+    {
+      "word": "Integration",
+      "meaning": "融合；整合；一体化",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The integration of immigrants into a new society requires mutual understanding and respect."
+    },
+    {
+      "word": "Assimilation",
+      "meaning": "同化；吸收；同化作用",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Cultural assimilation occurs when minority groups adopt the values and behaviors of the dominant culture."
+    },
+    {
+      "word": "Diversity",
+      "meaning": "多样性；差异；多元性",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Cultural diversity enriches society by bringing different perspectives and traditions."
+    },
+    {
+      "word": "Pluralism",
+      "meaning": "多元主义；多元文化；复数形式",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Cultural pluralism emphasizes the coexistence of different cultures within a single society."
+    },
+    {
+      "word": "Globalization",
+      "meaning": "全球化；全球一体化",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Globalization has increased economic interdependence between countries around the world."
+    },
+    {
+      "word": "Modernization",
+      "meaning": "现代化；近代化；更新",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The modernization of rural areas has improved living standards but also changed traditional lifestyles."
+    },
+    {
+      "word": "Urbanization",
+      "meaning": "城市化；都市化",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Rapid urbanization in developing countries has led to the growth of megacities with millions of residents."
+    },
+    {
+      "word": "Economy",
+      "meaning": "经济；经济体；节约",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The global economy has recovered slowly from the financial crisis of 2008."
+    },
+    {
+      "word": "Economics",
+      "meaning": "经济学；经济状况；经济因素",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Economics studies how societies allocate scarce resources to meet unlimited wants and needs."
+    },
+    {
+      "word": "Resource",
+      "meaning": "n.资源；财力；办法 v.向...提供资源",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Natural resources such as oil and minerals are essential for industrial development."
+    },
+    {
+      "word": "Scarcity",
+      "meaning": "稀缺；短缺；匮乏",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Scarcity is the fundamental economic problem that arises from limited resources and unlimited wants."
+    },
+    {
+      "word": "Supply",
+      "meaning": "n.供给；供应；供应量 v.提供；供应",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The supply of a product depends on factors such as production costs and technology."
+    },
+    {
+      "word": "Demand",
+      "meaning": "n.需求；要求；需要 v.要求；需要",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Consumer demand for electric vehicles has increased rapidly due to environmental concerns."
+    },
+    {
+      "word": "Price",
+      "meaning": "n.价格；代价；价值 v.给...定价",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The price of a product is usually determined by the interaction of supply and demand in a market."
+    },
+    {
+      "word": "Market",
+      "meaning": "n.市场；集市；行情 v.营销 adj.市场的",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "A free market allows buyers and sellers to exchange goods and services without government interference."
+    },
+    {
+      "word": "Capital",
+      "meaning": "n.资本；资金；首都 adj.资本的；主要的",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Entrepreneurs need capital to start businesses and invest in new projects."
+    },
+    {
+      "word": "Investment",
+      "meaning": "投资；投入；投资额",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Foreign investment has played an important role in the economic development of many developing countries."
+    },
+    {
+      "word": "Production",
+      "meaning": "生产；产量；产品",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Technological progress has greatly increased the production efficiency of factories around the world."
+    },
+    {
+      "word": "Consumption",
+      "meaning": "消费；消耗；消费额",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Consumer consumption accounts for a large part of the gross domestic product in many countries."
+    },
+    {
+      "word": "GDP",
+      "meaning": "国内生产总值（Gross Domestic Product）",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "GDP is a key indicator used to measure the economic performance of a country."
+    },
+    {
+      "word": "Inflation",
+      "meaning": "通货膨胀；通胀率；物价上涨",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "High inflation reduces the purchasing power of money and can destabilize an economy."
+    },
+    {
+      "word": "Deflation",
+      "meaning": "通货紧缩；物价下跌",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Deflation can lead to reduced consumer spending and economic recession if not properly managed."
+    },
+    {
+      "word": "Recession",
+      "meaning": "经济衰退；衰退期；不景气",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The country entered a recession after two consecutive quarters of negative economic growth."
+    },
+    {
+      "word": "Growth",
+      "meaning": "经济增长；增长；发展",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Sustainable economic growth requires a balance between development and environmental protection."
+    },
+    {
+      "word": "Trade",
+      "meaning": "n.贸易；交易；行业 v.交易；贸易",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "International trade allows countries to specialize in producing goods and services they are good at."
+    },
+    {
+      "word": "Export",
+      "meaning": "n.出口；出口商品 v.出口；输出",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The export of manufactured goods is an important source of income for many developing countries."
+    },
+    {
+      "word": "Import",
+      "meaning": "n.进口；进口商品 v.进口；输入",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Countries import goods and services that are scarce or more expensive to produce domestically."
+    },
+    {
+      "word": "Tariff",
+      "meaning": "n.关税；税率；价目表 v.对...征收关税",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Governments often impose tariffs on imported goods to protect domestic industries."
+    },
+    {
+      "word": "Tax",
+      "meaning": "n.税收；税款；负担 v.征税；使负重担",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Tax revenue is the main source of funding for government programs and public services."
+    },
+    {
+      "word": "Budget",
+      "meaning": "n.预算；预算案 v.编制预算 adj.廉价的",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The government's annual budget outlines its spending plans for public services."
+    },
+    {
+      "word": "Debt",
+      "meaning": "n.债务；欠款；负债 v.欠债",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "High levels of national debt can limit a government's ability to respond to economic crises."
+    },
+    {
+      "word": "Interest",
+      "meaning": "n.利息；兴趣；利益 v.使感兴趣",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Central banks adjust interest rates to control inflation and stimulate economic growth."
+    },
+    {
+      "word": "Currency",
+      "meaning": "货币；通货；流通",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The US dollar is the most widely used currency in international trade."
+    },
+    {
+      "word": "Exchange Rate",
+      "meaning": "汇率；兑换率",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Fluctuations in exchange rates can affect the competitiveness of exported goods."
+    },
+    {
+      "word": "Monopoly",
+      "meaning": "垄断；垄断企业；独占",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "A monopoly occurs when a single company dominates a market and controls prices."
+    },
+    {
+      "word": "Competition",
+      "meaning": "竞争；竞赛；角逐",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Healthy competition between companies encourages innovation and lower prices."
+    },
+    {
+      "word": "Innovation",
+      "meaning": "创新；革新；新方法",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Technological innovation is a key driver of long-term economic growth."
+    },
+    {
+      "word": "Psychology",
+      "meaning": "心理学；心理；心理特征",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Psychology explores how people think, feel and behave in different situations."
+    },
+    {
+      "word": "Perception",
+      "meaning": "感知；知觉；看法",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "People's perception of the world is influenced by their past experiences and cultural background."
+    },
+    {
+      "word": "Memory",
+      "meaning": "记忆；记忆力；回忆",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Short-term memory can hold a limited amount of information for a short period of time."
+    },
+    {
+      "word": "Attention",
+      "meaning": "注意力；关注；留心",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Selective attention allows people to focus on important information while ignoring distractions."
+    },
+    {
+      "word": "Emotion",
+      "meaning": "情绪；情感；激情",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Emotions such as happiness, anger and fear play an important role in human decision-making."
+    },
+    {
+      "word": "Motivation",
+      "meaning": "动机；动力；积极性",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Intrinsic motivation, such as personal interest, is often more effective than external rewards."
+    },
+    {
+      "word": "Behavior",
+      "meaning": "行为；举止；表现",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Human behavior is shaped by a combination of biological, psychological and social factors."
+    },
+    {
+      "word": "Personality",
+      "meaning": "人格；个性；性格",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Personality traits such as extroversion and introversion influence how people interact."
+    },
+    {
+      "word": "Trait",
+      "meaning": "特质；特征；品性",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Honesty and kindness are important personality traits valued in many cultures."
+    },
+    {
+      "word": "Extroversion",
+      "meaning": "外向；外向性",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Extroversion is characterized by a preference for social interaction and external stimulation."
+    },
+    {
+      "word": "Introversion",
+      "meaning": "内向；内向性",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Introversion is not shyness; it refers to a focus on internal thoughts and feelings."
+    },
+    {
+      "word": "Learning",
+      "meaning": "n.学习；学问；习得 v.学习（learn的现在分词）",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Learning is a lifelong process that involves acquiring new knowledge and skills."
+    },
+    {
+      "word": "Conditioning",
+      "meaning": "条件反射；条件作用；训练",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Classical conditioning explains how humans and animals learn through association."
+    },
+    {
+      "word": "Intelligence",
+      "meaning": "智力；智能；智慧",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Intelligence is a complex trait that includes logical reasoning and problem-solving."
+    },
+    {
+      "word": "Creativity",
+      "meaning": "创造力；创造性；创意",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Creativity is the ability to generate new ideas and solutions."
+    },
+    {
+      "word": "Problem-solving",
+      "meaning": "n.问题解决；解决问题 adj.解决问题的",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Problem-solving skills are essential for academic and professional success."
+    },
+    {
+      "word": "Decision-making",
+      "meaning": "n.决策；决策制定 adj.决策的",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Emotions and rational thinking both play important roles in decision-making."
+    },
+    {
+      "word": "Stress",
+      "meaning": "n.压力；紧张；强调 v.强调；施压",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Chronic stress can have negative effects on physical and mental health."
+    },
+    {
+      "word": "Anxiety",
+      "meaning": "焦虑；忧虑；不安；焦虑症",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Test anxiety can impair students' performance even if they have mastered the material."
+    },
+    {
+      "word": "Depression",
+      "meaning": "抑郁；抑郁症；消沉；洼地",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Depression is a common mental health disorder characterized by persistent low mood."
+    },
+    {
+      "word": "Empathy",
+      "meaning": "共情；同理心；共鸣",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Empathy allows people to understand and share the feelings of others."
+    },
+    {
+      "word": "Sympathy",
+      "meaning": "同情；怜悯；赞同",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Sympathy involves feeling sorry for others, while empathy involves understanding."
+    },
+    {
+      "word": "Consciousness",
+      "meaning": "意识；知觉；觉悟",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Consciousness refers to being aware of one's own thoughts and surroundings."
+    },
+    {
+      "word": "Unconscious",
+      "meaning": "adj.无意识的；潜意识的 n.潜意识",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Freud's theory suggests that the unconscious mind influences many behaviors."
+    },
+    {
+      "word": "Cognitive",
+      "meaning": "认知的；认识的；感知的",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Cognitive development in children involves the gradual improvement of thinking skills."
+    },
+    {
+      "word": "Socialization",
+      "meaning": "社会化；社交；适应社会",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Socialization is the process through which individuals learn society's norms and values."
+    },
+    {
+      "word": "Attachment",
+      "meaning": "依恋；依附；附件；连接",
+      "cat": "填空题-社会科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Secure attachment in early childhood is associated with better social development."
+    },
+    {
+      "word": "Novel",
+      "meaning": "n.小说 adj.新颖的；新奇的",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "The novel as a literary genre became popular in Europe during the 18th century."
+    },
+    {
+      "word": "Poetry",
+      "meaning": "诗歌；诗；诗意；诗集",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Poetry often uses figurative language and rhythm to express emotions and ideas."
+    },
+    {
+      "word": "Prose",
+      "meaning": "n.散文；prose体 adj.散文的；平淡的",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Prose is characterized by straightforward language and narrative structure."
+    },
+    {
+      "word": "Drama",
+      "meaning": "戏剧；剧本；戏剧文学；戏剧性事件",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Greek drama, including tragedies and comedies, influenced Western literature."
+    },
+    {
+      "word": "Tragedy",
+      "meaning": "悲剧；悲剧作品；惨案；灾难",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Shakespeare's tragedies explore themes of power, fate and morality."
+    },
+    {
+      "word": "Comedy",
+      "meaning": "喜剧；喜剧作品；滑稽；幽默",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Comedy often uses humor and satire to criticize social issues."
+    },
+    {
+      "word": "Fiction",
+      "meaning": "小说；虚构；虚构作品；谎言",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Science fiction often imagines future technologies and their social impact."
+    },
+    {
+      "word": "Non-fiction",
+      "meaning": "n.非虚构作品；纪实文学 adj.非虚构的",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Non-fiction works such as biographies are based on real events and people."
+    },
+    {
+      "word": "Biography",
+      "meaning": "传记；传记文学",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "A biography of a historical figure provides insights into their times."
+    },
+    {
+      "word": "Autobiography",
+      "meaning": "自传；自传文学",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "An autobiography allows readers to experience the author's life from their perspective."
+    },
+    {
+      "word": "Myth",
+      "meaning": "神话；神话故事",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Ancient myths often explain natural phenomena and the origins of human society."
+    },
+    {
+      "word": "Legend",
+      "meaning": "传说；传奇故事；传奇人物；图例",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Legends about King Arthur have inspired countless works of literature."
+    },
+    {
+      "word": "Folklore",
+      "meaning": "民间传说；民俗；民俗学",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Folklore includes stories, songs and customs passed down through generations."
+    },
+    {
+      "word": "Allegory",
+      "meaning": "寓言；讽喻；象征",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Animal Farm by George Orwell is an allegory about totalitarianism."
+    },
+    {
+      "word": "Satire",
+      "meaning": "讽刺；讽刺文学；讽刺作品",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Satire uses humor to expose and criticize foolishness in society."
+    },
+    {
+      "word": "Metaphor",
+      "meaning": "隐喻；暗喻；比喻手法",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "\"Time is money\" is a common metaphor comparing time to a valuable resource."
+    },
+    {
+      "word": "Simile",
+      "meaning": "明喻；明喻手法",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "A simile compares things using \"like\" or \"as\", such as \"brave as a lion\"."
+    },
+    {
+      "word": "Symbolism",
+      "meaning": "象征主义；象征手法；符号体系",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Symbolism in literature uses objects to represent abstract ideas or themes."
+    },
+    {
+      "word": "Theme",
+      "meaning": "n.主题；主旨；主旋律 v.以...为主题",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "The theme of love and sacrifice is central to many classic works of literature."
+    },
+    {
+      "word": "Plot",
+      "meaning": "n.情节；阴谋；地块 v.密谋；绘制",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "A well-constructed plot includes exposition, climax and resolution."
+    },
+    {
+      "word": "Character",
+      "meaning": "n.人物；性格；角色；特征 v.刻画性格",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Complex characters with depth are more memorable than one-dimensional heroes."
+    },
+    {
+      "word": "Narrator",
+      "meaning": "叙述者；讲述者；旁白员",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "A first-person narrator tells the story from their perspective using \"I\"."
+    },
+    {
+      "word": "Point of View",
+      "meaning": "视角；观点；看法；叙事视角",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "The author's choice of point of view shapes how readers perceive the story."
+    },
+    {
+      "word": "Style",
+      "meaning": "n.风格；文体；样式 v.设计；命名",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Hemingway's literary style is known for its simplicity and understatement."
+    },
+    {
+      "word": "Genre",
+      "meaning": "体裁；类型；流派",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Mystery is a popular literary genre that focuses on solving crimes or puzzles."
+    },
+    {
+      "word": "Allusion",
+      "meaning": "典故；暗示；提及",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "The poem contains an allusion to Greek mythology, adding depth to its meaning."
+    },
+    {
+      "word": "Irony",
+      "meaning": "讽刺；反语；讽刺意味；出乎意料的事",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Situational irony occurs when the outcome is the opposite of what was expected."
+    },
+    {
+      "word": "Imagery",
+      "meaning": "意象；形象化描述；图像",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Poets use vivid imagery to help readers visualize emotions in their work."
+    },
+    {
+      "word": "Rhetoric",
+      "meaning": "修辞；修辞学；言辞；华丽辞藻",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Rhetoric is the art of using language effectively to persuade an audience."
+    },
+    {
+      "word": "Art",
+      "meaning": "n.艺术；美术；艺术品；技艺 v.使艺术化",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Art has the power to express emotions, challenge ideas and reflect cultural values."
+    },
+    {
+      "word": "Painting",
+      "meaning": "n.绘画；油画；画作 v.绘画（paint的现在分词）",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Oil painting became a dominant art form during the Renaissance."
+    },
+    {
+      "word": "Sculpture",
+      "meaning": "n.雕塑；雕刻；雕塑品 v.雕刻；塑造",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Ancient Greek sculpture emphasized idealized human forms and symmetry."
+    },
+    {
+      "word": "Architecture",
+      "meaning": "建筑；建筑学；建筑风格；结构",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Gothic architecture is characterized by pointed arches and stained glass windows."
+    },
+    {
+      "word": "Music",
+      "meaning": "音乐；乐曲；乐谱；音乐艺术",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Music has been an integral part of human culture throughout history."
+    },
+    {
+      "word": "Dance",
+      "meaning": "n.舞蹈；舞蹈艺术；舞会 v.跳舞；舞动",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Dance is a performative art that uses movement to express ideas and emotions."
+    },
+    {
+      "word": "Theater",
+      "meaning": "戏剧；剧院；剧场；戏剧艺术",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Elizabethan theater was a popular form of entertainment in 16th-century England."
+    },
+    {
+      "word": "Cinema",
+      "meaning": "电影；电影艺术；电影院；电影业",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Cinema emerged as a new art form in the late 19th century."
+    },
+    {
+      "word": "Photography",
+      "meaning": "摄影；摄影术；照片",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Photography revolutionized the way people document events."
+    },
+    {
+      "word": "Design",
+      "meaning": "n.设计；设计方案；图案 v.设计；策划",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Graphic design combines art and technology to communicate ideas."
+    },
+    {
+      "word": "Movement",
+      "meaning": "运动；艺术运动；移动；活动",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "The Surrealist movement explored the unconscious mind through dreamlike images."
+    },
+    {
+      "word": "Palette",
+      "meaning": "调色板；色彩范围；颜料",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "The artist's limited palette of earth tones created a warm atmosphere."
+    },
+    {
+      "word": "Brushstroke",
+      "meaning": "笔触；画笔stroke；一笔",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Van Gogh's distinctive brushstrokes are one of the most recognizable features."
+    },
+    {
+      "word": "Composition",
+      "meaning": "构图；作品；作曲；作文",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "A strong composition is essential to creating a balanced work of art."
+    },
+    {
+      "word": "Color",
+      "meaning": "n.颜色；色彩；色调 v.给...上色；染色",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Artists use color to evoke emotions and create depth in their work."
+    },
+    {
+      "word": "Form",
+      "meaning": "n.形式；形态；形状；表格 v.形成；构成",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Abstract art focuses on form, color and texture rather than representing real objects."
+    },
+    {
+      "word": "Texture",
+      "meaning": "质感；纹理；质地；结构",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "The texture of a painting depends on the materials and techniques used."
+    },
+    {
+      "word": "Shadow",
+      "meaning": "n.阴影；影子；阴暗处 v.遮蔽；使朦胧",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "The contrast between light and shadow creates a sense of depth and drama."
+    },
+    {
+      "word": "Symbol",
+      "meaning": "n.象征；符号；标志 v.象征；代表",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "The dove is a universal symbol of peace in many cultures."
+    },
+    {
+      "word": "Motif",
+      "meaning": "主题；母题；图案；动机",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "A floral motif is common in traditional Chinese art and textiles."
+    },
+    {
+      "word": "Masterpiece",
+      "meaning": "杰作；代表作；典范",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Michelangelo's Sistine Chapel ceiling is a masterpiece of Renaissance art."
+    },
+    {
+      "word": "Artist",
+      "meaning": "艺术家；画家；美术家；大师",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Great artists challenge traditional norms and push creative boundaries."
+    },
+    {
+      "word": "Critic",
+      "meaning": "评论家；批评家；评论员",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Art critics help audiences understand the meaning and value of artworks."
+    },
+    {
+      "word": "Exhibition",
+      "meaning": "展览；展览会；展示；陈列",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "The Impressionist exhibition attracted thousands of visitors from around the world."
+    },
+    {
+      "word": "Gallery",
+      "meaning": "画廊；美术馆；走廊；旁听席",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Art galleries provide space for artists to showcase their work."
+    },
+    {
+      "word": "Medium",
+      "meaning": "n.媒介；材料；介质（复数media） adj.中等的；适中的",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Oil paint is a popular medium due to its versatility and long drying time."
+    },
+    {
+      "word": "Technique",
+      "meaning": "技巧；技法；技术；方法",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "The artist developed a unique technique for blending colors."
+    },
+    {
+      "word": "Influence",
+      "meaning": "n.影响；感化；势力 v.影响；感化",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Eastern art has had a significant influence on Western artists."
+    },
+    {
+      "word": "Heritage",
+      "meaning": "遗产；传统；继承物；文化遗产",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "UNESCO works to protect cultural heritage sites around the world."
+    },
+    {
+      "word": "Ethnic",
+      "meaning": "种族的；民族的；人种的；具有民族特色的",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Ethnic minorities preserve their unique cultures while integrating into larger societies."
+    },
+    {
+      "word": "Nationality",
+      "meaning": "国籍；民族；民族性；国家",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Globalization has made it easier for different nationalities to interact."
+    },
+    {
+      "word": "Language",
+      "meaning": "语言；语言文字；表达方式；言语",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Language is not only a tool for communication but also a carrier of cultural identity."
+    },
+    {
+      "word": "Dialect",
+      "meaning": "方言；土语；地方话；语调",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "A dialect is a variety of a language spoken by a specific social group."
+    },
+    {
+      "word": "Religion",
+      "meaning": "宗教；宗教信仰；信念；虔诚",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Religion has played a central role in shaping culture and history."
+    },
+    {
+      "word": "Belief",
+      "meaning": "信仰；信念；相信；看法",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Cultural beliefs influence how people perceive and interact with the world."
+    },
+    {
+      "word": "Morality",
+      "meaning": "道德；道德准则；品行；德行",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Morality refers to the principles that guide right and wrong in human behavior."
+    },
+    {
+      "word": "Ethics",
+      "meaning": "伦理；伦理学；道德准则；行为准则",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Business ethics involves making morally responsible decisions."
+    },
+    {
+      "word": "Festival",
+      "meaning": "n.节日；庆典；音乐节 adj.节日的；喜庆的",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Festivals bring communities together to celebrate shared traditions."
+    },
+    {
+      "word": "Ceremony",
+      "meaning": "仪式；典礼；礼节；礼仪",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Graduation ceremonies are important life events that follow cultural traditions."
+    },
+    {
+      "word": "Ritual",
+      "meaning": "n.仪式；惯例；例行公事 adj.仪式性的；例行的",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Religious rituals involve specific actions and symbols meaningful to believers."
+    },
+    {
+      "word": "Cuisine",
+      "meaning": "烹饪；菜肴；cuisine风格；饮食文化",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "French cuisine is renowned for its sophisticated techniques and fresh ingredients."
+    },
+    {
+      "word": "Food",
+      "meaning": "食物；食品；粮食；养料",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Food is not only a source of nutrition but also part of cultural identity."
+    },
+    {
+      "word": "Clothing",
+      "meaning": "服装；衣物；衣着；服饰",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Traditional clothing reflects a culture's climate, values and social structure."
+    },
+    {
+      "word": "Fashion",
+      "meaning": "n.时尚；时装；潮流；方式 v.制作；塑造",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Fashion is a dynamic cultural phenomenon reflecting social changes."
+    },
+    {
+      "word": "Literature",
+      "meaning": "文学；文学作品；文献；著作",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "National literature reflects the unique experiences and perspectives of a people."
+    },
+    {
+      "word": "Mythology",
+      "meaning": "神话；神话学；神话集；虚构的事",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Greek mythology has profoundly influenced Western art and literature."
+    },
+    {
+      "word": "Idiom",
+      "meaning": "习语；成语；惯用表达；方言",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Idioms are difficult to translate literally because their meaning is culturally specific."
+    },
+    {
+      "word": "Gesture",
+      "meaning": "n.手势；姿态；动作；表示 v.做手势；用动作表示",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Gestures can have different meanings in different cultures."
+    },
+    {
+      "word": "Greeting",
+      "meaning": "n.问候；招呼；祝贺；致意 v.问候；迎接",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Greeting customs vary across cultures around the world."
+    },
+    {
+      "word": "Etiquette",
+      "meaning": "礼仪；礼节；规矩；行为准则",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Business etiquette is essential for cross-cultural relationships."
+    },
+    {
+      "word": "Manners",
+      "meaning": "礼貌；礼仪；举止；风度",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Good manners are valued in all cultures worldwide."
+    },
+    {
+      "word": "Hospitality",
+      "meaning": "好客；殷勤；款待；热情好客",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "The hospitality of local people made travelers feel welcome."
+    },
+    {
+      "word": "Family",
+      "meaning": "n.家庭；家族；亲属；家族 adj.家庭的；家族的",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Family is the basic unit of society, and structures vary across cultures."
+    },
+    {
+      "word": "Marriage",
+      "meaning": "婚姻；婚姻生活；结合；联姻",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Marriage customs reflect cultural values about love and commitment."
+    },
+    {
+      "word": "Education",
+      "meaning": "教育；培养；教育学；训练",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Education plays a crucial role in preserving cultural heritage."
+    },
+    {
+      "word": "Knowledge",
+      "meaning": "知识；学问；认识；了解",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Traditional knowledge is an important part of cultural heritage."
+    },
+    {
+      "word": "Wisdom",
+      "meaning": "智慧；明智；才智；贤明",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Cultural wisdom is passed down through stories and proverbs."
+    },
+    {
+      "word": "Tolerance",
+      "meaning": "宽容；容忍；忍耐力；公差",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Cultural tolerance is essential for peaceful coexistence in a diverse world."
+    },
+    {
+      "word": "Respect",
+      "meaning": "n.尊重；尊敬；敬意；方面 v.尊重；尊敬；重视",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Respect for cultural differences is the foundation of cross-cultural communication."
+    },
+    {
+      "word": "Understanding",
+      "meaning": "n.理解；了解；谅解；领会 adj.理解的；有理解力的",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Cross-cultural understanding helps reduce prejudice between groups."
+    },
+    {
+      "word": "Communication",
+      "meaning": "交流；沟通；通信；传达",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Effective cross-cultural communication requires awareness of cultural differences."
+    },
+    {
+      "word": "Homogenization",
+      "meaning": "同质化；均一化；均质化",
+      "cat": "填空题-人文艺术",
+      "time": "2026/05/21 13:44:48",
+      "example": "Cultural homogenization is when different cultures become more similar."
+    },
+    {
+      "word": "Marketing",
+      "meaning": "n.市场营销；营销学；促销活动 v.推销；营销",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Effective marketing strategies help companies reach target customers."
+    },
+    {
+      "word": "Brand",
+      "meaning": "n.品牌；商标；烙印 v.打烙印；铭刻；塑造品牌",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Building a strong brand requires consistent quality and service."
+    },
+    {
+      "word": "Customer",
+      "meaning": "客户；顾客；消费者；用户",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Understanding customer needs is key to successful products and services."
+    },
+    {
+      "word": "Product",
+      "meaning": "产品；产物；制品；成果",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "A successful product must meet customer needs and offer unique value."
+    },
+    {
+      "word": "Service",
+      "meaning": "n.服务；服务业；服务质量 v.维修；服务 adj.服务性的",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "High-quality customer service is essential for building brand loyalty."
+    },
+    {
+      "word": "Promotion",
+      "meaning": "促销；推广；晋升；宣传",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Sales promotions such as discounts can boost short-term sales."
+    },
+    {
+      "word": "Advertising",
+      "meaning": "n.广告；广告业；广告活动 v.做广告；宣传",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Advertising is used to persuade consumers to buy products or services."
+    },
+    {
+      "word": "Distribution",
+      "meaning": "分销；分配；分布；分发",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "An efficient distribution network ensures timely product delivery."
+    },
+    {
+      "word": "Channel",
+      "meaning": "n.渠道；通道；频道 v.引导；输送",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Online sales channels have become increasingly important for businesses."
+    },
+    {
+      "word": "Target",
+      "meaning": "n.目标；靶子；目标客户 v.瞄准；针对 adj.目标的",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Businesses must identify their target market before developing strategies."
+    },
+    {
+      "word": "Market Share",
+      "meaning": "市场份额；市场占有率",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Increasing market share is a key objective for competitive companies."
+    },
+    {
+      "word": "Strategy",
+      "meaning": "战略；策略；规划；计谋",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "A clear marketing strategy helps allocate resources effectively."
+    },
+    {
+      "word": "Tactic",
+      "meaning": "战术；策略；手段；招数",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Marketing tactics are specific actions to implement a larger strategy."
+    },
+    {
+      "word": "Loyalty",
+      "meaning": "忠诚；忠心；忠诚度；忠实",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Customer loyalty is built through consistent quality and service."
+    },
+    {
+      "word": "Reputation",
+      "meaning": "声誉；名声；名望；信誉",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "A good brand reputation can attract and retain customers."
+    },
+    {
+      "word": "Trend",
+      "meaning": "n.趋势；潮流；倾向 v.倾向；趋势",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Businesses must adapt to changing market trends to remain competitive."
+    },
+    {
+      "word": "Management",
+      "meaning": "管理；管理学；管理层；管理部门",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Effective management is essential for organizational success."
+    },
+    {
+      "word": "Leadership",
+      "meaning": "领导力；领导；领导地位；领导才能",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Strong leadership helps guide the organization toward its goals."
+    },
+    {
+      "word": "Company",
+      "meaning": "公司；企业；陪伴；同伴",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Many large companies adapt their products to local markets."
+    },
+    {
+      "word": "Enterprise",
+      "meaning": "企业；事业；进取心；事业心",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Small and medium-sized enterprises play an important role in the economy."
+    },
+    {
+      "word": "Employee",
+      "meaning": "员工；雇员；受雇者",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Motivated employees are more productive and contribute to success."
+    },
+    {
+      "word": "Employer",
+      "meaning": "雇主；雇佣者；老板",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Employers must provide a safe working environment for employees."
+    },
+    {
+      "word": "Team",
+      "meaning": "n.团队；小组；工作队 v.合作；协作",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Effective team collaboration is essential for complex projects."
+    },
+    {
+      "word": "Teamwork",
+      "meaning": "团队合作；协同工作；配合",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Teamwork fosters creativity and leverages each other's strengths."
+    },
+    {
+      "word": "Goal",
+      "meaning": "n.目标；目的；球门；得分 v.射门；得分",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Setting clear and achievable goals guides organizational success."
+    },
+    {
+      "word": "Objective",
+      "meaning": "n.目标；目的；宗旨 adj.客观的；目标的",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Objectives should be specific, measurable and time-bound."
+    },
+    {
+      "word": "Plan",
+      "meaning": "n.计划；规划；方案 v.计划；打算；设计",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "A detailed business plan is essential for guiding company growth."
+    },
+    {
+      "word": "Efficiency",
+      "meaning": "效率；效能；功效；生产率",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Improving operational efficiency helps reduce costs and increase profits."
+    },
+    {
+      "word": "Effectiveness",
+      "meaning": "有效性；效益；效果；效能",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Management effectiveness is measured by the ability to achieve goals."
+    },
+    {
+      "word": "Decision",
+      "meaning": "决策；决定；抉择；判断",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Timely decision-making is crucial for addressing business challenges."
+    },
+    {
+      "word": "Change",
+      "meaning": "n.变化；改变；变革；替换 v.改变；更换；变革",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Organizations must adapt to change to remain competitive."
+    },
+    {
+      "word": "Operation",
+      "meaning": "运营；操作；运作；手术",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Smooth business operations require effective coordination between departments."
+    },
+    {
+      "word": "Manufacturing",
+      "meaning": "n.制造业；制造；生产 v.制造；生产",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Manufacturing has been transformed by automation and technology."
+    },
+    {
+      "word": "Supply Chain",
+      "meaning": "供应链；供给链；供需链",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "A resilient supply chain can withstand disruptions and delays."
+    },
+    {
+      "word": "Logistics",
+      "meaning": "物流；后勤；组织工作；物流学",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Effective logistics management ensures timely delivery at minimal cost."
+    },
+    {
+      "word": "Inventory",
+      "meaning": "n.库存；存货；清单 v.清点；盘存",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Inventory management is critical for balancing supply and demand."
+    },
+    {
+      "word": "Quality",
+      "meaning": "n.质量；品质；优质；特性 adj.优质的；高品质的",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Consistently high quality is essential for building customer trust."
+    },
+    {
+      "word": "Control",
+      "meaning": "n.控制；管理；管制；控制权 v.控制；管理；支配",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Quality control processes identify defects before products reach customers."
+    },
+    {
+      "word": "Cost",
+      "meaning": "n.成本；费用；代价 v.花费；使付出；价值为",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Cost reduction is a key objective for improving profitability."
+    },
+    {
+      "word": "Profit",
+      "meaning": "n.利润；收益；益处 v.获利；盈利；受益",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Businesses aim to maximize profit while providing value to customers."
+    },
+    {
+      "word": "Revenue",
+      "meaning": "收入；税收；营业额；收益",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Revenue is the total amount earned from sales before deducting costs."
+    },
+    {
+      "word": "Expense",
+      "meaning": "费用；开支；花费；消耗",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Operating expenses include costs such as rent, salaries and utilities."
+    },
+    {
+      "word": "Risk",
+      "meaning": "n.风险；危险；冒险 v.冒...的风险；冒险做",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Businesses must assess risks before making investment decisions."
+    },
+    {
+      "word": "Insurance",
+      "meaning": "保险；保险业；保险费；保障",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Business insurance protects companies from financial losses."
+    },
+    {
+      "word": "Contract",
+      "meaning": "n.合同；契约；合约 v.收缩；签约；感染",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "A legally binding contract outlines the rights and obligations of parties."
+    },
+    {
+      "word": "Negotiation",
+      "meaning": "谈判；协商；洽谈；磋商",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Successful negotiation requires effective communication and compromise."
+    },
+    {
+      "word": "Partnership",
+      "meaning": "合作关系；伙伴关系；合伙企业；搭档",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Strategic partnerships help companies expand market reach."
+    },
+    {
+      "word": "Merger",
+      "meaning": "合并；并购；联合；融合",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "The merger of two large companies created a market leader."
+    },
+    {
+      "word": "Acquisition",
+      "meaning": "收购；获得；习得；取得",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "The acquisition of a competitor helped expand the product line."
+    },
+    {
+      "word": "Finance",
+      "meaning": "n.金融；财政；资金；财务状况 v.为...提供资金；融资",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Corporate finance involves managing a company's capital and investments."
+    },
+    {
+      "word": "Stock",
+      "meaning": "n.股票；股份；库存；储备 v.储备 adj.库存的",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Investors buy and sell stocks on stock exchanges."
+    },
+    {
+      "word": "Share",
+      "meaning": "n.股份；股票；份额；部分 v.分享；分担；共有",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Shareholders receive dividends based on company profits."
+    },
+    {
+      "word": "Dividend",
+      "meaning": "股息；红利；分红；被除数",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Companies may distribute profits as dividends to shareholders."
+    },
+    {
+      "word": "Loan",
+      "meaning": "n.贷款；借款；借出 v.借出；贷予",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Many small businesses rely on bank loans to finance operations."
+    },
+    {
+      "word": "Financial",
+      "meaning": "金融的；财务的；财政的；资金的",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Sound financial management is vital for long-term profitability."
+    },
+    {
+      "word": "Bankruptcy",
+      "meaning": "破产；倒闭；无偿付能力",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Excessive debt can lead to bankruptcy for companies and individuals."
+    },
+    {
+      "word": "Credit",
+      "meaning": "n.信用；信贷；学分；赞扬 v.相信；记入贷方；赞扬",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Good credit ratings help obtain loans with favorable interest rates."
+    },
+    {
+      "word": "Asset",
+      "meaning": "资产；财产；宝贵的人/物；有利条件",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Intellectual property is considered an intangible asset for companies."
+    },
+    {
+      "word": "Liability",
+      "meaning": "负债；债务；责任；不利因素",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "A company's total liabilities include loans and unpaid bills."
+    },
+    {
+      "word": "Wealth",
+      "meaning": "财富；财产；大量；丰富",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Wealth creation is a primary goal for many entrepreneurs."
+    },
+    {
+      "word": "Economic",
+      "meaning": "经济的；经济学的；合算的；有利可图的",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Economic growth is measured by the increase in GDP."
+    },
+    {
+      "word": "Policy",
+      "meaning": "政策；方针；策略；保险单",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Government economic policies influence interest rates and taxes."
+    },
+    {
+      "word": "Regulation",
+      "meaning": "n.法规；监管；条例；管理 adj.规定的；正规的",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Financial regulations protect investors from fraud."
+    },
+    {
+      "word": "Accounting",
+      "meaning": "n.会计；会计学；记账 v.解释；记账",
+      "cat": "填空题-商业管理",
+      "time": "2026/05/21 13:44:48",
+      "example": "Professional accounting ensures financial records are accurate."
+    },
+    {
+      "word": "Ecology",
+      "meaning": "生态学；生态；生态环境",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Ecology studies how living organisms interact with their environment."
+    },
+    {
+      "word": "Environment",
+      "meaning": "环境；外界；自然环境；周围状况",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Human activities have a profound impact on the natural environment."
+    },
+    {
+      "word": "Nature",
+      "meaning": "自然；大自然；本性；性质",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Protecting nature is essential for maintaining ecological balance."
+    },
+    {
+      "word": "Species",
+      "meaning": "物种；种类；类型",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Many species are facing extinction due to habitat loss."
+    },
+    {
+      "word": "Population",
+      "meaning": "种群；人口；群体；数量",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The population of bees has declined due to pesticide use."
+    },
+    {
+      "word": "Survival",
+      "meaning": "生存；幸存；残存物；幸存者",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The survival of endangered species depends on habitat protection."
+    },
+    {
+      "word": "Balance",
+      "meaning": "n.平衡；均衡；余额 v.平衡；权衡；持平",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Ecological balance is maintained when all species coexist in harmony."
+    },
+    {
+      "word": "Pollution",
+      "meaning": "污染；污染物；玷污；败坏",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Air and water pollution threaten human health and wildlife."
+    },
+    {
+      "word": "Pollute",
+      "meaning": "污染；弄脏；玷污；败坏",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Factories release toxic chemicals that pollute water supplies."
+    },
+    {
+      "word": "Contamination",
+      "meaning": "污染；污染物；弄脏；感染",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Soil contamination from heavy metals makes farmland unsuitable."
+    },
+    {
+      "word": "Toxic",
+      "meaning": "adj.有毒的；有害的；中毒的 n.有毒物质；毒物",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Toxic waste from industry has long-term harmful effects."
+    },
+    {
+      "word": "Waste",
+      "meaning": "n.废物；垃圾；浪费 v.浪费；滥用 adj.废弃的；无用的",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Improper disposal of plastic waste causes ocean pollution."
+    },
+    {
+      "word": "Emission",
+      "meaning": "排放；散发；发射；排放量",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Reducing greenhouse gas emissions is critical for climate change."
+    },
+    {
+      "word": "Exhaust",
+      "meaning": "n.废气；排气；耗尽 v.耗尽；使疲惫；排出",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Vehicle exhaust fumes contain chemicals that cause air pollution."
+    },
+    {
+      "word": "Smog",
+      "meaning": "雾霾；烟雾；烟尘",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Smog in large cities is caused by vehicle and industrial emissions."
+    },
+    {
+      "word": "Deforestation",
+      "meaning": "森林砍伐；毁林；采伐森林",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Deforestation contributes to climate change by reducing carbon absorption."
+    },
+    {
+      "word": "Degradation",
+      "meaning": "退化；恶化；降解；堕落",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Soil degradation is serious where farmers overuse fertilizers."
+    },
+    {
+      "word": "Depletion",
+      "meaning": "消耗；枯竭；耗尽；减少",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The depletion of the ozone layer increases UV radiation."
+    },
+    {
+      "word": "Ozone",
+      "meaning": "臭氧；臭氧层",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The ozone layer protects Earth from harmful UV rays."
+    },
+    {
+      "word": "Pesticide",
+      "meaning": "杀虫剂；农药；除害剂",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Overuse of pesticides kills beneficial insects and pollutes water."
+    },
+    {
+      "word": "Chemical",
+      "meaning": "adj.化学的；化工的 n.化学制品；化学品",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Cleaning products contain chemicals that can pollute waterways."
+    },
+    {
+      "word": "Sewage",
+      "meaning": "污水；污物；下水道系统",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Untreated sewage discharged into rivers is a major water pollution source."
+    },
+    {
+      "word": "Landfill",
+      "meaning": "n.垃圾填埋场；填埋 v.填埋；掩埋",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Plastic waste in landfills takes hundreds of years to decompose."
+    },
+    {
+      "word": "Acid Rain",
+      "meaning": "酸雨",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Acid rain damages forests, lakes and buildings."
+    },
+    {
+      "word": "Disposal",
+      "meaning": "处理；处置；清除；安排",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Proper waste disposal is essential for environmental protection."
+    },
+    {
+      "word": "Renewable",
+      "meaning": "可再生的；可更新的；可恢复的",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Solar and wind power are examples of renewable energy sources."
+    },
+    {
+      "word": "Non-renewable",
+      "meaning": "不可再生的；不可更新的",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Fossil fuels are non-renewable and take millions of years to form."
+    },
+    {
+      "word": "Fossil Fuel",
+      "meaning": "化石燃料",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Burning fossil fuels releases carbon dioxide into the atmosphere."
+    },
+    {
+      "word": "Fuel",
+      "meaning": "n.燃料；养料；刺激物 v.加油；提供燃料；激发",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Researchers are developing cleaner alternatives to traditional fuels."
+    },
+    {
+      "word": "Conserve",
+      "meaning": "v.保护；保存；节约；守恒 n.果酱；蜜饯",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "We must conserve water for future generations."
+    },
+    {
+      "word": "Conservation",
+      "meaning": "保护；保存；节约；守恒",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Wildlife conservation aims to protect endangered species and habitats."
+    },
+    {
+      "word": "Recycle",
+      "meaning": "v.回收；循环利用；再利用 n.回收利用；循环",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Recycling paper and plastic reduces waste and saves resources."
+    },
+    {
+      "word": "Recyclable",
+      "meaning": "可回收的；可循环利用的",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Many cities provide bins for recyclable materials."
+    },
+    {
+      "word": "Reuse",
+      "meaning": "v.再利用；重新使用；复用 n.再利用；重新使用",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Reusing containers is a simple way to reduce plastic waste."
+    },
+    {
+      "word": "Sustainability",
+      "meaning": "可持续性；永续性；能维持性",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Environmental sustainability is key for governments worldwide."
+    },
+    {
+      "word": "Solar",
+      "meaning": "太阳的；太阳能的；日光的",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Solar panels convert sunlight into clean electricity."
+    },
+    {
+      "word": "Wind",
+      "meaning": "n.风；风力；气息 v.缠绕；蜿蜒；上发条",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Wind turbines convert wind energy into mechanical power."
+    },
+    {
+      "word": "Hydroelectric",
+      "meaning": "水力发电的；水电的",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Hydroelectric plants use flowing water to generate electricity."
+    },
+    {
+      "word": "Biofuel",
+      "meaning": "生物燃料",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Biofuels made from corn are used as an alternative to gasoline."
+    },
+    {
+      "word": "Shortage",
+      "meaning": "短缺；不足；缺乏；匮乏",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Water shortages are becoming more common due to climate change."
+    },
+    {
+      "word": "Climate",
+      "meaning": "气候；风气；氛围；思潮",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The Earth's climate is changing at an unprecedented rate."
+    },
+    {
+      "word": "Climate Change",
+      "meaning": "气候变化",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Climate change has led to rising sea levels and extreme weather."
+    },
+    {
+      "word": "Global Warming",
+      "meaning": "全球变暖",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Global warming is caused by greenhouse gas accumulation."
+    },
+    {
+      "word": "Greenhouse Gas",
+      "meaning": "温室气体",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Carbon dioxide and methane are common greenhouse gases."
+    },
+    {
+      "word": "Carbon Dioxide",
+      "meaning": "二氧化碳",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Trees absorb carbon dioxide and release oxygen during photosynthesis."
+    },
+    {
+      "word": "Atmosphere",
+      "meaning": "大气；大气层；氛围；气氛",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "The atmosphere traps heat and blocks harmful UV radiation."
+    },
+    {
+      "word": "Weather",
+      "meaning": "n.天气；气象；境遇 v.经受住；风化；侵蚀",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Extreme weather events are becoming more frequent due to climate change."
+    },
+    {
+      "word": "Disaster",
+      "meaning": "灾难；灾害；不幸；祸患",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Natural disasters cause billions of dollars in damage each year."
+    },
+    {
+      "word": "Catastrophe",
+      "meaning": "大灾难；惨祸；灾变",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "A climate catastrophe could occur if temperatures rise too much."
+    },
+    {
+      "word": "Melting",
+      "meaning": "n.融化；熔化 adj.融化的 v.融化",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Melting Arctic ice is causing sea levels to rise."
+    },
+    {
+      "word": "Rise",
+      "meaning": "v.上升；升起；增长；起身 n.上升；增长；兴起",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Sea level rise threatens coastal cities and island nations."
+    },
+    {
+      "word": "Drought",
+      "meaning": "干旱；旱灾；缺乏；枯竭",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Prolonged drought can lead to crop failures and food shortages."
+    },
+    {
+      "word": "Flood",
+      "meaning": "n.洪水；泛滥；大量 v.淹没；泛滥；涌入",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Heavy rainfall caused severe flooding in the region."
+    },
+    {
+      "word": "Protect",
+      "meaning": "保护；防护；保卫；维护",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Governments must work together to protect the environment."
+    },
+    {
+      "word": "Preserve",
+      "meaning": "v.保护；保存；维护；腌制 n.保护区；果酱",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "National parks preserve natural landscapes and wildlife."
+    },
+    {
+      "word": "Restore",
+      "meaning": "恢复；修复；复原；重建",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Efforts to restore wetlands help improve water quality."
+    },
+    {
+      "word": "Mitigate",
+      "meaning": "减轻；缓解；缓和；降低",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Planting trees helps mitigate the effects of climate change."
+    },
+    {
+      "word": "Combat",
+      "meaning": "v.对抗；战斗；防止；减轻 n.战斗；搏斗；冲突",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "International cooperation is needed to combat environmental problems."
+    },
+    {
+      "word": "Awareness",
+      "meaning": "意识；认识；了解；觉悟",
+      "cat": "填空题-环境科学",
+      "time": "2026/05/21 13:44:48",
+      "example": "Public awareness of environmental issues is the first step to change."
+    },
+    {
+      "word": "aesthetic",
+      "meaning": "adj. 审美的； 美学的； 雅致的 n. 美感； 审美观",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The design of this museum fully reflects the unique aesthetic taste of the local people."
+    },
+    {
+      "word": "craftsmanship",
+      "meaning": "n. 手艺； 工艺； 技艺精湛",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The delicate craftsmanship of this handmade porcelain makes it become a precious collection."
+    },
+    {
+      "word": "performance",
+      "meaning": "n. 表演； 演出； 表现； 业绩",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "I was deeply impressed by the wonderful dance performance at the cultural evening party last night."
+    },
+    {
+      "word": "melody",
+      "meaning": "n. 旋律； 曲调； 美妙的音乐",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The soft melody of this folk song always reminds me of my hometown and childhood memories."
+    },
+    {
+      "word": "opera",
+      "meaning": "n. 歌剧； 歌剧院",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "I have watched a classic Italian opera and was shocked by the beautiful singing and gorgeous stage design."
+    },
+    {
+      "word": "costume",
+      "meaning": "n. 服装； 戏服； 民族服饰 v. 给...穿服装",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The traditional costume of this ethnic group is colorful and full of strong cultural characteristics."
+    },
+    {
+      "word": "rhythm",
+      "meaning": "n. 节奏； 韵律； 规律",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The strong rhythm of hip-hop music makes people want to dance with it involuntarily."
+    },
+    {
+      "word": "antique",
+      "meaning": "古老的； 古董的 n. 古董； 古物",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "My grandfather collected many antique vases which have a history of more than one hundred years."
+    },
+    {
+      "word": "composer",
+      "meaning": "n. 作曲家； 创作者",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Mozart is one of the greatest composers in the history of western classical music."
+    },
+    {
+      "word": "painter",
+      "meaning": "n. 画家； 油漆匠",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "This famous painter is good at using bright colors to describe the beauty of nature."
+    },
+    {
+      "word": "symbolize",
+      "meaning": "v. 象征； 代表； 作为...的象征",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The red color symbolizes joy and good luck in Chinese traditional culture."
+    },
+    {
+      "word": "elegant",
+      "meaning": "优雅的； 高雅的； 精美的",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Her elegant dance movements and gentle temperament won warm applause from the audience."
+    },
+    {
+      "word": "vibrant",
+      "meaning": "充满活力的； 鲜艳的； 生机勃勃的",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The vibrant street art in this city shows the creativity and vitality of young artists."
+    },
+    {
+      "word": "unique",
+      "meaning": "独特的； 独一无二的； 稀罕的",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Each nation has its unique cultural customs that cannot be replaced by others."
+    },
+    {
+      "word": "authentic",
+      "meaning": "真实的；正宗的；原汁原味的",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "We tasted authentic Italian pizza in the restaurant and it tasted completely different from the local one."
+    },
+    {
+      "word": "intangible",
+      "meaning": "无形的；触摸不到的；难以形容的 n. 无形资产",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Cultural confidence is an intangible wealth that can promote the development of a nation."
+    },
+    {
+      "word": "inherit",
+      "meaning": "v. 继承；遗传；承袭",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Young people should inherit the excellent traditional culture and carry it forward in modern society."
+    },
+    {
+      "word": "revive",
+      "meaning": "v. 复兴；复活；使苏醒；重新流行",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Many young people are trying to revive traditional folk music by combining it with pop elements."
+    },
+    {
+      "word": "appreciate",
+      "meaning": "v. 欣赏；感激；理解；赏识",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "To truly appreciate a piece of music, we need to understand its creation background and emotional connotation."
+    },
+    {
+      "word": "inspiration",
+      "meaning": "n. 灵感；鼓舞；启发；妙计",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The beautiful natural scenery provides endless inspiration for writers and artists to create works."
+    },
+    {
+      "word": "mastery",
+      "meaning": "n. 精通；掌握；技艺精湛；控制权",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Years of hard practice finally brought him a complete mastery of the piano playing skills."
+    },
+    {
+      "word": "precious",
+      "meaning": "珍贵的；宝贵的；珍稀的",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Every cultural relic is a precious treasure left by our ancestors and deserves our careful protection."
+    },
+    {
+      "word": "spectacular",
+      "meaning": "壮观的；惊人的；精彩的 n. 壮观的场面",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The fireworks show on New Year's Eve was so spectacular that all the spectators were deeply shocked."
+    },
+    {
+      "word": "tribute",
+      "meaning": "n. 致敬；颂词；贡品 v. 致敬；献礼",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "This music concert is a special tribute to the great musician who passed away last year."
+    },
+    {
+      "word": "versatile",
+      "meaning": "多才多艺的；多功能的；万用的",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "This versatile artist is good at painting, singing and dancing at the same time."
+    },
+    {
+      "word": "vivid",
+      "meaning": "adj. 生动的；鲜明的；清晰的；栩栩如生的",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The poet uses vivid language to describe the beautiful scenery of the countryside in his poems."
+    },
+    {
+      "word": "classic",
+      "meaning": "adj. 经典的；古典的；优秀的 n. 经典著作；名著",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Classic movies can still arouse people's resonance even after decades of their release."
+    },
+    {
+      "word": "festive",
+      "meaning": "节日的；喜庆的；欢乐的",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The festive atmosphere of the Spring Festival can be felt everywhere in the streets and alleys."
+    },
+    {
+      "word": "harmony",
+      "meaning": "n. 和谐；融洽；和声；和睦",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The harmony between human beings and nature is the core of many traditional cultural concepts."
+    },
+    {
+      "word": "illuminate",
+      "meaning": "v. 照亮；阐明；启发；使灿烂",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Good art works can illuminate people's hearts and make them think about the meaning of life."
+    },
+    {
+      "word": "impressive",
+      "meaning": "令人印象深刻的；难忘的；感人的",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The impressive performance of the symphony orchestra made all the audience stand up and applaud."
+    },
+    {
+      "word": "ingenious",
+      "meaning": "精巧的；独具匠心的；机灵的",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The ingenious design of this ancient architecture shows the wisdom of the ancient working people."
+    },
+    {
+      "word": "integrity",
+      "meaning": "n. 完整；完整性；诚信；正直",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Protecting the integrity of cultural heritage is more important than pursuing economic benefits blindly."
+    },
+    {
+      "word": "ornament",
+      "meaning": "n. 装饰品；装饰；点缀 v. 装饰；点缀",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The delicate ornaments on the traditional cheongsam make it more elegant and beautiful."
+    },
+    {
+      "word": "radiant",
+      "meaning": "辐射的；光芒四射的；灿烂的；喜悦的",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The radiant smile of the dancer and her beautiful movements made the whole stage bright."
+    },
+    {
+      "word": "refine",
+      "meaning": "v. 精炼；提纯；改进；使高雅",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Artists need to constantly refine their skills and ideas to create better works for the audience."
+    },
+    {
+      "word": "splendid",
+      "meaning": "辉煌的；灿烂的；极好的；壮丽的",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The splendid cultural achievements of ancient China are admired by people all over the world."
+    },
+    {
+      "word": "stunning",
+      "meaning": "adj. 极好的；绝妙的；令人震惊的；极美的",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The stunning scenery of the sunset and the sea inspired the painter to finish his masterpiece quickly."
+    },
+    {
+      "word": "timeless",
+      "meaning": "永恒的；不朽的；不受时间影响的",
+      "cat": "阅读高频-文化艺术类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Classic music is timeless and can be loved by people of all ages and all times."
+    },
+    {
+      "word": "extracurricular",
+      "meaning": "课外的；校外的；业余的",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Participating in extracurricular activities can help students develop their comprehensive abilities and make more friends."
+    },
+    {
+      "word": "seminar",
+      "meaning": "研讨会；研讨班；专题讨论会",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "I attended a seminar about environmental protection last week and learned a lot of practical knowledge."
+    },
+    {
+      "word": "presentation",
+      "meaning": "展示；演讲；报告；演示文稿",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "We need to finish our group presentation on educational reform and deliver it in class next Monday."
+    },
+    {
+      "word": "campaign",
+      "meaning": "活动；运动；战役 v. 发起运动",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Our school launched a reading campaign to encourage students to read more books."
+    },
+    {
+      "word": "club",
+      "meaning": "俱乐部；社团；会所 v. 用棍棒打",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "I joined the English speaking club to practice my oral English."
+    },
+    {
+      "word": "debate",
+      "meaning": "辩论；争论；讨论 v. 辩论；争论",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The debate competition helped us improve our logical thinking and expression ability."
+    },
+    {
+      "word": "workshop",
+      "meaning": "工作坊；研讨会；讲习班；工场",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The writing workshop taught me a lot of skills about academic writing."
+    },
+    {
+      "word": "assignment",
+      "meaning": "作业；任务；分配；指派",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "We need to finish this research assignment independently before this weekend."
+    },
+    {
+      "word": "project",
+      "meaning": "项目；工程；课题",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Our group spent two months completing the science project."
+    },
+    {
+      "word": "lecture",
+      "meaning": "讲座；演讲；讲课 v. 讲课；演讲",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The professor's lecture about American history was so interesting."
+    },
+    {
+      "word": "tutorial",
+      "meaning": "辅导课；教程；辅导材料",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "I take a math tutorial every weekend to make up for my weak points."
+    },
+    {
+      "word": "revision",
+      "meaning": "复习；修订；修改",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Doing proper revision every day is more effective than cramming for exams."
+    },
+    {
+      "word": "quiz",
+      "meaning": "小测验；问答比赛；智力竞赛",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Our teacher gave us a surprise English quiz this morning."
+    },
+    {
+      "word": "exam",
+      "meaning": "考试；测验；检查",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "I have been preparing for the final exam for a month."
+    },
+    {
+      "word": "assessment",
+      "meaning": "评估；评价；评定",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The comprehensive assessment includes academic and extracurricular performance."
+    },
+    {
+      "word": "attendance",
+      "meaning": "出席；出勤；到场",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Perfect attendance is one of the important criteria."
+    },
+    {
+      "word": "punctual",
+      "meaning": "准时的；守时的；如期的",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Being punctual for class is a basic quality that every student should have."
+    },
+    {
+      "word": "diligent",
+      "meaning": "勤奋的；用功的；认真的",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Diligent students usually get better academic results."
+    },
+    {
+      "word": "ambitious",
+      "meaning": "有雄心的；有抱负的",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Most ambitious students set clear learning goals."
+    },
+    {
+      "word": "motivated",
+      "meaning": "有动机的；有积极性的",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Teachers should keep students motivated in learning."
+    },
+    {
+      "word": "cooperate",
+      "meaning": "合作；协作；配合",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Students need to cooperate to finish difficult group tasks."
+    },
+    {
+      "word": "communicate",
+      "meaning": "交流；沟通；传达",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Learning a foreign language is a good way to communicate."
+    },
+    {
+      "word": "participate",
+      "meaning": "参与；参加",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "I recommend that all students participate in school activities."
+    },
+    {
+      "word": "organize",
+      "meaning": "组织；安排；整理",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Our class plans to organize a spring outing."
+    },
+    {
+      "word": "coordinate",
+      "meaning": "协调；配合；统筹",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "I need to coordinate the relationship between classmates and teachers."
+    },
+    {
+      "word": "volunteer",
+      "meaning": "自愿做；志愿 n. 志愿者",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Many students volunteer to help clean the campus."
+    },
+    {
+      "word": "contribute",
+      "meaning": "贡献；捐献；投稿",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Every student can contribute their strengths."
+    },
+    {
+      "word": "achieve",
+      "meaning": "实现；达到；获得",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Setting small goals is a good way to achieve big dreams."
+    },
+    {
+      "word": "accomplish",
+      "meaning": "完成；实现；达成",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "We can accomplish more with a reasonable study plan."
+    },
+    {
+      "word": "improve",
+      "meaning": "提高；改善；增进",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Reading English articles every day improves reading speed."
+    },
+    {
+      "word": "enhance",
+      "meaning": "提高；增强；增进",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Speech competitions can enhance our oral expression ability."
+    },
+    {
+      "word": "cultivate",
+      "meaning": "培养；培育；耕作",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "School should cultivate students' independent thinking ability."
+    },
+    {
+      "word": "develop",
+      "meaning": "发展；培养；开发",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Activities can help students develop their hobbies effectively."
+    },
+    {
+      "word": "excel",
+      "meaning": "擅长；胜过；杰出",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "She excels in both academic study and music performance."
+    },
+    {
+      "word": "endeavor",
+      "meaning": "努力；尽力；竭力",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "All students should endeavor to study hard."
+    },
+    {
+      "word": "persevere",
+      "meaning": "坚持；坚忍；不屈不挠",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "We need to persevere in learning English every day."
+    },
+    {
+      "word": "concentrate",
+      "meaning": "集中；专心；浓缩",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Students should concentrate on their study."
+    },
+    {
+      "word": "efficient",
+      "meaning": "高效的；有效率的；能干的",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "An efficient study method helps us finish homework quickly."
+    },
+    {
+      "word": "productive",
+      "meaning": "富有成效的；多产的",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Group discussions are usually very productive."
+    },
+    {
+      "word": "resourceful",
+      "meaning": "足智多谋的；善于利用资源的",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Resourceful students can always find ways to solve problems."
+    },
+    {
+      "word": "responsible",
+      "meaning": "负责的；有责任的；可靠的",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Being a responsible team member means finishing tasks on time."
+    },
+    {
+      "word": "conscientious",
+      "meaning": "认真的；尽责的；一丝不苟的",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Conscientious students check their work repeatedly."
+    },
+    {
+      "word": "enthusiastic",
+      "meaning": "热情的；热心的；狂热的",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Teachers like enthusiastic students who are active in class."
+    },
+    {
+      "word": "energetic",
+      "meaning": "精力充沛的；积极的；有力的",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Energetic students participate in sports activities."
+    },
+    {
+      "word": "dynamic",
+      "meaning": "动态的；有活力的；动力的",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The dynamic campus environment stimulates learning interest."
+    },
+    {
+      "word": "initiative",
+      "meaning": "倡议；主动性；首创精神",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Students who take the initiative can solve problems more quickly."
+    },
+    {
+      "word": "aspire",
+      "meaning": "渴望；追求；立志；向往",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Most students aspire to enter their ideal universities."
+    },
+    {
+      "word": "collaborate",
+      "meaning": "合作；协作；合著",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Students should collaborate to complete research projects."
+    },
+    {
+      "word": "mediate",
+      "meaning": "调解；调停；斡旋",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The monitor often mediates conflicts between classmates."
+    },
+    {
+      "word": "negotiate",
+      "meaning": "谈判；协商；交涉",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "We need to negotiate the time of the friendly match."
+    },
+    {
+      "word": "resolve",
+      "meaning": "解决；决心；分解 n. 决心",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Communication is the best way to resolve misunderstandings."
+    },
+    {
+      "word": "sacrifice",
+      "meaning": "牺牲；祭品；奉献 v. 牺牲",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Some students sacrifice spare time for volunteer activities."
+    },
+    {
+      "word": "succeed",
+      "meaning": "成功；继承；继任",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Students who work hard are more likely to succeed."
+    },
+    {
+      "word": "talented",
+      "meaning": "有天赋的；有才能的",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Our school has many talented students in various fields."
+    },
+    {
+      "word": "versatility",
+      "meaning": "多才多艺；多功能性",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Versatility helps students adapt to different learning environments."
+    },
+    {
+      "word": "vigorous",
+      "meaning": "精力充沛的；有力的；朝气蓬勃的",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Vigorous exercise helps students keep healthy."
+    },
+    {
+      "word": "zealous",
+      "meaning": "热心的；热情的；狂热的；积极的",
+      "cat": "阅读高频-学生活动类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Zealous students take an active part in all school activities."
+    },
+    {
+      "word": "qualification",
+      "meaning": "资格；资历；学历；合格证书",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "A good academic record and practical experience are important qualifications for applying for this scholarship."
+    },
+    {
+      "word": "candidate",
+      "meaning": "候选人；申请者；应试者；人选",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "As a candidate for the student union president, I prepared a detailed work plan."
+    },
+    {
+      "word": "application",
+      "meaning": "申请；申请书；应用；运用",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "I need to finish my university application form carefully."
+    },
+    {
+      "word": "resume",
+      "meaning": "简历；履历；摘要 v. 重新开始；恢复",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "A well-written resume should include educational background and skills."
+    },
+    {
+      "word": "certificate",
+      "meaning": "证书；文凭；证明",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The English proficiency certificate is necessary for international universities."
+    },
+    {
+      "word": "diploma",
+      "meaning": "毕业证书；文凭；奖状",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Getting a bachelor's diploma is the basic requirement for many jobs."
+    },
+    {
+      "word": "credentials",
+      "meaning": "资历；凭证；证书",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Her excellent credentials make her a competitive applicant."
+    },
+    {
+      "word": "eligibility",
+      "meaning": "资格；合格；适宜性",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Check the eligibility requirements before applying."
+    },
+    {
+      "word": "criterion",
+      "meaning": "标准；准则；规范（复数criteria）",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Academic performance is the main criterion for selecting awards."
+    },
+    {
+      "word": "merit",
+      "meaning": "优点；功绩；价值；美德 v. 值得",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "This scholarship is awarded based on academic merit."
+    },
+    {
+      "word": "achievement",
+      "meaning": "成就；成绩；功绩",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Listing your achievements increases your competitiveness."
+    },
+    {
+      "word": "distinction",
+      "meaning": "荣誉；优秀；区别；卓越",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Graduating with distinction is a great honor for students."
+    },
+    {
+      "word": "commendation",
+      "meaning": "表扬；嘉奖；推荐；赞许",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "She received a commendation for outstanding volunteer service."
+    },
+    {
+      "word": "honor",
+      "meaning": "荣誉；荣幸；尊敬",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "It's a great honor to be nominated as the outstanding student."
+    },
+    {
+      "word": "prize",
+      "meaning": "奖品；奖金；奖赏",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Winning first prize is an important achievement on my resume."
+    },
+    {
+      "word": "award",
+      "meaning": "奖项；奖品；奖金 v. 授予；颁发",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The school will award scholarships to excellent students."
+    },
+    {
+      "word": "reward",
+      "meaning": "奖励；回报；报酬 v. 奖励；报答",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Hard work will eventually get a good reward."
+    },
+    {
+      "word": "nominate",
+      "meaning": "提名；推荐；任命；指定",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "We decided to nominate Li Ming for the award."
+    },
+    {
+      "word": "select",
+      "meaning": "选择；挑选；选拔 adj. 精选的",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The committee will select the final winners."
+    },
+    {
+      "word": "elect",
+      "meaning": "选举；推选；选择 adj. 当选的",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Students will elect a new student representative."
+    },
+    {
+      "word": "recruit",
+      "meaning": "招募；招聘；吸收 n. 新成员",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The student union is going to recruit new members."
+    },
+    {
+      "word": "interview",
+      "meaning": "面试；采访；面谈",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Prepare well for the university interview."
+    },
+    {
+      "word": "assess",
+      "meaning": "评估；评定；评价；估价",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The interviewers will assess your comprehensive ability."
+    },
+    {
+      "word": "evaluate",
+      "meaning": "评价；评估；估价",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Teachers and students will jointly evaluate the candidates."
+    },
+    {
+      "word": "recommend",
+      "meaning": "推荐；建议；介绍；举荐",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "My professor agreed to write a recommendation letter."
+    },
+    {
+      "word": "reference",
+      "meaning": "参考；推荐信；引用",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Applications require reference letters from teachers."
+    },
+    {
+      "word": "competent",
+      "meaning": "胜任的；有能力的；合格的；能干的",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "A competent leader should have good communication skills."
+    },
+    {
+      "word": "capable",
+      "meaning": "有能力的；能胜任的；有才干的",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "She is a very capable student."
+    },
+    {
+      "word": "proficient",
+      "meaning": "熟练的；精通的；能手的",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Being proficient in a foreign language is an important skill."
+    },
+    {
+      "word": "skilled",
+      "meaning": "熟练的；有技能的；有技巧的",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Skilled teamwork is the key that interviewers value."
+    },
+    {
+      "word": "experienced",
+      "meaning": "有经验的；老练的；熟练的",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "An experienced candidate is more likely to be selected."
+    },
+    {
+      "word": "qualified",
+      "meaning": "合格的；有资格的；胜任的",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Only qualified students can apply for this scholarship."
+    },
+    {
+      "word": "outstanding",
+      "meaning": "杰出的；优秀的；显著的",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Outstanding performance is the core advantage of applicants."
+    },
+    {
+      "word": "exemplary",
+      "meaning": "模范的；典型的；值得效仿的",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "His exemplary behavior won the praise of all teachers."
+    },
+    {
+      "word": "prominent",
+      "meaning": "突出的；显著的；杰出的；重要的",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "She is a prominent student who has won many awards."
+    },
+    {
+      "word": "remarkable",
+      "meaning": "显著的；非凡的；卓越的；值得注意的",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "His remarkable progress surprised all his teachers."
+    },
+    {
+      "word": "exceptional",
+      "meaning": "杰出的；优秀的；例外的；罕见的",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Exceptional students have strong self-discipline."
+    },
+    {
+      "word": "superior",
+      "meaning": "优秀的；上级的；出众的",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Her superior skills make her the best candidate."
+    },
+    {
+      "word": "distinguished",
+      "meaning": "卓越的；著名的；杰出的",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The distinguished professor was invited to give a speech."
+    },
+    {
+      "word": "potential",
+      "meaning": "潜在的；可能的 n. 潜力；潜能",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Interviewers want to hire candidates with great potential."
+    },
+    {
+      "word": "ambition",
+      "meaning": "抱负；雄心；野心；志向",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Clear ambition is essential for applying to top universities."
+    },
+    {
+      "word": "dedication",
+      "meaning": "奉献；献身；忠诚；热爱",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Her dedication to community service helped her win the scholarship."
+    },
+    {
+      "word": "commitment",
+      "meaning": "承诺；献身；投入",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Showing commitment to your major increases acceptance chances."
+    },
+    {
+      "word": "persistence",
+      "meaning": "坚持；毅力；固执",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Persistence is vital when facing challenges."
+    },
+    {
+      "word": "diligence",
+      "meaning": "勤奋；用功；细心；认真",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Diligence combined with smart methods is the secret to high scores."
+    },
+    {
+      "word": "endurance",
+      "meaning": "耐力；忍耐力；持久力",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Long-term preparation requires great endurance."
+    },
+    {
+      "word": "deadline",
+      "meaning": "截止日期；最后期限",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Submit all materials before the deadline."
+    },
+    {
+      "word": "document",
+      "meaning": "文件；公文；文档；证件",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Prepare all required documents for the application."
+    },
+    {
+      "word": "verification",
+      "meaning": "验证；核实；证明；确认",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The verification of your background is a necessary step."
+    },
+    {
+      "word": "confirmation",
+      "meaning": "确认；证实；证明；批准",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "I received the confirmation email."
+    },
+    {
+      "word": "ratification",
+      "meaning": "批准；认可；正式承认",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The ratification will be announced at the next meeting."
+    },
+    {
+      "word": "nomination",
+      "meaning": "提名；任命；推荐",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "His nomination was supported by all his classmates."
+    },
+    {
+      "word": "shortlist",
+      "meaning": "候选名单；入围名单",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Five candidates were shortlisted for the final interview."
+    },
+    {
+      "word": "runner-up",
+      "meaning": "亚军；第二名",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Even as runner-up, he gained valuable experience."
+    },
+    {
+      "word": "honorable",
+      "meaning": "荣誉的；光荣的；可敬的",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "It is an honorable achievement to represent the school."
+    },
+    {
+      "word": "prestigious",
+      "meaning": "有声望的；受尊敬的；显赫的",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Winning this prestigious award enhances competitiveness."
+    },
+    {
+      "word": "renowned",
+      "meaning": "著名的；有声望的；闻名的",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The renowned university offers scholarships to attract students."
+    },
+    {
+      "word": "accolade",
+      "meaning": "荣誉；嘉奖；赞许；表彰",
+      "cat": "阅读高频-奖项和职位申请类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The highest accolade is the Golden Medal of Excellence."
+    },
+    {
+      "word": "volunteerism",
+      "meaning": "志愿服务精神；志愿主义",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Volunteerism plays an important role in building a harmonious and caring society."
+    },
+    {
+      "word": "charity",
+      "meaning": "慈善；慈善机构；施舍；仁爱",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "I spent my summer vacation working as a volunteer in a local charity."
+    },
+    {
+      "word": "donation",
+      "meaning": "捐赠；捐献；捐赠物；捐款",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Our class collected book donations for the primary school."
+    },
+    {
+      "word": "contribution",
+      "meaning": "贡献；捐献；投稿",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Every small contribution can make a big difference."
+    },
+    {
+      "word": "philanthropy",
+      "meaning": "慈善事业；博爱；慈善行为",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Many wealthy people devote themselves to philanthropy."
+    },
+    {
+      "word": "benevolence",
+      "meaning": "仁慈；善意；善行；仁爱",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The volunteer's benevolence brought warmth to lonely elderly people."
+    },
+    {
+      "word": "altruism",
+      "meaning": "利他主义；无私；利他行为",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Altruism encourages people to help others without expecting rewards."
+    },
+    {
+      "word": "compassion",
+      "meaning": "同情；怜悯；恻隐之心",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Compassion motivates young people to join volunteer programs."
+    },
+    {
+      "word": "assistance",
+      "meaning": "援助；帮助；支持；协助",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Volunteers provided medical assistance to villagers."
+    },
+    {
+      "word": "support",
+      "meaning": "支持；支撑；资助 n. 支持；援助",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Local businesses provided financial support for our project."
+    },
+    {
+      "word": "aid",
+      "meaning": "援助；帮助；救护 v. 援助；帮助",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "International organizations sent emergency aid to the disaster area."
+    },
+    {
+      "word": "relief",
+      "meaning": "救济；减轻；解除；安慰",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The relief work required volunteers to distribute supplies."
+    },
+    {
+      "word": "welfare",
+      "meaning": "福利；福祉；幸福；福利事业",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Volunteers promote the welfare of children with special needs."
+    },
+    {
+      "word": "neighborhood",
+      "meaning": "邻里；社区；附近；街坊",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "We help the elderly in our neighborhood with daily chores."
+    },
+    {
+      "word": "outreach",
+      "meaning": "外展服务；拓展；延伸",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The outreach program sends volunteers to rural schools."
+    },
+    {
+      "word": "program",
+      "meaning": "项目；计划；节目；程序",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "I participated in a volunteer tutoring program."
+    },
+    {
+      "word": "mission",
+      "meaning": "使命；任务；使团；天职",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The volunteer's mission is to bring hope to those in need."
+    },
+    {
+      "word": "task",
+      "meaning": "任务；工作；作业 v. 派给任务",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The most challenging task was building a temporary school."
+    },
+    {
+      "word": "mobilize",
+      "meaning": "动员；调动；组织",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The government mobilized volunteers for disaster relief."
+    },
+    {
+      "word": "engage",
+      "meaning": "参与；从事；吸引；聘用",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Young people engage in long-term volunteer work."
+    },
+    {
+      "word": "devote",
+      "meaning": "致力于；奉献；献身",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "She devoted her summer vacation to volunteer work."
+    },
+    {
+      "word": "dedicate",
+      "meaning": "奉献；致力于；献身",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "He dedicated his time to helping children with cancer."
+    },
+    {
+      "word": "commit",
+      "meaning": "承诺；承担义务；致力于",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "You need to commit at least two hours every week."
+    },
+    {
+      "word": "donate",
+      "meaning": "捐赠；捐献；赠予",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Many companies donate food to homeless shelters."
+    },
+    {
+      "word": "sponsor",
+      "meaning": "赞助商；赞助人 v. 赞助；发起",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "A local company agreed to sponsor our project."
+    },
+    {
+      "word": "fundraise",
+      "meaning": "筹款；募捐；筹集资金",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "We held a charity concert to fundraise."
+    },
+    {
+      "word": "advocate",
+      "meaning": "倡导；拥护；主张；提倡",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Volunteers advocate for the rights of the disabled."
+    },
+    {
+      "word": "promote",
+      "meaning": "促进；推动；提升；推广",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Activities promote mutual understanding between people."
+    },
+    {
+      "word": "raise",
+      "meaning": "筹集；提高；养育；升起",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "We need to raise public awareness about environmental protection."
+    },
+    {
+      "word": "empower",
+      "meaning": "授权；赋能；使能够",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The program empowers women by teaching business skills."
+    },
+    {
+      "word": "enrich",
+      "meaning": "丰富；充实；使富足",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Volunteer activities enrich your life experience."
+    },
+    {
+      "word": "transform",
+      "meaning": "改变；使改观；转换；转化",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Volunteer service can transform both helpers and those helped."
+    },
+    {
+      "word": "impact",
+      "meaning": "影响；冲击；效果 v. 影响",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The project had a positive impact on children's lives."
+    },
+    {
+      "word": "legacy",
+      "meaning": "遗产；遗赠；遗留物；传统",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The legacy of the program is the spirit of helping others."
+    },
+    {
+      "word": "gratitude",
+      "meaning": "感激；感谢；感恩之情",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The gratitude we received is the best reward."
+    },
+    {
+      "word": "appreciation",
+      "meaning": "欣赏；感激；赏识",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "We received a letter of appreciation from the government."
+    },
+    {
+      "word": "recognition",
+      "meaning": "认可；承认；表彰；识别",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The volunteer's work gained community recognition."
+    },
+    {
+      "word": "fulfillment",
+      "meaning": "满足感；成就感；履行",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Volunteer work brings fulfillment not from material rewards."
+    },
+    {
+      "word": "satisfaction",
+      "meaning": "满意；满足；欣慰",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Seeing smiles gave us deep satisfaction."
+    },
+    {
+      "word": "pride",
+      "meaning": "自豪；骄傲；自尊心 v. 使自豪",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "We take great pride in our volunteer work."
+    },
+    {
+      "word": "dignity",
+      "meaning": "尊严；庄重；高贵；自尊",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Volunteers should respect the dignity of those they help."
+    },
+    {
+      "word": "unity",
+      "meaning": "团结；统一；整体性；联合",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The unity of the team overcame all difficulties."
+    },
+    {
+      "word": "solidarity",
+      "meaning": "团结；团结一致；休戚与共",
+      "cat": "阅读高频-志愿服务类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The solidarity shown by volunteers moved people nationwide."
+    },
+    {
+      "word": "technology",
+      "meaning": "技术；科技；工艺；技术学",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Modern technology has changed people's lifestyles."
+    },
+    {
+      "word": "digital",
+      "meaning": "数字的；数码的；电子的",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The digital age has brought opportunities and challenges."
+    },
+    {
+      "word": "virtual",
+      "meaning": "虚拟的；有效的；实质上的",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Virtual meetings are now common in the workplace."
+    },
+    {
+      "word": "online",
+      "meaning": "在线的；联网的 adv. 在线地",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Online education allows learning anytime and anywhere."
+    },
+    {
+      "word": "offline",
+      "meaning": "离线的；脱机的 adv. 离线地",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Many people prefer offline shopping."
+    },
+    {
+      "word": "automation",
+      "meaning": "自动化；自动操作",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Automation improved efficiency but led to job losses."
+    },
+    {
+      "word": "artificial",
+      "meaning": "人工的；人造的；虚假的",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Artificial intelligence is changing the world today."
+    },
+    {
+      "word": "productivity",
+      "meaning": "生产力；生产率",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Remote work can increase productivity."
+    },
+    {
+      "word": "convenience",
+      "meaning": "便利；方便；便利设施",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Online shopping brought great convenience to people's lives."
+    },
+    {
+      "word": "connectivity",
+      "meaning": "连通性；连接性",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Good internet connectivity is essential for remote work."
+    },
+    {
+      "word": "burnout",
+      "meaning": "倦怠；精疲力竭；燃尽",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Long overtime can lead to burnout."
+    },
+    {
+      "word": "well-being",
+      "meaning": "幸福；健康；福祉",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "People pay more attention to mental well-being."
+    },
+    {
+      "word": "lifestyle",
+      "meaning": "生活方式；生活作风",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "A healthy lifestyle helps prevent diseases."
+    },
+    {
+      "word": "environmental",
+      "meaning": "环境的",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "People are choosing a low-carbon lifestyle."
+    },
+    {
+      "word": "overpopulation",
+      "meaning": "人口过剩",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Overpopulation leads to shortages of food and resources."
+    },
+    {
+      "word": "congestion",
+      "meaning": "拥挤；拥塞；堵塞",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Traffic congestion is common in big cities."
+    },
+    {
+      "word": "isolation",
+      "meaning": "隔离；孤立；与世隔绝",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Social isolation negatively impacts mental health."
+    },
+    {
+      "word": "loneliness",
+      "meaning": "孤独；寂寞；孤单",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Many people suffer from loneliness in modern cities."
+    },
+    {
+      "word": "distraction",
+      "meaning": "分心；使人分心的事物",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Mobile phones are big distractions for students."
+    },
+    {
+      "word": "addiction",
+      "meaning": "瘾；入迷；嗜好；沉溺",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Internet addiction is a growing problem among teenagers."
+    },
+    {
+      "word": "cyberbullying",
+      "meaning": "网络欺凌；网络霸凌",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Schools should educate about the harm of cyberbullying."
+    },
+    {
+      "word": "privacy",
+      "meaning": "隐私；私密；隐私权",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Privacy is increasingly important in the digital age."
+    },
+    {
+      "word": "security",
+      "meaning": "安全；保障；安全感",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Network security is a priority for companies."
+    },
+    {
+      "word": "unemployment",
+      "meaning": "失业；失业率",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "High unemployment is a major challenge for governments."
+    },
+    {
+      "word": "poverty",
+      "meaning": "贫穷；贫困；贫乏",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Education is the most effective way to escape poverty."
+    },
+    {
+      "word": "inequality",
+      "meaning": "不平等；不均等",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "The gap between rich and poor reflects social inequality."
+    },
+    {
+      "word": "resilience",
+      "meaning": "恢复力；适应力；韧性",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Mental resilience helps people cope with challenges."
+    },
+    {
+      "word": "flexibility",
+      "meaning": "灵活性；柔韧性；适应性",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Workplace flexibility is becoming more popular."
+    },
+    {
+      "word": "prioritize",
+      "meaning": "优先处理；按重要性排序",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Students should prioritize their study tasks."
+    },
+    {
+      "word": "streamline",
+      "meaning": "使效率更高；使简化",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Companies streamline work to improve efficiency."
+    },
+    {
+      "word": "optimize",
+      "meaning": "使最优化；充分利用",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Time management tools help optimize daily schedules."
+    },
+    {
+      "word": "collaboration",
+      "meaning": "合作；协作",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "International collaboration is essential for global challenges."
+    },
+    {
+      "word": "sophistication",
+      "meaning": "复杂；精致；世故",
+      "cat": "阅读高频-现代生活与挑战类",
+      "time": "2026/05/21 14:22:22",
+      "example": "Technology sophistication makes life more convenient but complicated."
     }
   ]
 }
