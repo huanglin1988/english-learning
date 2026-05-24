@@ -4848,22 +4848,74 @@ function checkDictation() {
       state.wrongSentences = (state.wrongSentences || []).filter(s => s.sentence !== sentence.sentence);
     }
   } else {
-    // Show diff
-    const userWords = normalize(userInput).split(' ');
-    const correctWords = normalize(correctSentence).split(' ');
+    // Word-by-word comparison to highlight errors
+    const correctTokens = correctSentence.replace(/[.,!?;:'"()]/g, '').split(/\s+/).filter(Boolean);
+    const userTokens = userInput.replace(/[.,!?;:'"()]/g, '').split(/\s+/).filter(Boolean);
     
     result.style.background = '#f8d7da';
     result.style.border = '1px solid #f5c6cb';
     result.style.color = '#721c24';
     
-    let feedback = '<strong>✖️ 不完全正确</strong><br>';
-    feedback += '<div style="margin-top:8px;">📝 你的输入：<span style="color:#c0392b;">' + escapeHtml(userInput) + '</span></div>';
-    feedback += '<div style="margin-top:4px;">✅ 正确答案：<span style="color:#27ae60;font-weight:600;">' + escapeHtml(correctSentence) + '</span></div>';
+    let feedback = '<strong>✖️ 有错误，逐词校对如下：</strong>';
     
-    // Word count comparison
-    const wordDiff = Math.abs(userWords.length - correctWords.length);
+    // Build word-by-word comparison
+    const maxLen = Math.max(correctTokens.length, userTokens.length);
+    let wordCompare = '<div style="margin-top:10px;font-size:14px;line-height:2;">';
+    let errorWords = [];
+    
+    wordCompare += '<div style="font-size:12px;color:#666;margin-bottom:4px;">你的输入 vs 正确答案（红色 = 错误，绿色 = 正确）：</div>';
+    
+    for (let i = 0; i < maxLen; i++) {
+      const cw = correctTokens[i] || '';
+      const uw = userTokens[i] || '';
+      
+      if (i < correctTokens.length && i < userTokens.length) {
+        if (cw.toLowerCase() === uw.toLowerCase()) {
+          wordCompare += '<span style="color:#27ae60;font-weight:600;background:#e8f8e8;padding:2px 4px;border-radius:3px;margin:1px;">' + escapeHtml(cw) + '</span> ';
+        } else {
+          wordCompare += '<span style="color:#e74c3c;font-weight:700;background:#ffe8e8;padding:2px 4px;border-radius:3px;margin:1px;text-decoration:line-through;">' + escapeHtml(uw) + '</span>';
+          wordCompare += '<span style="color:#27ae60;font-weight:600;background:#e8f8e8;padding:2px 4px;border-radius:3px;margin:1px;">→' + escapeHtml(cw) + '</span> ';
+          errorWords.push({ wrong: uw, correct: cw });
+        }
+      } else if (i >= correctTokens.length) {
+        // Extra word from user
+        wordCompare += '<span style="color:#e74c3c;font-weight:700;background:#ffe8e8;padding:2px 4px;border-radius:3px;margin:1px;text-decoration:line-through;">✗' + escapeHtml(uw) + '</span> ';
+        errorWords.push({ wrong: uw, correct: '(多余)' });
+      } else {
+        // Missing word
+        wordCompare += '<span style="color:#27ae60;font-weight:600;background:#e8f8e8;padding:2px 4px;border-radius:3px;margin:1px;">[' + escapeHtml(cw) + ']</span> ';
+        errorWords.push({ wrong: '(缺少)', correct: cw });
+      }
+    }
+    wordCompare += '</div>';
+    feedback += wordCompare;
+    
+    // Error summary
+    if (errorWords.length > 0) {
+      feedback += '<div style="margin-top:8px;padding:8px 12px;background:#fff;border-radius:6px;border:1px solid #f5c6cb;">';
+      feedback += '<div style="font-size:12px;font-weight:600;color:#c0392b;margin-bottom:4px;">❌ 错误汇总（' + errorWords.length + ' 处）：</div>';
+      feedback += '<table style="font-size:12px;width:100%;border-collapse:collapse;">';
+      feedback += '<tr><th style="text-align:left;padding:3px 6px;border-bottom:1px solid #eee;">你写的</th><th style="text-align:left;padding:3px 6px;border-bottom:1px solid #eee;">应该写</th></tr>';
+      errorWords.forEach(e => {
+        feedback += '<tr><td style="padding:2px 6px;color:#e74c3c;">' + escapeHtml(e.wrong) + '</td><td style="padding:2px 6px;color:#27ae60;">' + escapeHtml(e.correct) + '</td></tr>';
+      });
+      feedback += '</table></div>';
+    }
+    
+    // Word count
+    const wordDiff = Math.abs(userTokens.length - correctTokens.length);
     if (wordDiff > 0) {
-      feedback += '<div style="margin-top:4px;font-size:12px;">📊 词数差异：你写了 ' + userWords.length + ' 词，原文 ' + correctWords.length + ' 词</div>';
+      feedback += '<div style="margin-top:6px;font-size:12px;">📊 词数差异：你写了 ' + userTokens.length + ' 词，原文 ' + correctTokens.length + ' 词</div>';
+    }
+    
+    // Show full correct answer
+    feedback += '<div style="margin-top:8px;padding:8px 12px;background:#e8f8e8;border-radius:6px;border:1px solid #c3e6cb;">✅ 完整正确答案：<span style="font-weight:600;color:#27ae60;">' + escapeHtml(correctSentence) + '</span></div>';
+    
+    // Chinese meaning reminder
+    const allSentences = getSentences();
+    const fullData = allSentences.find(s => s.sentence === sentence.sentence) || {};
+    if (fullData.meaning) {
+      feedback += '<div style="margin-top:6px;font-size:12px;color:#666;">📖 中文：' + escapeHtml(fullData.meaning) + '</div>';
     }
     
     result.innerHTML = feedback;
