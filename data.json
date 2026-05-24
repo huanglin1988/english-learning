@@ -5153,303 +5153,353 @@
   "ew_sentences": [
     {
       "word": "accelerate",
+      "meaning": "v. 加速；促进；加快",
       "sentence": "The wide use of digital technology has accelerated the pace of social development in modern cities.",
-      "meaning": "数字技术的广泛应用加快了现代城市的社会发展步伐。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "数字技术的广泛应用加快了现代城市的社会发展步伐。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "advocate",
+      "meaning": "v. 提倡，拥护，主张 n. 倡导者",
       "sentence": "Many sociologists advocate that citizens should reduce the use of disposable plastic products to protect the environment.",
-      "meaning": "许多社会学家提倡公民减少一次性塑料制品的使用，以此保护环境。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "许多社会学家倡议公民减少一次性塑料制品的使用，以此保护环境。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "alleviate",
+      "meaning": "v. 减轻，缓解（痛苦、压力、问题）",
       "sentence": "Building more public hospitals can help alleviate the shortage of medical resources in urban areas.",
-      "meaning": "修建更多公立医院有助于缓解城市医疗资源短缺的问题。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "新建更多公立医院有助于缓解城市医疗资源短缺的现状。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "ambiguous",
+      "meaning": "adj. 模糊的，含糊不清的，有歧义的",
       "sentence": "Ambiguous social norms may lead to misunderstandings between people from different cultural backgrounds.",
-      "meaning": "模糊的社会规范可能会造成不同文化背景人群之间的误解。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "模糊的社会规范可能会造成不同文化背景人群之间的误解。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "amplify",
+      "meaning": "v. 放大，增强；扩大（影响）",
       "sentence": "Social media platforms amplify the influence of public opinions and make social events spread more quickly.",
-      "meaning": "社交媒体平台放大了舆论影响力，让社会事件传播得更快。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "社交媒体平台放大了舆论影响力，让社会事件传播得更快。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "assimilate",
+      "meaning": "v. 吸收，理解；融入（文化），同化",
       "sentence": "Immigrants need time to assimilate into the local society and adapt to the new living environment.",
-      "meaning": "移民需要时间融入当地社会，适应新的生活环境。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "移民需要时间融入当地社会，并适应新的生活环境。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "attribute",
+      "meaning": "v. 把…归因于；认为是…所为 n. 特征，属性",
       "sentence": "Most experts attribute the rising crime rate in some areas to insufficient public security management.",
-      "meaning": "大多数专家认为，部分地区犯罪率上升源于治安管理不足。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "大多数专家将部分地区犯罪率上升归因于治安管理不足。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "ban",
+      "meaning": "v. 禁止，取缔 n. 禁令",
       "sentence": "Some countries have decided to ban the sale of tobacco products to teenagers under the age of 18.",
-      "meaning": "部分国家决定禁止向 18 岁以下青少年售卖烟草制品。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "部分国家决定禁止向18岁以下青少年售卖烟草制品。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "boom",
+      "meaning": "v. 繁荣，兴旺，迅速发展 n. 繁荣期，热潮",
       "sentence": "The tourism industry has boomed in coastal cities since the relaxation of travel restrictions.",
-      "meaning": "自从旅行限制放宽后，沿海城市的旅游业蓬勃发展。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "旅行限制放宽后，沿海城市的旅游业蓬勃发展。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "boundary",
+      "meaning": "n. 边界，界限；分界线",
       "sentence": "Respecting others' personal boundary is an essential principle of interpersonal communication in modern society.",
-      "meaning": "尊重他人的个人界限是现代人际交往的重要准则。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "尊重他人的个人界限是现代人际交往的重要准则。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "circumstance",
+      "meaning": "n. 情况，情形；环境，境遇",
       "sentence": "People's behavior and choices are often influenced by their living circumstances and social backgrounds.",
-      "meaning": "人们的行为与选择往往受生活环境和社会背景影响。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "人的行为与选择往往受生活环境和社会背景影响。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "collapse",
+      "meaning": "v./n. 倒塌，坍塌；崩溃，瓦解",
       "sentence": "Excessive financial pressure may cause small businesses to collapse in fierce market competition.",
-      "meaning": "过大的财务压力可能让小企业在激烈的市场竞争中倒闭。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "过大的资金压力可能让小企业在激烈的市场竞争中倒闭。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "comply",
-      "sentence": "Visitors shall comply with the rules of scenic spots.",
-      "meaning": "游客应当遵守景区规章制度。",
-      "time": "2026/5/24 11:00:00"
+      "meaning": "v. 遵守，遵从，服从",
+      "sentence": "Companies need to comply with environmental protection standards.",
+      "translation": "企业需要遵守环保相关规定。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "consequence",
+      "meaning": "n. 结果，后果；重要性",
       "sentence": "Individuals should be aware of the potential consequences of their behaviors and take responsibility for them.",
-      "meaning": "每个人都应意识到自身行为可能带来的后果，并为之负责。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "每个人都应清楚自身行为可能带来的后果，并为之负责。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "constitute",
+      "meaning": "v. 组成，构成；被视为，等同于",
       "sentence": "Honesty and loyalty constitute the core of good friendship.",
-      "meaning": "诚实与忠诚是美好友谊的核心要素。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "诚实与忠诚构成了美好友谊的核心。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "contaminate",
+      "meaning": "v. 污染，弄脏；玷污",
       "sentence": "Industrial waste water discharged without treatment will contaminate rivers and threaten the survival of aquatic organisms.",
-      "meaning": "未经处理的工业废水会污染河流，威胁水生生物的生存。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "未经处理的工业废水会污染河流，威胁水生生物的生存。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "contradict",
+      "meaning": "v. 反驳，驳斥；与…矛盾、相悖",
       "sentence": "This finding contradicts previous research results.",
-      "meaning": "这一研究发现与以往的研究结论相悖。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "这一研究结论与以往的研究成果相悖。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "conventional",
+      "meaning": "adj. 传统的，惯例的；常规的",
       "sentence": "Young people in modern society are more willing to break conventional ideas and pursue personalized lifestyles.",
-      "meaning": "当代年轻人更愿意打破传统观念，追求个性化的生活方式。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "当代年轻人更愿意打破传统观念，追求个性化的生活方式。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "corrupt",
+      "meaning": "adj. 腐败的，贪污的 v. 使腐败，腐蚀",
       "sentence": "Strict supervision and punishment mechanisms can curb official corruption and safeguard social fairness.",
-      "meaning": "严格的监管与惩处机制能够遏制官员腐败，维护社会公平。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "严格的监管与惩处机制能够遏制官员腐败，维护社会公平。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "curb",
+      "meaning": "v. 控制，抑制，约束 n. 约束，限制",
       "sentence": "The government has taken a series of measures to curb the excessive consumption of natural resources.",
-      "meaning": "政府已采取一系列措施抑制自然资源的过度消耗。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "政府已采取一系列措施抑制自然资源的过度消耗。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "decline",
+      "meaning": "v./n. 下降，衰退，衰落；婉拒",
       "sentence": "The continuous decline of interpersonal communication in real life is a serious problem caused by over-reliance on mobile phones.",
-      "meaning": "现实中人际交流不断减少，是过度依赖手机引发的严重问题。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "现实中人际交流不断减少，是过度依赖手机引发的严重社会问题。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "deteriorate",
+      "meaning": "v. 恶化，变坏，退化",
       "sentence": "Air quality in some industrial cities will continue to deteriorate if no effective environmental protection measures are taken.",
-      "meaning": "若不采取有效的环保措施，部分工业城市的空气质量会持续恶化。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "若不采取有效的环保措施，部分工业城市的空气质量会持续恶化。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "devastating",
+      "meaning": "adj. 毁灭性的，极具破坏力的；令人震惊的",
       "sentence": "Earthquakes, floods and other disasters exert devastating impacts on people's lives and social development.",
-      "meaning": "地震、洪水等自然灾害会对人们的生活和社会发展造成毁灭性影响。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "地震、洪水等自然灾害会对民众生活和社会发展造成毁灭性影响。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "dilemma",
+      "meaning": "n. 困境，进退两难的局面",
       "sentence": "Many young people are facing the dilemma of choosing between stable jobs and challenging but promising careers.",
-      "meaning": "许多年轻人陷入两难：要选择安稳的工作，还是有挑战但有前景的职业。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "许多年轻人陷入安稳工作和有前景的挑战性职业之间的两难选择。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "discern",
+      "meaning": "v. 察觉，识别；领悟，理解",
       "sentence": "We can barely discern underlying social troubles behind prosperous city appearances.",
-      "meaning": "我们很难在城市繁华表象之下察觉到潜在的社会问题。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "我们很难在城市繁华表象之下察觉到潜在的社会隐患。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "discriminate",
+      "meaning": "v. 歧视，区别对待；区分，辨别",
       "sentence": "Laws must not discriminate against anyone on account of gender or race.",
-      "meaning": "法律绝不允许以性别、种族为由歧视任何人。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "法律绝不允许以性别、种族为由歧视任何人。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "distort",
+      "meaning": "v. 扭曲，使变形；歪曲，曲解",
       "sentence": "Rumors online tend to distort facts and mislead the general public.",
-      "meaning": "网络谣言往往歪曲事实，误导大众。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "网络谣言往往歪曲事实，误导大众。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "diverse",
+      "meaning": "adj. 多种多样的，形形色色的；不同的",
       "sentence": "The city boasts a diverse culture that attracts visitors worldwide.",
-      "meaning": "这座城市拥有多元的文化，吸引着世界各地的游客。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "这座城市拥有多元文化，吸引着世界各地的游客。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "dominate",
+      "meaning": "v. 支配，控制；主导，占优势",
       "sentence": "Smart devices continue to dominate modern people's daily routines and changed their ways of obtaining information and communicating.",
-      "meaning": "智能设备持续主导现代人的日常生活，改变了人们获取信息与沟通的方式。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "智能设备持续主导现代人的日常生活，改变了人们获取信息与沟通的方式。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "drastic",
+      "meaning": "adj. 激烈的，猛烈的；极端的，急剧的",
       "sentence": "Drastic shifts in social values create sharp contrasts in outlooks on life between the elderly and the younger generation.",
-      "meaning": "社会价值观的急剧变化造成了老年人与年轻人人生观的巨大差异。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "社会价值观的急剧变化造成了老年人与年轻人人生观的巨大差异。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "durable",
+      "meaning": "adj. 耐用的，持久的；长期的",
       "sentence": "Establishing a durable social security system is pivotal to safeguarding citizens' wellbeing and sense of security.",
-      "meaning": "建立长效持久的社会保障体系，是保障民众幸福感与安全感的关键。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "建立长效持久的社会保障体系，是保障民众幸福感与安全感的关键。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "eliminate",
+      "meaning": "v. 消除，根除，淘汰",
       "sentence": "Only by enhancing public education and social publicity can we eliminate uncivilized behaviors that damage public order and social civilization.",
-      "meaning": "只有加强公众教育与社会宣传，才能根除破坏公共秩序与社会文明的不文明行为。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "只有加强公众教育与社会宣传，才能根除破坏公共秩序与社会文明的不文明行为。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "emerge",
+      "meaning": "v. 出现，浮现；露出，冒出",
       "sentence": "Numerous new social issues have emerged amid the rapid advancement of artificial intelligence.",
-      "meaning": "随着人工智能飞速发展，许多新的社会问题随之出现。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "随着人工智能飞速发展，许多新的社会问题随之出现。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "emulate",
+      "meaning": "v. 效仿，模仿；努力赶上",
       "sentence": "Teenagers tend to emulate celebrities' conduct, so public figures should set positive role models.",
-      "meaning": "青少年容易效仿名人的行为，因此公众人物应当树立正面榜样。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "青少年容易效仿名人的言行，因此公众人物应当树立正面榜样。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "endeavor",
+      "meaning": "v./n. 努力，竭力，尝试",
       "sentence": "All citizens should endeavor to preserve ecosystems to achieve sustainable human development.",
-      "meaning": "全体公民都应努力保护生态环境，实现人类可持续发展。",
-      "time": "2026/5/24 11:00:00"
+      "translation": "全体公民都应努力保护生态环境，实现人类可持续发展。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "enhance",
-      "sentence": "Volunteer activities can effectively enhance people's sense of social responsibility and team spirit.",
-      "meaning": "志愿活动能够有效增强人们的社会责任感与团队精神。",
-      "time": "2026/5/24 11:00:00"
+      "meaning": "v. 提高，增强，增进",
+      "sentence": "Volunteer work can effectively enhance people's social responsibility and teamwork spirit.",
+      "translation": "志愿活动能够有效增强人们的社会责任感与团队精神。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "enforce",
-      "sentence": "The police are responsible for enforcing laws and maintaining social order and public safety.",
-      "meaning": "警察负责执法，维护社会秩序与公共安全。",
-      "time": "2026/5/24 11:00:00"
+      "meaning": "v. 实施，执行；强制，强迫",
+      "sentence": "Police officers enforce laws to maintain social order and safeguard public security.",
+      "translation": "警察负责执法，维护社会秩序与公共安全。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "enrich",
-      "sentence": "Reading books of different types can enrich our spiritual world and deepen our understanding of society.",
-      "meaning": "阅读各类书籍可以丰富我们的精神世界，加深对社会的认知。",
-      "time": "2026/5/24 11:00:00"
+      "meaning": "v. 丰富，充实；使富裕，使富足",
+      "sentence": "Reading diverse books enriches our inner mind and deepens our insight into society.",
+      "translation": "阅读各类书籍可以丰富我们的精神世界，加深对社会的认知。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "equilibrium",
-      "sentence": "Maintaining the equilibrium between economic development and environmental protection is a major challenge for modern society.",
-      "meaning": "维持经济发展与环境保护之间的平衡，是现代社会的一大挑战。",
-      "time": "2026/5/24 11:00:00"
+      "meaning": "n. 平衡，均衡；均势",
+      "sentence": "Keeping equilibrium between economic growth and environmental protection poses a severe challenge to modern society.",
+      "translation": "维持经济发展与环境保护之间的平衡，是现代社会的一大挑战。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "erosion",
-      "sentence": "The erosion of traditional culture is an unavoidable problem in the process of social modernization.",
-      "meaning": "传统文化的流失是社会现代化进程中不可避免的问题。",
-      "time": "2026/5/24 11:00:00"
+      "meaning": "n. 侵蚀，腐蚀；逐渐破坏、削弱",
+      "sentence": "Cultural erosion is an inevitable issue amid social modernization.",
+      "translation": "传统文化的流失是社会现代化进程中不可避免的问题。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "ethical",
-      "sentence": "Every citizen should abide by ethical standards and refuse to engage in behaviors that harm the interests of others and society.",
-      "meaning": "每个公民都应恪守道德准则，拒绝做出损害他人与社会利益的行为。",
-      "time": "2026/5/24 11:00:00"
+      "meaning": "adj. 道德的，伦理的；合乎道德的",
+      "sentence": "All citizens shall follow ethical norms and avoid acts damaging public and personal interests.",
+      "translation": "每个公民都应恪守道德准则，杜绝损害他人与社会利益的行为。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "evoke",
-      "sentence": "Traditional festivals can evoke people's sense of national identity and strengthen the cohesion of the whole society.",
-      "meaning": "传统节日能够唤起人们的民族认同感，增强社会凝聚力。",
-      "time": "2026/5/24 11:00:00"
+      "meaning": "v. 唤起，引起，触发（感情、记忆）",
+      "sentence": "Traditional festivals evoke national identity and boost social cohesion.",
+      "translation": "传统节日能够唤起人们的民族认同感，增强社会凝聚力。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "excessive",
-      "sentence": "Excessive pursuit of material wealth may make people ignore the importance of spiritual happiness and social relations.",
-      "meaning": "过度追求物质财富，会让人忽视精神幸福和人际关系的重要性。",
-      "time": "2026/5/24 11:00:00"
+      "meaning": "adj. 过多的，过分的，过度的",
+      "sentence": "Excessive consumption easily leads to unnecessary waste and financial burden.",
+      "translation": "过度消费容易造成不必要的浪费和经济负担。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "exploit",
-      "sentence": "It is important for human beings to exploit natural resources rationally instead of overusing them without restraint.",
-      "meaning": "人类应当合理开发自然资源，而非无节制地过度开采。",
-      "time": "2026/5/24 11:00:00"
+      "meaning": "v. 开发，利用；剥削，压榨",
+      "sentence": "Humans must exploit natural resources rationally rather than use them recklessly.",
+      "translation": "人类应当合理开发自然资源，而非无节制地滥用。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "facilitate",
-      "sentence": "Advanced transportation systems facilitate people's travel and promote the flow of goods and personnel between regions.",
-      "meaning": "完善的交通系统便利了人们出行，促进了地区间物资与人员的流动。",
-      "time": "2026/5/24 11:00:00"
+      "meaning": "v. 促进，使便利，帮助",
+      "sentence": "Sophisticated transport networks facilitate travel and boost cross-regional trade and population mobility.",
+      "translation": "完善的交通网络便利了人们出行，促进了地区贸易与人员流动。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "fatal",
-      "sentence": "Ignoring the hidden dangers of environmental pollution will bring fatal consequences to the survival and development of human society.",
-      "meaning": "忽视环境污染的隐患，会给人类社会的生存与发展带来灾难性后果。",
-      "time": "2026/5/24 11:00:00"
+      "meaning": "adj. 致命的；灾难性的，毁灭性的",
+      "sentence": "Reckless driving can result in fatal accidents and irreversible losses.",
+      "translation": "鲁莽驾驶会引发致命事故，造成无法挽回的损失。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "feasible",
-      "sentence": "Building more community service centers is a feasible way to solve the problem of inconvenient life for the elderly.",
-      "meaning": "修建更多社区服务中心，是解决老年人生活不便的可行办法。",
-      "time": "2026/5/24 11:00:00"
+      "meaning": "adj. 可行的，行得通的；适宜的",
+      "sentence": "Constructing more community service hubs is a feasible solution to elderly residents' living troubles.",
+      "translation": "修建更多社区服务中心，是解决老年人生活不便的可行办法。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "flourish",
-      "sentence": "Cultural artistic undertakings will flourish only when they are closely combined with the needs of society and people's lives.",
-      "meaning": "文化艺术事业只有贴近社会需求和民众生活，才能蓬勃发展。",
-      "time": "2026/5/24 11:00:00"
+      "meaning": "v. 繁荣，兴旺，蓬勃发展；茂盛生长",
+      "sentence": "Local businesses flourish with steady market demand and sound policies.",
+      "translation": "依托稳定的市场需求和良好政策，本土企业蓬勃发展。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "foresee",
-      "sentence": "A responsible government should foresee potential social risks and take preventive measures in advance.",
-      "meaning": "负责任的政府应当预见潜在社会风险，并提前采取防范措施。",
-      "time": "2026/5/24 11:00:00"
+      "meaning": "v. 预见，预知，预料",
+      "sentence": "An accountable government should foresee potential social risks and adopt preventive measures.",
+      "translation": "负责任的政府应当预见潜在社会风险，并采取防范措施。",
+      "time": "2026/5/24 14:30:00"
     },
     {
       "word": "foster",
-      "sentence": "Community activities can foster mutual understanding and friendship between neighbors and build a harmonious community atmosphere.",
-      "meaning": "社区活动可以增进邻里间的理解与友谊，营造和谐的社区氛围。",
-      "time": "2026/5/24 11:00:00"
+      "meaning": "v. 培养，促进，培育；收养，养育",
+      "sentence": "Community activities foster mutual trust and friendship among residents and create a harmonious neighborhood.",
+      "translation": "社区活动增进邻里间的信任与情谊，营造和谐的社区氛围。",
+      "time": "2026/5/24 14:30:00"
     }
   ]
 }
