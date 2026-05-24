@@ -4721,13 +4721,29 @@ function showCurrentDictation(state) {
   const idx = state.currentIndex;
   const sentence = state.sentences[idx];
   
-  // Show Chinese prompt — use the sentence as prompt (show first few chars or just use it as hint target)
-  document.getElementById('dictatePrompt').textContent = '📝 请默写以下句子：';
-  document.getElementById('dictatePrompt').innerHTML = 
-    '<div style="font-size:13px;color:var(--text-light);margin-bottom:8px;">第 ' + (idx + 1) + '/' + state.sentences.length + ' 题' +
+  // Find the full sentence data (with meaning) from getSentences()
+  const allSentences = getSentences();
+  const fullData = allSentences.find(s => s.sentence === sentence.sentence) || {};
+  const chineseMeaning = fullData.meaning || '';
+  const vocabWord = fullData.word || '';
+  
+  // Show Chinese meaning as the dictation prompt
+  let promptHtml = '<div style="font-size:13px;color:var(--text-light);margin-bottom:8px;">第 ' + (idx + 1) + '/' + state.sentences.length + ' 题' +
     (sentence.isRetry ? ' <span style="background:#fff3cd;padding:2px 8px;border-radius:4px;font-size:11px;">🔁 复习</span>' : '') +
-    '</div>' +
-    '<div style="font-size:16px;color:#666;">' + escapeHtml(sentence.sentence) + '</div>';
+    '</div>';
+  
+  if (chineseMeaning) {
+    promptHtml += '<div style="font-size:14px;color:var(--text-light);margin-bottom:6px;">📖 请根据中文默写英文句子：</div>';
+    promptHtml += '<div style="font-size:18px;font-weight:600;color:var(--text);padding:12px;background:#f0f4ff;border-radius:10px;border:1px solid #d0d9ff;">' + escapeHtml(chineseMeaning) + '</div>';
+    if (vocabWord) {
+      promptHtml += '<div style="margin-top:8px;font-size:12px;color:var(--text-light);">💡 本句关键词：<code style="background:#e8daef;padding:2px 8px;border-radius:4px;font-size:13px;color:#6c3483;">' + escapeHtml(vocabWord) + '</code></div>';
+    }
+  } else {
+    // Fallback: show the English sentence itself
+    promptHtml += '<div style="font-size:16px;color:#666;">' + escapeHtml(sentence.sentence) + '</div>';
+  }
+  
+  document.getElementById('dictatePrompt').innerHTML = promptHtml;
   
   document.getElementById('dictateInput').value = '';
   document.getElementById('dictateInput').disabled = false;
@@ -4838,6 +4854,11 @@ function showDictationHint() {
   const sentence = state.sentences[state.currentIndex];
   const text = sentence.sentence;
   
+  // Find vocab word
+  const allSentences = getSentences();
+  const fullData = allSentences.find(s => s.sentence === sentence.sentence) || {};
+  const vocabWord = fullData.word || '';
+  
   // Show first letter of each word as hint
   const words = text.split(' ');
   const firstLetters = words.map(w => {
@@ -4848,9 +4869,12 @@ function showDictationHint() {
   // Count words
   const hint = document.getElementById('dictateHint');
   hint.style.display = 'block';
-  hint.innerHTML = 
-    '💡 提示：共 ' + words.length + ' 个单词<br>' +
-    '首字母：<code style="background:#fff;padding:2px 6px;border-radius:4px;font-size:14px;">' + escapeHtml(firstLetters) + '</code>';
+  let hintHtml = '💡 提示：共 ' + words.length + ' 个单词';
+  if (vocabWord) {
+    hintHtml += '<br>🔑 关键词：<code style="background:#e8daef;padding:2px 8px;border-radius:4px;font-size:14px;color:#6c3483;">' + escapeHtml(vocabWord) + '</code>';
+  }
+  hintHtml += '<br>📝 首字母：<code style="background:#fff;padding:2px 6px;border-radius:4px;font-size:14px;">' + escapeHtml(firstLetters) + '</code>';
+  hint.innerHTML = hintHtml;
 }
 
 function skipDictation() {
