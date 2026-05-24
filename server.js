@@ -24,7 +24,34 @@ if (!fs.existsSync(DATA_FILE)) {
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 
-// Serve static files
+// Serve static files — inject sentence data into index.html
+app.get('/', (req, res) => {
+  const indexPath = path.join(__dirname, 'index.html');
+  let html = fs.readFileSync(indexPath, 'utf8');
+  
+  // Read sentence data from data.json and inject as a global variable
+  try {
+    const rootData = JSON.parse(fs.readFileSync(path.join(__dirname, 'data.json'), 'utf8'));
+    if (rootData.ew_sentences && rootData.ew_sentences.length > 0) {
+      const jsonStr = JSON.stringify(rootData.ew_sentences);
+      const injectScript = '<script>var EMBEDDED_SENTENCES = ' + jsonStr + ';</script>';
+      html = html.replace('</head>', injectScript + '</head>');
+    }
+  } catch(e) {
+    // Fallback: try db.json
+    try {
+      const dbData = JSON.parse(fs.readFileSync(DATA_FILE, 'utf8'));
+      if (dbData.ew_sentences && dbData.ew_sentences.length > 0) {
+        const jsonStr = JSON.stringify(dbData.ew_sentences);
+        const injectScript = '<script>var EMBEDDED_SENTENCES = ' + jsonStr + ';</script>';
+        html = html.replace('</head>', injectScript + '</head>');
+      }
+    } catch(e2) {}
+  }
+  
+  res.send(html);
+});
+
 app.use(express.static(path.join(__dirname)));
 
 // API: Load all data from server

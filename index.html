@@ -1356,48 +1356,31 @@ function initDefaultWords() {
   updateCategoryFilters();
 }
 
-// Initialize default sentences from the server's data.json
-let _sentencesLoading = false;
+// Initialize default sentences from the server
 function initDefaultSentences() {
-  if (_sentencesLoading) return;
-  const sentences = STORAGE.sentences.get();
-  if (sentences.length > 0) return;
+  var sentences = STORAGE.sentences.get();
+  if (sentences && sentences.length > 0) return;
   
-  _sentencesLoading = true;
+  // Check if server already embedded sentences in the page
+  if (typeof EMBEDDED_SENTENCES !== 'undefined' && EMBEDDED_SENTENCES && EMBEDDED_SENTENCES.length > 0) {
+    STORAGE.sentences.set(EMBEDDED_SENTENCES);
+    renderSentences();
+    return;
+  }
   
-  // Use XMLHttpRequest for synchronous-like loading
+  // Fallback: XHR to API
   var xhr = new XMLHttpRequest();
-  xhr.open('GET', '/api/data', true);
-  xhr.onload = function() {
-    try {
+  xhr.open('GET', '/api/data', false);  // synchronous
+  try {
+    xhr.send();
+    if (xhr.status === 200) {
       var res = JSON.parse(xhr.responseText);
       if (res.success && res.data && res.data.ew_sentences && res.data.ew_sentences.length > 0) {
         STORAGE.sentences.set(res.data.ew_sentences);
-        _sentencesLoading = false;
-        // Re-render everything now that sentences are loaded
         renderSentences();
-        // Re-init dictation if the dictate tab is visible
-        var ds = document.getElementById('sentenceDictateSection');
-        if (ds && ds.style.display !== 'none') {
-          initDictation();
-        }
-        // Re-sync dictation state if on sentences page
-        var pageSentences = document.getElementById('page-sentences');
-        if (pageSentences && pageSentences.classList.contains('active')) {
-          var libSection = document.getElementById('sentenceLibSection');
-          if (libSection && libSection.style.display !== 'none') {
-            renderSentences();
-          }
-        }
-      } else {
-        _sentencesLoading = false;
       }
-    } catch(e) {
-      _sentencesLoading = false;
     }
-  };
-  xhr.onerror = function() { _sentencesLoading = false; };
-  xhr.send();
+  } catch(e) {}
 }
 function updateCategoryFilters() {
   const container = document.getElementById('wordCatFilters');
@@ -4648,52 +4631,20 @@ function showSentenceTab(tab) {
 
 function initDictation() {
   const sentences = getSentences();
-  if (!sentences.length) {
+  if (!sentences || !sentences.length) {
     document.getElementById('dictateEmpty').style.display = 'block';
     document.getElementById('dictateCurrentCard').style.display = 'none';
     document.getElementById('dictateComplete').style.display = 'none';
     document.getElementById('startDictateBtn').style.display = 'none';
-    
-    if (_sentencesLoading) {
-      document.getElementById('dictateEmptyText').textContent = '📝 正在加载句子库，请稍候...';
-      // Retry every second until loaded
-      var retryTimer = setInterval(function() {
-        var retry = getSentences();
-        if (retry.length > 0) {
-          clearInterval(retryTimer);
-          initDictation();
-        }
-      }, 1000);
-      // Stop retrying after 30 seconds
-      setTimeout(function() { clearInterval(retryTimer); }, 30000);
-    } else {
-      document.getElementById('dictateEmptyText').textContent = '📝 句子库还没有句子，先去添加句子吧！';
-      // Try to init via API
-      initDefaultSentences();
-      // Retry a few times
-      var retryTimer = setInterval(function() {
-        var retry = getSentences();
-        if (retry.length > 0) {
-          clearInterval(retryTimer);
-          initDictation();
-        }
-      }, 1000);
-      setTimeout(function() { clearInterval(retryTimer); }, 15000);
-    }
+    document.getElementById('dictateEmptyText').textContent = '📝 句子库还没有句子，先去「句子库」添加吧！';
     return;
   }
 
-  const state = getDictationState();
-  const today = getDateKey();
-
-  // Clear old-format state that might not have proper sentence data
-  if (state.date !== today || !state.sentences || !state.sentences.length || !Array.isArray(state.sentences)) {
-    // New day — pick 25 random sentences
-    startDailyDictation();
-    return;
-  }
-
-  renderDictationState(state);
+  // Clear any old-format dictation state
+  try { localStorage.removeItem('ew_dictation_state'); } catch(e) {}
+  
+  // Start fresh daily dictation
+  startDailyDictation();
 }
 
 function startDailyDictation() {
