@@ -593,20 +593,66 @@ nav a.active {
 
 <!-- ===== 句子库 ===== -->
 <div class="page" id="page-sentences">
-  <div class="card">
-    <div class="card-title">➕ 添加句子</div>
-    <div class="input-row" style="flex-direction:column;">
-      <textarea id="sentenceInput" placeholder="输入英文句子…" style="width:100%;"></textarea>
-      <div style="display:flex;gap:10px;width:100%;">
-        <input type="text" id="sentenceMeaning" placeholder="中文翻译（可选）…" style="flex:1;padding:10px 14px;border:1.5px solid var(--border);border-radius:8px;font-size:14px;outline:none;">
-        <button class="btn btn-primary" onclick="addSentence()" style="white-space:nowrap;">保存</button>
+  <div class="tab-bar" style="margin-bottom:16px;">
+    <button class="tab active" onclick="showSentenceTab('lib')" id="stt-lib">📝 句子库</button>
+    <button class="tab" onclick="showSentenceTab('dictate')" id="stt-dictate">✍️ 句子默写</button>
+  </div>
+
+  <!-- 句子库 -->
+  <div id="sentenceLibSection">
+    <div class="card">
+      <div class="card-title">➕ 添加句子</div>
+      <div class="input-row" style="flex-direction:column;">
+        <textarea id="sentenceInput" placeholder="输入英文句子…" style="width:100%;"></textarea>
+        <div style="display:flex;gap:10px;width:100%;">
+          <input type="text" id="sentenceMeaning" placeholder="中文翻译（可选）…" style="flex:1;padding:10px 14px;border:1.5px solid var(--border);border-radius:8px;font-size:14px;outline:none;">
+          <button class="btn btn-primary" onclick="addSentence()" style="white-space:nowrap;">保存</button>
+        </div>
       </div>
     </div>
+    <div class="card">
+      <div class="card-title">📝 我的句子库</div>
+      <input type="text" class="search-box" id="sentenceSearch" placeholder="搜索句子…" oninput="renderSentences()">
+      <div id="sentenceList"></div>
+    </div>
   </div>
-  <div class="card">
-    <div class="card-title">📝 我的句子库</div>
-    <input type="text" class="search-box" id="sentenceSearch" placeholder="搜索句子…" oninput="renderSentences()">
-    <div id="sentenceList"></div>
+
+  <!-- 句子默写 -->
+  <div id="sentenceDictateSection" style="display:none;">
+    <div class="card">
+      <div class="card-title" id="dictateTitle">✍️ 今日默写</div>
+      <div id="dictateProgress" style="display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap;"></div>
+      <div id="dictateStats" style="font-size:13px;color:var(--text-light);margin-bottom:12px;"></div>
+      <div id="dictateCurrentCard" style="display:none;">
+        <div id="dictatePrompt" style="font-size:18px;font-weight:600;color:var(--text);margin-bottom:20px;padding:16px;background:#f8f9ff;border-radius:10px;border:1px solid var(--border);text-align:center;line-height:1.6;"></div>
+        <div style="margin-bottom:12px;">
+          <textarea id="dictateInput" placeholder="输入英文句子…" style="width:100%;min-height:80px;padding:12px;border:1.5px solid var(--border);border-radius:8px;font-size:15px;font-family:inherit;line-height:1.6;resize:vertical;outline:none;"></textarea>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+          <button class="btn btn-primary" onclick="checkDictation()" id="dictateSubmitBtn">✅ 提交校对</button>
+          <button class="btn btn-outline" onclick="showDictationHint()" id="dictateHintBtn">💡 提示</button>
+          <button class="btn btn-danger" onclick="skipDictation()" id="dictateSkipBtn">⏭️ 跳过</button>
+        </div>
+        <div id="dictateHint" style="display:none;margin-top:12px;padding:12px;background:#fff3cd;border-radius:8px;font-size:13px;color:#856404;border:1px solid #ffc107;"></div>
+        <div id="dictateResult" style="display:none;margin-top:16px;padding:16px;border-radius:10px;font-size:14px;line-height:1.6;"></div>
+        <div id="dictateNextBtnWrap" style="display:none;margin-top:16px;">
+          <button class="btn btn-primary btn-block" onclick="nextDictation()">下一题 →</button>
+        </div>
+      </div>
+      <div id="dictateEmpty" style="display:block;">
+        <div class="empty-state">
+          <div class="icon">✍️</div>
+          <div id="dictateEmptyText">句子库还没有句子，先去添加吧！</div>
+          <button class="btn btn-primary" onclick="startDailyDictation()" id="startDictateBtn" style="margin-top:12px;display:none;">🎯 开始今日默写</button>
+        </div>
+      </div>
+      <div id="dictateComplete" style="display:none;text-align:center;padding:30px 20px;">
+        <div style="font-size:48px;margin-bottom:12px;">🎉</div>
+        <div style="font-size:20px;font-weight:700;color:var(--primary);margin-bottom:8px;">今日默写完成！</div>
+        <div id="dictateCompleteStats" style="font-size:14px;color:var(--text-light);margin-bottom:16px;"></div>
+        <button class="btn btn-outline" onclick="resetDictation()">🔄 重新开始</button>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -4526,6 +4572,363 @@ saveEssay = function() {
     }
   }
 };
+
+// ===== SENTENCE DICTATION =====
+const DICTATE_DAILY_COUNT = 25;
+
+function getDictationState() {
+  try { return JSON.parse(localStorage.getItem('ew_dictation_state')) || {}; } catch(e) { return {}; }
+}
+function saveDictationState(s) {
+  localStorage.setItem('ew_dictation_state', JSON.stringify(s));
+}
+
+function getDateKey() {
+  const d = new Date();
+  return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+}
+
+function showSentenceTab(tab) {
+  document.querySelectorAll('#page-sentences .tab-bar .tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('stt-' + tab).classList.add('active');
+  document.getElementById('sentenceLibSection').style.display = tab === 'lib' ? 'block' : 'none';
+  document.getElementById('sentenceDictateSection').style.display = tab === 'dictate' ? 'block' : 'none';
+  if (tab === 'dictate') initDictation();
+}
+
+function initDictation() {
+  const sentences = getSentences();
+  if (!sentences.length) {
+    document.getElementById('dictateEmpty').style.display = 'block';
+    document.getElementById('dictateCurrentCard').style.display = 'none';
+    document.getElementById('dictateComplete').style.display = 'none';
+    document.getElementById('startDictateBtn').style.display = 'none';
+    document.getElementById('dictateEmptyText').textContent = '📝 句子库还没有句子，先去添加吧！';
+    return;
+  }
+
+  const state = getDictationState();
+  const today = getDateKey();
+
+  if (state.date !== today || !state.sentences) {
+    // New day — pick 25 random sentences
+    startDailyDictation();
+    return;
+  }
+
+  renderDictationState(state);
+}
+
+function startDailyDictation() {
+  const sentences = getSentences();
+  if (!sentences.length) {
+    showSentenceTab('lib');
+    return;
+  }
+
+  // Get previously wrong sentences to prioritize
+  const dictState = getDictationState();
+  const wrongKeys = new Set((dictState.wrongSentences || []).map(s => s.sentence));
+
+  // Shuffle and pick 25
+  const shuffled = [...sentences].sort(() => Math.random() - 0.5);
+  
+  // Prioritize wrong sentences
+  const wrongFirst = [];
+  const rest = [];
+  for (const s of shuffled) {
+    if (wrongKeys.has(s.sentence) && wrongFirst.length < DICTATE_DAILY_COUNT) {
+      wrongFirst.push({ sentence: s.sentence, time: s.time, isRetry: true });
+    } else if (rest.length < DICTATE_DAILY_COUNT - wrongFirst.length) {
+      rest.push({ sentence: s.sentence, time: s.time, isRetry: false });
+    }
+  }
+  
+  const todaySentences = [...wrongFirst, ...rest].slice(0, DICTATE_DAILY_COUNT);
+  
+  const state = {
+    date: getDateKey(),
+    sentences: todaySentences,
+    currentIndex: 0,
+    correct: [],
+    wrong: [],
+    completed: []
+  };
+  saveDictationState(state);
+  renderDictationState(state);
+}
+
+function renderDictationState(state) {
+  const total = state.sentences.length;
+  const done = state.correct.length + state.wrong.length;
+  
+  if (done >= total) {
+    // All done
+    document.getElementById('dictateEmpty').style.display = 'none';
+    document.getElementById('dictateCurrentCard').style.display = 'none';
+    document.getElementById('dictateComplete').style.display = 'block';
+    document.getElementById('dictateCompleteStats').innerHTML = 
+      '✅ 正确 ' + state.correct.length + '  ✖️ 错误 ' + state.wrong.length +
+      '  📊 正确率 ' + (done > 0 ? Math.round(state.correct.length / done * 100) : 0) + '%' +
+      '  📝 共 ' + state.sentences.length + ' 句';
+    return;
+  }
+  
+  document.getElementById('dictateEmpty').style.display = 'none';
+  document.getElementById('dictateComplete').style.display = 'none';
+  document.getElementById('dictateCurrentCard').style.display = 'block';
+  
+  // Progress bar
+  renderDictateProgress(state);
+  
+  // Stats
+  const retryCount = state.sentences.filter(s => s.isRetry).length;
+  document.getElementById('dictateStats').innerHTML = 
+    '📝 已完成 ' + done + '/' + total + '  ' +
+    '✅ 正确 ' + state.correct.length + '  ✖️ 错误 ' + state.wrong.length +
+    (retryCount > 0 ? '  🔄 复习 ' + retryCount + ' 题' : '');
+  
+  // Show current sentence
+  showCurrentDictation(state);
+}
+
+function renderDictateProgress(state) {
+  const total = state.sentences.length;
+  let html = '';
+  for (let i = 0; i < total; i++) {
+    let cls = 'dictate-dot';
+    let tip = '';
+    if (state.correct.includes(i)) {
+      cls += ' dictate-dot-correct';
+      tip = '✅ 正确';
+    } else if (state.wrong.includes(i)) {
+      cls += ' dictate-dot-wrong';
+      tip = '✖️ 错误';
+    } else if (i === state.currentIndex) {
+      cls += ' dictate-dot-current';
+      tip = '📝 当前';
+    } else {
+      cls += ' dictate-dot-pending';
+      tip = '⏳ 待做';
+    }
+    if (state.sentences[i].isRetry) cls += ' dictate-dot-retry';
+    html += '<span class="' + cls + '" title="' + tip + '"></span>';
+  }
+  document.getElementById('dictateProgress').innerHTML = html;
+}
+
+function showCurrentDictation(state) {
+  const idx = state.currentIndex;
+  const sentence = state.sentences[idx];
+  
+  // Show Chinese prompt — use the sentence as prompt (show first few chars or just use it as hint target)
+  document.getElementById('dictatePrompt').textContent = '📝 请默写以下句子：';
+  document.getElementById('dictatePrompt').innerHTML = 
+    '<div style="font-size:13px;color:var(--text-light);margin-bottom:8px;">第 ' + (idx + 1) + '/' + state.sentences.length + ' 题' +
+    (sentence.isRetry ? ' <span style="background:#fff3cd;padding:2px 8px;border-radius:4px;font-size:11px;">🔁 复习</span>' : '') +
+    '</div>' +
+    '<div style="font-size:16px;color:#666;">' + escapeHtml(sentence.sentence) + '</div>';
+  
+  document.getElementById('dictateInput').value = '';
+  document.getElementById('dictateInput').disabled = false;
+  document.getElementById('dictateInput').style.borderColor = 'var(--border)';
+  document.getElementById('dictateSubmitBtn').style.display = 'inline-block';
+  document.getElementById('dictateHintBtn').style.display = 'inline-block';
+  document.getElementById('dictateSkipBtn').style.display = 'inline-block';
+  document.getElementById('dictateHint').style.display = 'none';
+  document.getElementById('dictateResult').style.display = 'none';
+  document.getElementById('dictateNextBtnWrap').style.display = 'none';
+  document.getElementById('dictateInput').focus();
+}
+
+function checkDictation() {
+  const state = getDictationState();
+  if (!state.sentences || state.currentIndex >= state.sentences.length) return;
+  
+  const idx = state.currentIndex;
+  const sentence = state.sentences[idx];
+  const userInput = document.getElementById('dictateInput').value.trim();
+  
+  if (!userInput) {
+    document.getElementById('dictateInput').style.borderColor = 'var(--danger)';
+    return;
+  }
+  
+  const correctSentence = sentence.sentence.replace(/&#39;/g, "'").replace(/&amp;/g, '&');
+  
+  // Normalize for comparison
+  const normalize = s => s.toLowerCase().replace(/[\s]+/g, ' ').replace(/['"]/g, "'").trim();
+  const isCorrect = normalize(userInput) === normalize(correctSentence);
+  
+  document.getElementById('dictateInput').disabled = true;
+  document.getElementById('dictateSubmitBtn').style.display = 'none';
+  document.getElementById('dictateHintBtn').style.display = 'none';
+  document.getElementById('dictateSkipBtn').style.display = 'none';
+  
+  const result = document.getElementById('dictateResult');
+  result.style.display = 'block';
+  
+  if (isCorrect) {
+    result.style.background = '#d4edda';
+    result.style.border = '1px solid #c3e6cb';
+    result.style.color = '#155724';
+    result.innerHTML = '<strong>✅ 完全正确！</strong><br><span style="opacity:0.7;">' + escapeHtml(correctSentence) + '</span>';
+    
+    state.correct.push(idx);
+    state.completed.push({ idx, correct: true });
+    
+    // If this was a retry sentence, remove from wrong list
+    if (sentence.isRetry) {
+      state.wrongSentences = (state.wrongSentences || []).filter(s => s.sentence !== sentence.sentence);
+    }
+  } else {
+    // Show diff
+    const userWords = normalize(userInput).split(' ');
+    const correctWords = normalize(correctSentence).split(' ');
+    
+    result.style.background = '#f8d7da';
+    result.style.border = '1px solid #f5c6cb';
+    result.style.color = '#721c24';
+    
+    let feedback = '<strong>✖️ 不完全正确</strong><br>';
+    feedback += '<div style="margin-top:8px;">📝 你的输入：<span style="color:#c0392b;">' + escapeHtml(userInput) + '</span></div>';
+    feedback += '<div style="margin-top:4px;">✅ 正确答案：<span style="color:#27ae60;font-weight:600;">' + escapeHtml(correctSentence) + '</span></div>';
+    
+    // Word count comparison
+    const wordDiff = Math.abs(userWords.length - correctWords.length);
+    if (wordDiff > 0) {
+      feedback += '<div style="margin-top:4px;font-size:12px;">📊 词数差异：你写了 ' + userWords.length + ' 词，原文 ' + correctWords.length + ' 词</div>';
+    }
+    
+    result.innerHTML = feedback;
+    
+    state.wrong.push(idx);
+    state.completed.push({ idx, correct: false });
+    
+    // Add to wrong sentences for retry
+    if (!state.wrongSentences) state.wrongSentences = [];
+    const existingWrong = state.wrongSentences.find(s => s.sentence === sentence.sentence);
+    if (!existingWrong) {
+      state.wrongSentences.push({ sentence: sentence.sentence, time: sentence.time || new Date().toLocaleString(), wrongCount: 1 });
+    } else {
+      existingWrong.wrongCount = (existingWrong.wrongCount || 1) + 1;
+      existingWrong.lastWrong = new Date().toLocaleString();
+    }
+  }
+  
+  state.currentIndex++;
+  saveDictationState(state);
+  
+  document.getElementById('dictateNextBtnWrap').style.display = 'block';
+  renderDictateProgress(state);
+  
+  // Update stats
+  const done = state.correct.length + state.wrong.length;
+  const retryCount = state.sentences.filter(s => s.isRetry).length;
+  document.getElementById('dictateStats').innerHTML = 
+    '📝 已完成 ' + done + '/' + state.sentences.length + '  ' +
+    '✅ 正确 ' + state.correct.length + '  ✖️ 错误 ' + state.wrong.length +
+    (retryCount > 0 ? '  🔄 复习 ' + retryCount + ' 题' : '');
+}
+
+function showDictationHint() {
+  const state = getDictationState();
+  if (!state.sentences || state.currentIndex >= state.sentences.length) return;
+  
+  const sentence = state.sentences[state.currentIndex];
+  const text = sentence.sentence;
+  
+  // Show first letter of each word as hint
+  const words = text.split(' ');
+  const firstLetters = words.map(w => {
+    const clean = w.replace(/[.,!?;:'"()]/g, '');
+    return clean.charAt(0);
+  }).join(' ');
+  
+  // Count words
+  const hint = document.getElementById('dictateHint');
+  hint.style.display = 'block';
+  hint.innerHTML = 
+    '💡 提示：共 ' + words.length + ' 个单词<br>' +
+    '首字母：<code style="background:#fff;padding:2px 6px;border-radius:4px;font-size:14px;">' + escapeHtml(firstLetters) + '</code>';
+}
+
+function skipDictation() {
+  const state = getDictationState();
+  if (!state.sentences || state.currentIndex >= state.sentences.length) return;
+  
+  const idx = state.currentIndex;
+  const sentence = state.sentences[idx];
+  
+  state.wrong.push(idx);
+  state.completed.push({ idx, correct: false });
+  
+  // Add to wrong sentences for retry
+  if (!state.wrongSentences) state.wrongSentences = [];
+  const existing = state.wrongSentences.find(s => s.sentence === sentence.sentence);
+  if (!existing) {
+    state.wrongSentences.push({ sentence: sentence.sentence, time: sentence.time || new Date().toLocaleString(), wrongCount: 1 });
+  } else {
+    existing.wrongCount = (existing.wrongCount || 1) + 1;
+  }
+  
+  state.currentIndex++;
+  saveDictationState(state);
+  
+  const result = document.getElementById('dictateResult');
+  result.style.display = 'block';
+  result.style.background = '#fff3cd';
+  result.style.border = '1px solid #ffc107';
+  result.style.color = '#856404';
+  result.innerHTML = '<strong>⏭️ 已跳过</strong><br>✅ 正确答案：<span style="font-weight:600;">' + escapeHtml(sentence.sentence) + '</span>';
+  
+  document.getElementById('dictateInput').disabled = true;
+  document.getElementById('dictateSubmitBtn').style.display = 'none';
+  document.getElementById('dictateHintBtn').style.display = 'none';
+  document.getElementById('dictateSkipBtn').style.display = 'none';
+  document.getElementById('dictateNextBtnWrap').style.display = 'block';
+  
+  renderDictateProgress(state);
+  const done = state.correct.length + state.wrong.length;
+  document.getElementById('dictateStats').innerHTML = 
+    '📝 已完成 ' + done + '/' + state.sentences.length + '  ' +
+    '✅ 正确 ' + state.correct.length + '  ✖️ 错误 ' + state.wrong.length;
+}
+
+function nextDictation() {
+  const state = getDictationState();
+  renderDictationState(state);
+}
+
+function resetDictation() {
+  if (!confirm('确定要重置今日默写进度吗？')) return;
+  localStorage.removeItem('ew_dictation_state');
+  startDailyDictation();
+}
+
+// Add style for dictate progress dots
+const styleEl = document.createElement('style');
+styleEl.textContent = `
+.dictate-dot {
+  display: inline-block;
+  width: 24px; height: 24px;
+  border-radius: 50%;
+  margin: 2px;
+  font-size: 11px;
+  line-height: 24px;
+  text-align: center;
+  cursor: default;
+  transition: all .2s;
+}
+.dictate-dot-pending { background: #e1e8ed; color: #7f8c8d; }
+.dictate-dot-current { background: var(--primary); color: #fff; transform: scale(1.15); }
+.dictate-dot-correct { background: #2ecc71; color: #fff; }
+.dictate-dot-wrong { background: #e74c3c; color: #fff; }
+.dictate-dot-retry {
+  box-shadow: 0 0 0 2px #f39c12;
+}
+`;
+document.head.appendChild(styleEl);
 
 // ===== INIT =====
 initDefaultWords();
