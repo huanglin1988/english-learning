@@ -1355,6 +1355,47 @@ function initDefaultWords() {
   }
   updateCategoryFilters();
 }
+
+// Initialize default sentences from the server's data.json
+function initDefaultSentences() {
+  const sentences = STORAGE.sentences.get();
+  if (sentences.length === 0) {
+    // Try to load from the server's data.json via the API
+    fetch('/api/data')
+      .then(r => r.json())
+      .then(res => {
+        if (res.success && res.data && res.data.ew_sentences && res.data.ew_sentences.length > 0) {
+          STORAGE.sentences.set(res.data.ew_sentences);
+          renderSentences();
+          // Re-init dictation now that we have sentences
+          const dictateSection = document.getElementById('sentenceDictateSection');
+          if (dictateSection && dictateSection.style.display !== 'none') {
+            initDictation();
+          }
+        }
+      })
+      .catch(() => {
+        // If API fails, try direct loading from embedded data
+        loadSentencesFromServer();
+      });
+  }
+}
+
+// Fallback: try loading sentences via direct data fetch from server
+async function loadSentencesFromServer() {
+  try {
+    const res = await fetch('/api/data');
+    const json = await res.json();
+    if (json.success && json.data && json.data.ew_sentences && json.data.ew_sentences.length > 0) {
+      STORAGE.sentences.set(json.data.ew_sentences);
+      renderSentences();
+      const dictateSection = document.getElementById('sentenceDictateSection');
+      if (dictateSection && dictateSection.style.display !== 'none') {
+        initDictation();
+      }
+    }
+  } catch(e) {}
+}
 function updateCategoryFilters() {
   const container = document.getElementById('wordCatFilters');
   if (!container) return;
@@ -4603,14 +4644,23 @@ function initDictation() {
     document.getElementById('dictateCurrentCard').style.display = 'none';
     document.getElementById('dictateComplete').style.display = 'none';
     document.getElementById('startDictateBtn').style.display = 'none';
-    document.getElementById('dictateEmptyText').textContent = '📝 句子库还没有句子，先去添加吧！';
+    document.getElementById('dictateEmptyText').textContent = '📝 正在加载句子库...';
+    // Try loading from server again in case async fetch hasn't completed
+    setTimeout(() => {
+      const retry = getSentences();
+      if (retry.length > 0) {
+        initDictation();
+      } else {
+        document.getElementById('dictateEmptyText').textContent = '📝 句子库还没有句子，先去添加吧！';
+      }
+    }, 500);
     return;
   }
 
   const state = getDictationState();
   const today = getDateKey();
 
-  if (state.date !== today || !state.sentences) {
+  if (state.date !== today || !state.sentences || !state.sentences.length) {
     // New day — pick 25 random sentences
     startDailyDictation();
     return;
@@ -4956,6 +5006,7 @@ document.head.appendChild(styleEl);
 
 // ===== INIT =====
 initDefaultWords();
+initDefaultSentences();
 renderWords();
 renderSentences();
 updateWordCount();
