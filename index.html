@@ -1969,12 +1969,35 @@ function saveSentence(idx) {
   
   const sentences = STORAGE.sentences.get();
   if (idx >= 0 && idx < sentences.length) {
+    const oldText = sentences[idx].sentence;
+    const textChanged = oldText !== newText;
+    
     sentences[idx].sentence = newText;
     sentences[idx].translation = newTrans || '';
     sentences[idx].meaning = newTrans || '';
     sentences[idx].word = newWord || '';
     sentences[idx].time = sentences[idx].time || new Date().toLocaleString();
     STORAGE.sentences.set(sentences);
+    
+    // If the sentence text changed, update dictation state to preserve review history
+    if (textChanged) {
+      try {
+        const ds = JSON.parse(localStorage.getItem('ew_dictation_state'));
+        if (ds && ds.wrongSentences) {
+          let updated = false;
+          ds.wrongSentences = ds.wrongSentences.map(s => {
+            if (s.sentence === oldText) {
+              updated = true;
+              return { ...s, sentence: newText };
+            }
+            return s;
+          });
+          if (updated) {
+            localStorage.setItem('ew_dictation_state', JSON.stringify(ds));
+          }
+        }
+      } catch(e) {}
+    }
   }
   
   _editingSentenceIdx = -1;
